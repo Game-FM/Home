@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
-  <script src="./scriptindex.js"></script>
+  <script src="./scriptlogin.js"></script>
 
 </head>
 
@@ -42,32 +42,31 @@
             <div class="dropdown-menu dropdown-menu-dark text-center px-3" style="position: absolute; left: -5 0px;">
               <a href="./index.html" style="text-decoration: none;"><div class="menu-button-effect w-100 mb-1">Trang Chủ</div></a>
               <a href="./login_register.html" style="text-decoration: none;"><div class="menu-button-effect w-100 mb-1">Đăng Nhập</div></a>
-              <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
               <div class="menu-button-effect w-100">Tài Khoản</div>
           </div>
         </div>
       </div>
 
-      <div class="col-6 offset-4 d-flex align-items-center py-2 justify-content-start">
+      <a href="./index.html" class="col-6 offset-4 d-flex align-items-center py-2 justify-content-start text-decoration-none">
           <img src="./images/trangchu/GAMEFM.png" style="width: 3.5vw;" alt="">
           <b style="color: white; font-size: 2.5vw;">GameFM</b>
-      </div>
+      </a>
 
     </div>
 
   </header>
 
   <main class="container">
-    <div class="row form-bg">
+    <div class="row form-bg" id="content">
         <!-- Login -->
          <div class="col-lg-6 col-12 opacity-bg">
-            <a href="" class="row text-center my-3" style="background-color: rgb(84, 48, 203); opacity: 75%; text-decoration: none;">
+            <a href="" class="row text-center my-3" onclick="event.preventDefault(); navigate('Login');" style="background-color: rgb(84, 48, 203); opacity: 75%; text-decoration: none;">
                 <strong style="font-size: 2rem; margin-top: 2vh; margin-bottom: 2vh; color: rgb(255, 255, 255,1);">Đăng Nhập</strong>
             </a>
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
                 <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 5vh;">
                     <form action="">
-                        <div class="text-start mb-3 mt-5">
+                        <div class="text-start mb-3 mt-5" style="padding-top: 4.5vh;">
                             <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN</strong></div>
                             <div><input class="login-input" type="text" name="" id=""></div>
                         </div>
@@ -96,7 +95,7 @@
          </div>
          <!-- end of login -->
          <!-- switch -->
-         <a href="" class="col-lg-6 col-12" style="text-decoration: none;">
+         <a href="" onclick="event.preventDefault(); navigate('Register');" class="col-lg-6 col-12" style="text-decoration: none;">
             <div class="row text-center my-3" style="background-color: black; opacity: 65%;">
                 <strong style="font-size: 2rem; margin-top: 2vh; margin-bottom: 2vh; color: white;">Đăng Ký</strong>
             </div>
