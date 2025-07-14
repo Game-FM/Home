@@ -88,7 +88,7 @@ function navigate(page) {
                         <div class="text-start mb-3">
                             <div class="d-flex align-items-center gap-2" style="font-size: 1rem;">
                                 <input class="custom-check" type="checkbox">
-                                <strong>Tôi đồng ý với các <a href="" style="text-decoration: none; color: rgb(84, 48, 203);">Điều Khoản</a></strong>
+                                <strong>Tôi đồng ý với các <a href="./Policy.html" target="_blank" style="text-decoration: none; color: rgb(84, 48, 203);">Điều Khoản</a></strong>
                             </div>
                         </div>
                         <div class="text-center mb-3 mt-3">
