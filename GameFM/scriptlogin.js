@@ -63,7 +63,7 @@ function navigate(page) {
                 <strong style="font-size: 2rem; margin-top: 2vh; margin-bottom: 2vh; color: rgb(255, 255, 255,1);">Đăng Ký</strong>
             </a>
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
-                <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 5vh;">
+                <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 1vh;">
                     <form action="">
                         <div class="text-start mb-1 mt-4">
                             <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>USERNAME HOẶC TÊN CỦA BẠN</strong></div>
