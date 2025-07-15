@@ -4,297 +4,295 @@ body {
   margin: 0;
 }
 
-header,footer,main{
-    max-width: 90% !important;
+header,
+footer,
+main {
+  max-width: 90% !important;
 }
 
 .center-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5px;
-    padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
-.menu-button-effect{
-    position: relative;
-    background-color: rgb(18, 18, 39);
-    color: white;
-    border: none;
-    transition: all 0.3s ease;
-    overflow: visible;
+.menu-button-effect {
+  position: relative;
+  background-color: rgb(18, 18, 39);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: visible;
 }
-.menu-button-effect::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 1.5px;
-    width: 0;
-    margin-top: 1px;
-    background-color: rgb(255, 255, 255);
-    transition: width 0.5s ease;
+.menu-button-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1.5px;
+  width: 0;
+  margin-top: 1px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.5s ease;
 }
 .menu-button-effect:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 /*  */
 
-
-.button-effect{
-    margin: auto;
-    position: relative;
-    background-color: rgb(18, 18, 39);
-    color: white;
-    border: none;
-    transition: all 0.3s ease;
-    overflow: visible;
+.button-effect {
+  margin: auto;
+  position: relative;
+  background-color: rgb(18, 18, 39);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: visible;
 }
 
 /* Tạo đường gạch dưới ảo */
 .button-effect::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 1.5px;
-    width: 0;
-    margin-top: 1px;
-    background-color: rgb(255, 255, 255);
-    transition: width 0.5s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1.5px;
+  width: 0;
+  margin-top: 1px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.5s ease;
 }
 
 /* Khi hover, mở rộng đường gạch dưới */
 .button-effect:not(.choose):hover::after {
-    width: 100%;
+  width: 100%;
 }
-
 
 /*  */
 
-.choose{
-    border-bottom: 1.8px white solid;
-    padding-bottom: 4px;
-    position: relative;
-    top: 2px;
+.choose {
+  border-bottom: 1.8px white solid;
+  padding-bottom: 4px;
+  position: relative;
+  top: 2px;
 }
 
-.search-input{
-    justify-content: center;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    border: none;
+.search-input {
+  justify-content: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: none;
 }
-header{
-    background-color: rgb(18, 18, 39);
-}
-
-.container{
-    max-width: 100%;
+header {
+  background-color: rgb(18, 18, 39);
 }
 
-footer{
-    background-color: rgb(18, 18, 39);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-footer p{
-    margin: auto;
-}
-main{
-    margin: 10px;
-    color: white;
+.container {
+  max-width: 100%;
 }
 
-.middle{
-    display: flex;
+footer {
+  background-color: rgb(18, 18, 39);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer p {
+  margin: auto;
+}
+main {
+  margin: 10px;
+  color: white;
+}
+
+.middle {
+  display: flex;
 }
 .dropdown-toggle::after {
   display: none !important;
 }
-.menudrop{
-    display: flex;
-    justify-content: left;
-    gap: 10px;
-    text-align: center;
-    margin-bottom: 4px;
+.menudrop {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 4px;
 }
-.logo{
-    width: 50px;
+.logo {
+  width: 50px;
 }
 
-.color1{
-    background-color: none;
-    padding: 15px;
-    margin: auto;
-    color: white;
-    font-size: 25px;
+.color1 {
+  background-color: none;
+  padding: 15px;
+  margin: auto;
+  color: white;
+  font-size: 25px;
 }
-.search-bar{
-    background-color: black;
-    border-radius: 10px;
-    border: 0.1px white solid;
-    color: white;
-    width: 100%;
-    margin-left: -12px;
-    padding-left: 20px;
+.search-bar {
+  background-color: black;
+  border-radius: 10px;
+  border: 0.1px white solid;
+  color: white;
+  width: 100%;
+  margin-left: -12px;
+  padding-left: 20px;
 }
-.search-bar::placeholder{
-    text-indent: -10px;
+.search-bar::placeholder {
+  text-indent: -10px;
 }
 .dropdown-menu {
-    background-color: rgb(18, 18, 39) !important; 
-    color: white;       
-    text-align: center !important; 
+  background-color: rgb(18, 18, 39) !important;
+  color: white;
+  text-align: center !important;
 }
 /* .dropdownitem{
     margin-right: 15px;
 } */
-.customBut1{
-    border: 3px rgb(84, 48, 203) solid;
-    margin: auto;
-    text-align: center;
-    height: 30px;
-    width: 30px;
-    color: white;
-    margin-right: -5px;
+.customBut1 {
+  border: 3px rgb(84, 48, 203) solid;
+  margin: auto;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  color: white;
+  margin-right: -5px;
 }
-.customBut1:hover{
-    background-color: white;
-    color: rgb(84, 48, 203);    
+.customBut1:hover {
+  background-color: white;
+  color: rgb(84, 48, 203);
 }
-.costomBut2{
-    background-color: rgb(84, 48, 203);
-    border: none;
-    color: white;
-    width: 120px;
-    border-radius: 13px;
-    margin-right: -30px;
+.costomBut2 {
+  background-color: rgb(84, 48, 203);
+  border: none;
+  color: white;
+  width: 120px;
+  border-radius: 13px;
+  margin-right: -30px;
 }
-.costomBut2:hover{
-    background-color: white;
-    color: rgb(84, 48, 203);
+.costomBut2:hover {
+  background-color: white;
+  color: rgb(84, 48, 203);
 }
-.search-button{
-    border: 1px white solid;
-    background-color: rgb(84, 48, 203);
-    text-align: center;
-    font-size: 15px;
-    width: 35px;
-    height: auto;
-    color: white;
-    float: right;
-    border-radius: 20%;
-    margin-right: -10px;
+.search-button {
+  border: 1px white solid;
+  background-color: rgb(84, 48, 203);
+  text-align: center;
+  font-size: 15px;
+  width: 35px;
+  height: auto;
+  color: white;
+  float: right;
+  border-radius: 20%;
+  margin-right: -10px;
 }
-.search-button:hover{
-    background-color: white;
-    color: rgb(84, 48, 203);
+.search-button:hover {
+  background-color: white;
+  color: rgb(84, 48, 203);
 }
-.search-bar::placeholder{
-    font-size: 13px;
-    text-align: start;
-    justify-content: center;
-    margin: auto;
-    padding-left: 12px;
+.search-bar::placeholder {
+  font-size: 13px;
+  text-align: start;
+  justify-content: center;
+  margin: auto;
+  padding-left: 12px;
 }
-.item-index{
-    height: 100%;
-    width: 90%;
-    border-radius: 2vh;
-    object-fit: cover;
-    border: 0.5vw rgb(255, 255, 193) solid;
+.item-index {
+  height: 100%;
+  width: 90%;
+  border-radius: 2vh;
+  object-fit: cover;
+  border: 0.5vw rgb(255, 255, 193) solid;
 }
 
-
-.section2contain img{
-    border-radius: 2vh;
+.section2contain img {
+  border-radius: 2vh;
 }
 
 /* chứa ảnh game cần show details */
-.hover-details{
-    position: relative;
-    overflow: hidden;
-
+.hover-details {
+  position: relative;
+  overflow: hidden;
 }
-.details-box{
-    position: absolute;
-    bottom: -500%; /* Ẩn ban đầu */
-    left: 7%;
-    right: 0;
-    width: 86%; /* Chiếm toàn bộ chiều ngang */
-    height: 97%; /* Chiếm toàn bộ chiều cao của ảnh */
-    background: rgba(84, 48, 203, 0.5);
-    color: white;
-    text-align: center;
-    font-size: 1vw;
-    border-radius: 1.4vh;
-    transition: bottom 0.6s ease;
+.details-box {
+  position: absolute;
+  bottom: -500%; /* Ẩn ban đầu */
+  left: 7%;
+  right: 0;
+  width: 86%; /* Chiếm toàn bộ chiều ngang */
+  height: 97%; /* Chiếm toàn bộ chiều cao của ảnh */
+  background: rgba(84, 48, 203, 0.5);
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  border-radius: 1.4vh;
+  transition: bottom 0.6s ease;
 }
-.hover-details:hover .details-box{
-    bottom: 0;
+.hover-details:hover .details-box {
+  bottom: 0;
 }
 
 /* video details */
-.video-details{
-    position: relative;
-    width: 80% ;
-    border-radius: 2vh;
-    top: -5px;
+.video-details {
+  position: relative;
+  width: 80%;
+  border-radius: 2vh;
+  top: -5px;
 }
 
-.buy-button{
-    border: none;
-    background-color: rgb(84, 48, 203);
-    color: white;
-    text-align: center;
-    font-size: 1vw;
+.buy-button {
+  border: none;
+  background-color: rgb(84, 48, 203);
+  color: white;
+  text-align: center;
+  font-size: 1vw;
 }
-.buy-button:hover{
-    border: none;
-    background-color:white;
-    color:  rgb(84, 48, 203);
+.buy-button:hover {
+  border: none;
+  background-color: white;
+  color: rgb(84, 48, 203);
 }
-.buy-button2{
-    border: none;
-    background-color: rgb(33, 165, 12);
-    color: white;
-    text-align: center;
-    font-size: 1vw;
-    padding: 0.3vw;
+.buy-button2 {
+  border: none;
+  background-color: rgb(33, 165, 12);
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  padding: 0.3vw;
 }
-.buy-button2:hover{
-    border: none;
-    background-color:white;
-    color:   rgb(33, 165, 12);
-}
-
-.discount-tag{
-    background-color: rgb(227, 211, 26);
-    position: relative;
-}
-.discount-tag2{
-    background-color: rgb(227, 211, 26);
-    position: relative;
-    font-size: 1.4vw;
+.buy-button2:hover {
+  border: none;
+  background-color: white;
+  color: rgb(33, 165, 12);
 }
 
-.discount-num-tag{
-    background-color: #38485f;
-    font-size: 0.8vw;
+.discount-tag {
+  background-color: rgb(227, 211, 26);
+  position: relative;
 }
-.discount-num-tag2{
-    background-color: #74438f;
+.discount-tag2 {
+  background-color: rgb(227, 211, 26);
+  position: relative;
+  font-size: 1.4vw;
 }
-.discount-num-tag2 p{
-    margin: 0.3vw;
-    font-size: 1vw;
+
+.discount-num-tag {
+  background-color: #38485f;
+  font-size: 0.8vw;
 }
-.discount-num-tag p{
-    margin: auto;
-    padding: 2%;
+.discount-num-tag2 {
+  background-color: #74438f;
+}
+.discount-num-tag2 p {
+  margin: 0.3vw;
+  font-size: 1vw;
+}
+.discount-num-tag p {
+  margin: auto;
+  padding: 2%;
 }
 
 /* Phần Game nổi bật */
@@ -305,72 +303,71 @@ main{
 }
 /* section3 */
 
-.section3{
-    background: linear-gradient(to bottom, #22223c, #38485f);
-    margin: auto;
-    height: fit-content;
+.section3 {
+  background: linear-gradient(to bottom, #22223c, #38485f);
+  margin: auto;
+  height: fit-content;
 }
-.dcnn img{
-    border-radius: 2vw;
-    width: 23vw;
+.dcnn img {
+  border-radius: 2vw;
+  width: 23vw;
 }
 
 .czoom {
-    position: relative;
-    overflow:visible;
-    max-height: 15vw;
-    height: 15vw;
+  position: relative;
+  overflow: visible;
+  max-height: 15vw;
+  height: 15vw;
 }
 
 .zoom {
-    position: absolute;
-    width: 90%;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    transition: width 0.4s ease;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease;
 }
 
 .details-box1 {
-    position: absolute;
-    right: 0;   
-    left: 20%;
-    opacity: 0;
-    width: 18vw; 
-    height: 5vw; 
-    background: white;
-    color: rgba(84, 48, 203, 0.5);
-    text-align: center;
-    font-size: 1vw;
-    border-radius: 1vh;
+  position: absolute;
+  right: 0;
+  left: 20%;
+  opacity: 0;
+  width: 18vw;
+  height: 5vw;
+  background: white;
+  color: rgba(84, 48, 203, 0.5);
+  text-align: center;
+  font-size: 1vw;
+  border-radius: 1vh;
 }
 /* Phần mủi nhọn */
 .details-box1::after {
-    content: '';
-    position: absolute;
-    left: 50%; /* Căn giữa mũi nhọn theo chiều ngang của .details-box1 */
-    top: -1vw; /* Đặt mũi nhọn trên phần .details-box1 */
-    transform: translateX(-50%); /* Căn giữa mũi nhọn theo chiều ngang */
-    width: 0;
-    height: 0;
-    border-left: 2vw solid transparent; /* Mũi nhọn có màu trong suốt */
-    border-right: 2vw solid transparent; /* Mũi nhọn có màu trong suốt */
-    border-bottom: 2vw solid white; /* Mũi nhọn có màu trắng và hướng lên trên */
-    transition: top 0.4s ease; /* Thêm hiệu ứng khi mũi nhọn xuất hiện */
+  content: "";
+  position: absolute;
+  left: 50%; /* Căn giữa mũi nhọn theo chiều ngang của .details-box1 */
+  top: -1vw; /* Đặt mũi nhọn trên phần .details-box1 */
+  transform: translateX(-50%); /* Căn giữa mũi nhọn theo chiều ngang */
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent; /* Mũi nhọn có màu trong suốt */
+  border-right: 2vw solid transparent; /* Mũi nhọn có màu trong suốt */
+  border-bottom: 2vw solid white; /* Mũi nhọn có màu trắng và hướng lên trên */
+  transition: top 0.4s ease; /* Thêm hiệu ứng khi mũi nhọn xuất hiện */
 }
 
-.czoom:hover .details-box1{
-    top: 90%;
-    opacity: 55%;
+.czoom:hover .details-box1 {
+  top: 90%;
+  opacity: 55%;
 }
 .czoom:hover .zoom {
-    width: 100%;
+  width: 100%;
 }
 
-
-footer a{
-    text-decoration: none !important;
-    color: rgb(84, 48, 203);
+footer a {
+  text-decoration: none !important;
+  color: rgb(84, 48, 203);
 }
 
 .ellipsis {
@@ -380,7 +377,7 @@ footer a{
 }
 .multiline-ellipsis {
   display: -webkit-box;
-  -webkit-line-clamp: 3;     /* Số dòng muốn hiển thị */
+  -webkit-line-clamp: 3; /* Số dòng muốn hiển thị */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -388,93 +385,99 @@ footer a{
 
 /* section 4 */
 
-.item-index1{
-    height: 95%;
-    width: 95%;
-    object-fit: cover;
+.item-index1 {
+  height: 95%;
+  width: 95%;
+  object-fit: cover;
 }
-.readmore-button{
-    background-color: white;
-    color: rgb(84, 48, 203); 
-    font-size: 1vw; 
-    margin-top: -1vh;
+.readmore-button {
+  background-color: white;
+  color: rgb(84, 48, 203);
+  font-size: 1vw;
+  margin-top: -1vh;
 }
-.readmore-button:hover{
-    color: white;
-    background-color: rgb(84, 48, 203); 
+.readmore-button:hover {
+  color: white;
+  background-color: rgb(84, 48, 203);
 }
 
 /* Login and register */
 
-.opacity-bg{
-    background: linear-gradient(to top, #38485f, #22223c);
-    margin: 0;
-    opacity: 90%;
-    height: 100%;
-    box-sizing: border-box;
+.opacity-bg {
+  background: linear-gradient(to top, #38485f, #22223c);
+  margin: 0;
+  opacity: 90%;
+  height: 100%;
+  box-sizing: border-box;
 }
-.login-input{
-    background-color: #22223c;
-    width: 35vw;
-    border: 1px white solid;
-    border-radius: 10px;
-    height: 2.5rem;
-    color:white;
-    text-align: start;
+.login-input {
+  all: unset;
+  padding: 15px;
+  background-color: #22223c;
+  width: 30vw;
+  border: 2px solid transparent;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.088);
+  transition: border 0.3s ease-in-out;
+  border-radius: 12px;
+  height: 1rem;
+  color: white;
+  text-align: left;
 }
-.login-input::placeholder{
-    color: white; 
-    text-align: start;
-    font-size: 1rem;
-    opacity: 90%;
+.login-input:focus {
+  border-color: aquamarine;
+}
+.login-input::placeholder {
+  color: white;
+  text-align: start;
+  font-size: 1rem;
+  opacity: 90%;
 }
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 
 input[type="checkbox"].custom-check {
   accent-color: #5430cb;
 }
 
-.login-button{
-    background-color: rgb(84, 48, 203);
-    border: none;
-    color: white;
-    width: 9rem;
-    height: 3rem;
-    font-size: 1.2rem;
+.login-button {
+  background-color: rgb(84, 48, 203);
+  border: none;
+  color: white;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.2rem;
 }
-.login-button:hover{
-    background-color: white;
-    color: rgb(84, 48, 203);
+.login-button:hover {
+  background-color: white;
+  color: rgb(84, 48, 203);
 }
-.login-button2{
-    background-color: #38485f;
-    align-items: center;
-    width: 3rem;
-    height: 2rem;
+.login-button2 {
+  background-color: #38485f;
+  align-items: center;
+  width: 3rem;
+  height: 2rem;
 }
-.login-button2:hover{
-    background-color: rgb(84, 48, 203);
-    color: white;
+.login-button2:hover {
+  background-color: rgb(84, 48, 203);
+  color: white;
 }
 .form-bg {
   background-image: url(./images/Login_Register/1364878.png);
   background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  width: 88.9vw ;
-  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 88.9vw;
+  height: 100%;
 }
-.dkn:hover{
-    text-decoration: underline !important;
+.dkn:hover {
+  text-decoration: underline !important;
 }
-.eye-icon{
-    background-color: #22223c;
-    color: white;
-    border: none;
-    position: absolute;
-    right: 2%;
-    bottom: 17%;
+.eye-icon {
+  background-color: #22223c;
+  color: white;
+  border: none;
+  position: absolute;
+  right: -5%;
+  bottom: 19%;
 }
