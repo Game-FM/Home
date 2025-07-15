@@ -9,17 +9,17 @@ function navigate(page) {
                 <strong style="font-size: 2rem; margin-top: 2vh; margin-bottom: 2vh; color: rgb(255, 255, 255,1);">Đăng Nhập</strong>
             </a>
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
-                <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 5vh;">
+                <div class="col-12 border d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 5vh;">
                     <form action="">
-                        <div class="text-start mb-3 row mt-5" style="padding-top: 4.5vh;">
+                        <div class="text-start mb-3 row mt-5 " style="padding-top: 4.5vh;">
                             <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN</strong></div>
                             <div><input class="login-input w-100" type="text" name="" id=""></div>
                         </div>
-                        <div class="text-start mb-2">
+                        <div class="text-start row mb-2 ">
                             <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
-                            <div class="row w-100 position-relative" style="margin-left: 0.1%;">
-                              <input class="col-12 login-input" type="password" name="" id="psw">
-                              <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye();" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
+                            <div class="position-relative">
+                              <input class="col-11 w-100 login-input" type="password" name="" id="psw">
+                              <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye(this);" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
                             </div>
                         </div>
                         <div class="text-start mb-3">
@@ -85,16 +85,16 @@ function navigate(page) {
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
-                            <div class="row w-100 position-relative" style="margin-left: 0.1%;">
+                            <div class="position-relative" >
                               <input class="col-12 login-input" type="password" name="" id="psw">
-                              <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye();" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
+                              <button class="col-1 eye-icon1 d-flex align-items-center justify-content-center" type="button" onclick="toggleEye(this);" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
                             </div>
                         </div>
                         <div class="text-start mb-1">
-                            <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
-                            <div class="row w-100 position-relative" style="margin-left: 0.1%;">
-                              <input class="col-12 login-input" type="password" name="" id="psw">
-                              <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye();" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
+                            <div style="font-size: 1rem;"><strong>NHẬP LẠI MẬT KHẨU</strong></div>
+                            <div class="position-relative" >
+                              <input class="col-12 login-input" type="password" name="" id="psw1">
+                              <button class="col-1 eye-icon1 d-flex align-items-center justify-content-center" type="button" onclick="toggleEye(this);" id="togglePassword1"><i class="bi bi-eye-slash" id="iconToggle1"></i></button>
                             </div>
                         </div>
                         <div class="text-start mb-1">
@@ -127,13 +127,20 @@ function navigate(page) {
 
 // eye toggle password
 
-function toggleEye(){
-    const passwordInput = document.getElementById("psw"); //lấy psw
-    const toggleBtn = document.getElementById("togglePassword"); //lấy id button
-    const icon = document.getElementById("iconToggle"); //lấy id icon
-    const isPassword = passwordInput.type === "password"; // nếu đầu vô type là password thì isPassword = true
-    passwordInput.type = isPassword ? "text" : "password";  //nếu type = password thì chuyển sang text
-    // chuyển đổi icon toggle eye   
+function toggleEye(button) {
+    // Lấy icon trong nút được click
+    const icon = button.querySelector('i');
+
+    // Lấy input liền trước button
+    const passwordInput = button.previousElementSibling;
+
+    // Nếu không tìm thấy input hoặc icon thì thoát
+    if (!passwordInput || !icon) return;
+
+    const isPassword = passwordInput.type === "password";
+    passwordInput.type = isPassword ? "text" : "password";
+
+    // Chuyển đổi icon
     icon.classList.toggle("bi-eye");
     icon.classList.toggle("bi-eye-slash");
 }
