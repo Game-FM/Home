@@ -9,9 +9,9 @@ function navigate(page) {
                 <strong style="font-size: 2rem; margin-top: 2vh; margin-bottom: 2vh; color: rgb(255, 255, 255,1);">Đăng Nhập</strong>
             </a>
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
-                <div class="col-12 border d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 5vh;">
+                <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 1vh;">
                     <form action="">
-                        <div class="text-start mb-3 row mt-5 " style="padding-top: 4.5vh;">
+                        <div class="text-start mb-3 row mt-5 " style="padding-top: 1vw;">
                             <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN</strong></div>
                             <div><input class="login-input w-100" type="text" name="" id=""></div>
                         </div>
