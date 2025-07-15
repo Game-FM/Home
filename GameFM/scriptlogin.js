@@ -11,13 +11,16 @@ function navigate(page) {
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
                 <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 5vh;">
                     <form action="">
-                        <div class="text-start mb-3 mt-5" style="padding-top: 4.5vh;">
+                        <div class="text-start mb-3 row mt-5" style="padding-top: 4.5vh;">
                             <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN</strong></div>
-                            <div><input class="login-input" type="text" name="" id=""></div>
+                            <div><input class="login-input w-100" type="text" name="" id=""></div>
                         </div>
                         <div class="text-start mb-2">
                             <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
-                            <div><input class="login-input" type="text" name="" id=""></div>
+                            <div class="row w-100 position-relative" style="margin-left: 0.1%;">
+                              <input class="col-12 login-input" type="password" name="" id="psw">
+                              <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye();" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
+                            </div>
                         </div>
                         <div class="text-start mb-3">
                             <div class="d-flex align-items-center gap-2" style="font-size: 1rem;">
@@ -28,8 +31,15 @@ function navigate(page) {
                         <div class="text-center mb-3">
                             <input type="button" class="login-button" value="Đăng Nhập">
                         </div>
+                        <div class="text-center mb-2">
+                          <div class="row justify-content-center gap-1">
+                            <hr>
+                            <a href="" class="col-3 login-button2 d-flex justify-content-center text-decoration-none" style="color: white;"><i class="fab fa-google"></i></a>
+                            <a href="" class="col-3 login-button2 d-flex justify-content-center text-decoration-none" style="color: white;"><i class="fab fa-facebook"></i></a>
+                          </div>
+                        </div>
                         <div class="text-center mb-4" style="font-size: 1rem;">
-                            <div>Bạn chưa có tài khoản? <a href="" style="text-decoration: none; color: rgb(84, 48, 203);" >Đăng ký ngay!</a></div>
+                            <div>Bạn chưa có tài khoản? <a href="" onclick="event.preventDefault(); navigate('Register');" class="dkn" style="text-decoration: none; color: rgb(84, 48, 203);" >Đăng ký ngay!</a></div>
                         </div>
                         <div class="text-center mb-5" style="font-size: 0.8rem;">
                             <a href="" style="color: rgb(220, 220, 220);" >Tôi quên mật khẩu. Hãy giúp tôi T_T</a>
@@ -65,25 +75,31 @@ function navigate(page) {
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
                 <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 1vh;">
                     <form action="">
-                        <div class="text-start mb-1 mt-4">
+                        <div class="row text-start mb-1 mt-4">
                             <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>USERNAME HOẶC TÊN CỦA BẠN</strong></div>
-                            <div><input class="login-input" type="text" name="" id=""></div>
+                            <div><input class="login-input w-100" type="text" name="" id=""></div>
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>EMAIL</strong></div>
-                            <div><input class="login-input" type="text" name="" id=""></div>
+                            <div><input class="login-input w-100" type="text" name="" id=""></div>
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
-                            <div><input class="login-input" type="text" name="" id=""></div>
+                            <div class="row w-100 position-relative" style="margin-left: 0.1%;">
+                              <input class="col-12 login-input" type="password" name="" id="psw">
+                              <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye();" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
+                            </div>
                         </div>
                         <div class="text-start mb-1">
-                            <div style="font-size: 1rem;"><strong>NHẬP LẠI MẬT KHẨU</strong></div>
-                            <div><input class="login-input" type="text" name="" id=""></div>
+                            <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
+                            <div class="row w-100 position-relative" style="margin-left: 0.1%;">
+                              <input class="col-12 login-input" type="password" name="" id="psw">
+                              <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye();" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
+                            </div>
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>SỐ ĐIỆN THOẠI</strong></div>
-                            <div><input class="login-input" type="text" name="" id=""></div>
+                            <div><input class="login-input w-100" type="text" name="" id=""></div>
                         </div>
                         <div class="text-start mb-3">
                             <div class="d-flex align-items-center gap-2" style="font-size: 1rem;">
@@ -109,12 +125,15 @@ function navigate(page) {
   }
 }
 
-function selectImage(element) {
-  // Xóa class .selected-border khỏi tất cả phần tử có class clickable-img
-  document.querySelectorAll('.clickable-img').forEach(el => {
-    el.classList.remove('selected-border');
-  });
+// eye toggle password
 
-  // Thêm class vào phần tử được click
-  element.classList.add('selected-border');
+function toggleEye(){
+    const passwordInput = document.getElementById("psw"); //lấy psw
+    const toggleBtn = document.getElementById("togglePassword"); //lấy id button
+    const icon = document.getElementById("iconToggle"); //lấy id icon
+    const isPassword = passwordInput.type === "password"; // nếu đầu vô type là password thì isPassword = true
+    passwordInput.type = isPassword ? "text" : "password";  //nếu type = password thì chuyển sang text
+    // chuyển đổi icon toggle eye   
+    icon.classList.toggle("bi-eye");
+    icon.classList.toggle("bi-eye-slash");
 }

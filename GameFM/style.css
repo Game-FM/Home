@@ -139,10 +139,6 @@ main{
     color: white;
     width: 100%;
     margin-left: -12px;
-    padding-left: 20px;
-}
-.search-bar::placeholder{
-    text-indent: -10px;
 }
 .dropdown-menu {
     background-color: rgb(18, 18, 39) !important; 
@@ -420,11 +416,11 @@ footer a{
     border-radius: 10px;
     height: 2.5rem;
     color:white;
-    text-align: center;
+    text-align: start;
 }
 .login-input::placeholder{
     color: white; 
-    text-align: center;
+    text-align: start;
     font-size: 1rem;
     opacity: 90%;
 }
@@ -445,6 +441,20 @@ input[type="checkbox"].custom-check {
     height: 3rem;
     font-size: 1.2rem;
 }
+.login-button:hover{
+    background-color: white;
+    color: rgb(84, 48, 203);
+}
+.login-button2{
+    background-color: #38485f;
+    align-items: center;
+    width: 3rem;
+    height: 2rem;
+}
+.login-button2:hover{
+    background-color: rgb(84, 48, 203);
+    color: white;
+}
 .form-bg {
   background-image: url(./images/Login_Register/1364878.png);
   background-size: cover;
@@ -452,4 +462,15 @@ input[type="checkbox"].custom-check {
   background-repeat: no-repeat; 
   width: 88.9vw ;
   height: 100%; 
+}
+.dkn:hover{
+    text-decoration: underline !important;
+}
+.eye-icon{
+    background-color: #22223c;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 2%;
+    bottom: 17%;
 }
