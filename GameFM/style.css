@@ -422,6 +422,7 @@ footer a {
   height: 2.5rem;
   color: white;
   text-align: left;
+  text-indent: 10px;
 }
 .login-input:focus {
   border-color: aquamarine;
