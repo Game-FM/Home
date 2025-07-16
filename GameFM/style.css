@@ -410,9 +410,10 @@ footer a {
   height: 100%;
   box-sizing: border-box;
 }
+
 .login-input {
   all: unset;
-  padding: 15px; 
+  /* padding: 15px; */
   background-color: #22223c;
   width: 35vw;
   border: 2px solid transparent;
@@ -421,15 +422,14 @@ footer a {
   border-radius: 12px;
   height: 2.5rem;
   color: white;
-  text-align: left;
-  text-indent: 10px;
+  text-align: start;
 }
 .login-input:focus {
   border-color: aquamarine;
 }
 .login-input::placeholder {
   color: white;
-  text-align: left;
+  text-align: start;
   font-size: 1rem;
   opacity: 90%;
 }
@@ -491,3 +491,41 @@ input[type="checkbox"].custom-check {
   bottom: 19%;
 }
 
+/* support */
+.background-support {
+  background-image: url(./images/support/Free-Pixel-Art-Cloud-and-Sky-Backgrounds4.jpg);
+  height: 45vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0; /* thêm dòng này */
+}
+
+.background-support::before {
+  content: "";
+  background: linear-gradient(to top, #38485f, #22223c);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  opacity: 0.75; /* sửa thành số thực */
+  z-index: -1; 
+  box-sizing: border-box;
+}
+
+.background2{
+  background: linear-gradient(to top, #38485f, #22223c);
+  border-radius: 3vh;
+  height: 30vw;
+  width: 35vw;
+  opacity: 80%;
+}
+.xem-button{
+  background-color: rgb(84, 48, 203);
+  color: white;
+  border: none;
+}
+.xem-button:hover{
+  background-color: white;
+  color:rgb(84, 48, 203);
+}
