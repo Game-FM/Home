@@ -412,7 +412,7 @@ footer a {
 }
 .login-input {
   all: unset;
-  /* padding: 15px; */
+  padding: 15px; 
   background-color: #22223c;
   width: 35vw;
   border: 2px solid transparent;
@@ -421,14 +421,14 @@ footer a {
   border-radius: 12px;
   height: 2.5rem;
   color: white;
-  text-align: start;
+  text-align: left;
 }
 .login-input:focus {
   border-color: aquamarine;
 }
 .login-input::placeholder {
   color: white;
-  text-align: start;
+  text-align: left;
   font-size: 1rem;
   opacity: 90%;
 }
