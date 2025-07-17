@@ -10,15 +10,16 @@ function navigate(page) {
             </a>
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
                 <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 1vh;">
-                    <form action="" class="m-4">
+                    <!-- form  -->
+                  <form action="" id="loginForm" class="m-4">
                         <div class="text-start mb-5 row mt-5 " style="padding-top: 0.5vw;">
-                            <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN</strong></div>
-                            <div><input class="login-input w-100" type="text" name="" id=""></div>
+                            <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG EMAIL</strong></div>
+                            <div><input class="login-input w-100" type="email" name="" id="loginEmail" required></div>
                         </div>
                         <div class="text-start row mb-2 ">
                             <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
                             <div class="position-relative">
-                              <input class="col-11 w-100 login-input" type="password" name="" id="psw">
+                              <input class="col-11 w-100 login-input" type="password" name="" id="loginPassword" required>
                               <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye(this);" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
                             </div>
                         </div>
@@ -29,7 +30,7 @@ function navigate(page) {
                             </div>
                         </div>
                         <div class="text-center mb-3">
-                            <input type="button" class="login-button" value="Đăng Nhập">
+                            <input type="submit" class="login-button" value="Đăng Nhập">
                         </div>
                         <div class="text-center mb-2">
                           <div class="row justify-content-center gap-1">
@@ -56,7 +57,7 @@ function navigate(page) {
             </div>
          </a>
          <!-- end of switch -->
-      `;
+      `;initFormListeners();
       break;
     case 'Register':
       content.innerHTML = `
@@ -74,41 +75,42 @@ function navigate(page) {
             </a>
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
                 <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 1vh;">
-                    <form action="" class="m-4">
+                    <!-- form   -->
+                  <form action="" id="registerForm" class="m-4">
                         <div class="row text-start mb-1 mt-4">
                             <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>USERNAME HOẶC TÊN CỦA BẠN</strong></div>
-                            <div><input class="login-input w-100" type="text" name="" id=""></div>
+                            <div><input class="login-input w-100" type="text" name="" id="regName" required></div>
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>EMAIL</strong></div>
-                            <div><input class="login-input w-100" type="text" name="" id=""></div>
+                            <div><input class="login-input w-100" type="email" name="" id="regEmail" required></div>
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
                             <div class="position-relative" >
-                              <input class="col-12 login-input" type="password" name="" id="psw">
+                              <input class="col-12 login-input" type="password" name="" id="psw" required>
                               <button class="col-1 eye-icon1 d-flex align-items-center justify-content-center" type="button" onclick="toggleEye(this);" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
                             </div>
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>NHẬP LẠI MẬT KHẨU</strong></div>
                             <div class="position-relative" >
-                              <input class="col-12 login-input" type="password" name="" id="psw1">
+                              <input class="col-12 login-input" type="password" name="" id="psw1" required>
                               <button class="col-1 eye-icon1 d-flex align-items-center justify-content-center" type="button" onclick="toggleEye(this);" id="togglePassword1"><i class="bi bi-eye-slash" id="iconToggle1"></i></button>
                             </div>
                         </div>
                         <div class="text-start mb-1">
                             <div style="font-size: 1rem;"><strong>SỐ ĐIỆN THOẠI</strong></div>
-                            <div><input class="login-input w-100" type="text" name="" id=""></div>
+                            <div><input class="login-input w-100" type="text" name="" id="regSDT" required></div>
                         </div>
                         <div class="text-start mb-3">
                             <div class="d-flex align-items-center gap-2" style="font-size: 1rem;">
-                                <input class="custom-check" type="checkbox">
+                                <input class="custom-check" type="checkbox" required>
                                 <strong>Tôi đồng ý với các <a href="./Policy.html" target="_blank" style="text-decoration: none; color: rgb(84, 48, 203);">Điều Khoản</a></strong>
                             </div>
                         </div>
                         <div class="text-center mb-3 mt-3">
-                            <input type="button" class="login-button" value="Đăng Ký">
+                            <input type="submit" class="login-button" id="" value="Đăng Ký">
                         </div>
                         <div class="text-center mb-3">
                           <div>Bạn đã có tài khoản?<a href="" style="text-decoration: none; color: rgb(84, 48, 203);" >Đăng Nhập</a></div>
@@ -118,7 +120,7 @@ function navigate(page) {
             </div>
          </div>
          <!-- end of register -->
-      `;
+      `;initFormListeners();
       break;
     default:
       content.innerHTML = `<p>Không tìm thấy trang.</p>`;
@@ -144,3 +146,88 @@ function toggleEye(button) {
     icon.classList.toggle("bi-eye");
     icon.classList.toggle("bi-eye-slash");
 }
+
+
+
+
+// Phần login register lưu vào storage:
+
+initFormListeners();
+
+function initFormListeners() {
+    const registerForm = document.getElementById("registerForm");
+    const loginForm = document.getElementById("loginForm");
+
+    // Đăng ký
+    if (registerForm) { // Đảm bảo form tồn tại trước khi thêm listener
+        registerForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("regName").value.trim();
+            const email = document.getElementById("regEmail").value.trim();
+            const password = document.getElementById("psw").value;
+            const checkpassword = document.getElementById("psw1").value;
+            const SDT = document.getElementById("regSDT").value;
+
+            if (!name || !email || !password || !checkpassword || !SDT) {
+                alert("Vui lòng điền đầy đủ thông tin!");
+                return;
+            }
+
+            if (checkpassword !== password) { // Nên dùng !== thay vì !=
+                alert("Nhập lại mật khẩu không trùng khớp với mật khẩu!");
+                document.getElementById("psw1").focus();
+                return;
+            }
+            if (password.length < 8) {
+                alert("Mật khẩu không được có độ dài ngắn hơn 8!");
+                document.getElementById("psw").focus();
+                return;
+            }
+            if (localStorage.getItem(email)) {
+                alert("Tài Khoản Đã Tồn Tại!");
+                return;
+            }
+
+            const allUsers = Object.keys(localStorage);
+            const newId = String(allUsers.length + 1).padStart(4, '0');
+            const user = { id: newId, name, email, password, SDT };
+
+            localStorage.setItem(email, JSON.stringify(user));
+            alert("Đăng ký tài khoản thành công!");
+            navigate("Login");
+            registerForm.reset();
+        });
+    }
+
+    // Đăng nhập
+    if (loginForm) { // Đảm bảo form tồn tại trước khi thêm listener
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("loginEmail").value.trim();
+            const password = document.getElementById("loginPassword").value;
+
+            const userData = localStorage.getItem(email);
+            if (!userData) {
+                alert("Tài khoản không tồn tại!");
+                document.getElementById("loginEmail").focus();
+                return;
+            }
+
+            const user = JSON.parse(userData);
+            if (user.password === password) {
+                alert("✅ Đăng nhập thành công! Chào " + user.name);
+
+                localStorage.setItem("loggedInUser", JSON.stringify({ email: user.email, name: user.name, id: user.id, sdt: user.SDT}));
+
+                window.location.href = "./index.html";
+            } else {
+                alert("❌ Sai mật khẩu!");
+                document.getElementById("loginPassword").focus();
+            }
+        });
+    }
+}
+
+//sau khi login xong qua trang chủ. ng dùng sẽ thành longgedInUser

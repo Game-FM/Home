@@ -26,7 +26,7 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <script src="./scriptlogin.js"></script>
+  <script src="./scriptlogin.js" defer></script>
 
 </head>
 
@@ -67,15 +67,16 @@
             </a>
             <div class="row justify-content-center" style="margin-top: 2vh; margin-bottom: 2vh;">
                 <div class="col-12 d-flex justify-content-center g-2" style="background-color: rgb(17, 14, 40); width: 90%; border-radius: 3vw; margin-bottom: 1vh;">
-                    <form action="" class="m-4">
+                    <!-- form  -->
+                  <form action="" id="loginForm" class="m-4">
                         <div class="text-start mb-5 row mt-5 " style="padding-top: 0.5vw;">
-                            <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN</strong></div>
-                            <div><input class="login-input w-100" type="text" name="" id=""></div>
+                            <div style="font-size: 1rem; color:  rgb(84, 48, 203);"><strong>ĐĂNG NHẬP BẰNG EMAIL</strong></div>
+                            <div><input class="login-input w-100" type="email" name="" id="loginEmail" required></div>
                         </div>
                         <div class="text-start row mb-2 ">
                             <div style="font-size: 1rem;"><strong>MẬT KHẨU</strong></div>
                             <div class="position-relative">
-                              <input class="col-11 w-100 login-input" type="password" name="" id="psw">
+                              <input class="col-11 w-100 login-input" type="password" name="" id="loginPassword" required>
                               <button class="col-1 eye-icon d-flex align-items-center justify-content-center" type="button" onclick="toggleEye(this);" id="togglePassword"><i class="bi bi-eye-slash" id="iconToggle"></i></button>
                             </div>
                         </div>
@@ -86,7 +87,7 @@
                             </div>
                         </div>
                         <div class="text-center mb-3">
-                            <input type="button" class="login-button" value="Đăng Nhập">
+                            <button type="submit" class="login-button">Đăng Nhập</button>
                         </div>
                         <div class="text-center mb-2">
                           <div class="row justify-content-center gap-1">
