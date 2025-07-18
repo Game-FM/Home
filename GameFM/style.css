@@ -1,3 +1,15 @@
+/* quick class */
+.font-size-h1{
+  font-size: 3vw;
+}
+.font-size-h3{
+  font-size: 1.4vw;
+  color: lightgray;
+  opacity: 70%;
+}
+/*  */
+
+
 body {
   background: linear-gradient(to bottom, #38485f, #22223c);
   min-height: 100vh; /* Hoặc 100% */
@@ -561,4 +573,50 @@ input[type="checkbox"].custom-check {
 }
 .popup-form select{
   font-size: 1vw;
+}
+
+
+/* Communication */
+.commu-bg{
+  background-color: rgb(18, 18, 39,0.6);
+}
+.nav-commu{
+  font-size: 1vw;
+}
+.nav-commu > a:not(.nav-commu-choose){
+  background: linear-gradient(to top, #38485f, #22223c);
+  color: white;
+  border-top: 0.1vw #22223c solid;
+  border-right: 0.1vw #22223c solid;
+  border-left: 0.1vw #22223c solid;
+  border-bottom: none;
+  text-decoration: none;
+}
+.nav-commu > a:hover{
+  background: rgb(84, 48, 203);
+  color: white;
+}
+.line{
+  background: linear-gradient(to bottom, #38485f, #22223c);
+  height: 1vw;
+}
+.nav-commu-choose{
+  border: none;
+  opacity: 90%  ;
+}
+.content-bg{
+  background-color: #22223c;
+}
+.content-bg-sub{
+  background-color: rgba(0,0,0,0.4);
+}
+.sub-text{
+  font-size: 0.8vw;
+  color: white;
+  opacity: 50%;
+}
+.sub-text-1{
+  font-size: 0.8vw;
+  color: white;
+  opacity: 70%;
 }
