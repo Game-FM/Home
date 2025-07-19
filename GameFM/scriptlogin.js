@@ -173,7 +173,12 @@ function initFormListeners() {
                 alert("Vui lòng điền đầy đủ thông tin!");
                 return;
             }
-
+            var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (emailReg.test(email)==false){
+                alert("Vui lòng nhập email hợp lệ!");
+                document.getElementById("regEmail").focus();
+                return;
+            }
             if (checkpassword !== password) { // Nên dùng !== thay vì !=
                 alert("Nhập lại mật khẩu không trùng khớp với mật khẩu!");
                 document.getElementById("psw1").focus();
