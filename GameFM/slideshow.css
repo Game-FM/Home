@@ -3,7 +3,7 @@
 
 
 .slideshow-container {
-      width: 40vw;
+      height: 40vh;
       height: auto;
       position: relative;
       margin: auto;
@@ -64,7 +64,7 @@
     }
 
     .thumbnail-container {
-      width: 32vw;
+      width: auto;
       overflow-x: auto;
       display: flex;
       scrollbar-width: none;
@@ -75,8 +75,8 @@
     }
 
     .thumbnail {
-      width: 8vw;
-      height: 4vw;
+      height: auto;
+      width: 11vw;
       object-fit: cover;
       margin: 0 0.2vw;
       cursor: pointer;
