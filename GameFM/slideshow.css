@@ -1,0 +1,134 @@
+/* NOTE: SỬ DỤNG CHUYÊN DỤNG CHO SLIDE SHOW THANH CUỘN */
+
+
+
+.slideshow-container {
+      width: 40vw;
+      height: auto;
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fade {
+      animation: fadeEffect 10s ease-in-out;
+    }
+
+    @keyframes fadeEffect {
+      from {opacity: 0.4;}
+      to {opacity: 1;}
+    }
+
+    /* Nút chuyển trên ảnh lớn */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 0.5vw;
+      margin-top: -1.5vw;
+      color: white;
+      font-weight: bold;
+      font-size: 2vw;
+      transition: 0.3s;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 0.5vw;
+    }
+
+    .next {
+      right: 1vw;
+    }
+
+    .prev {
+      left: 1vw;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgb(84, 48, 203,0.4);
+    }
+
+    /* Thumbnails */
+    .thumbnail-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1vw;
+    }
+
+    .thumbnail-container {
+      width: 32vw;
+      overflow-x: auto;
+      display: flex;
+      scrollbar-width: none;
+    }
+
+    .thumbnail-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .thumbnail {
+      width: 8vw;
+      height: 4vw;
+      object-fit: cover;
+      margin: 0 0.2vw;
+      cursor: pointer;
+      border: 0.2vw solid transparent;
+      opacity: 0.3;
+      flex-shrink: 0;
+      transition: 0.3s;
+    }
+
+    .thumbnail.active {
+      border: 0.2vw solid rgb(84, 48, 203);
+      opacity: 1;
+    }
+
+    .arrow-btn {
+      background: none;
+      color: white;
+      border: none;
+      padding: 0.1vw 0.2vw;
+      cursor: pointer;
+      font-size: 1.5vw;
+      margin: 0 5px;
+    }
+
+    .arrow-btn:hover {
+      color: rgb(84, 48, 203);
+    }
+
+
+    /*  CODE MẪU
+    
+<div class="slideshow-container">
+  <img class="slides fade" src="./images/communication/1747378392742.jpg">
+  <img class="slides fade" src="./images/trangchu/top-index.jpg">
+  <img class="slides fade" src="./images/Login_Register/1364878.png">
+
+  <!-- Mũi tên trái/phải ảnh lớn -->
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Thumbnails with arrows -->
+<div class="thumbnail-wrapper">
+  <button class="arrow-btn" onclick="scrollThumbnails(-1)">&#9664;</button>
+  
+  <div class="thumbnail-container" id="thumbnailScroll">
+    <img class="thumbnail" src="./images/communication/1747378392742.jpg" onclick="showSlide(0)">
+    <img class="thumbnail" src="./images/trangchu/top-index.jpg" onclick="showSlide(1)">
+    <img class="thumbnail" src="./images/Login_Register/1364878.png" onclick="showSlide(2)">
+  </div>
+
+  <button class="arrow-btn" onclick="scrollThumbnails(1)">&#9654;</button>
+</div>
+    
+    */

@@ -585,7 +585,7 @@ input[type="checkbox"].custom-check {
 }
 .nav-commu > a:not(.nav-commu-choose){
   background: linear-gradient(to top, #38485f, #22223c);
-  color: white;
+  color: rgb(255, 255, 255);
   border-top: 0.1vw #22223c solid;
   border-right: 0.1vw #22223c solid;
   border-left: 0.1vw #22223c solid;
@@ -602,7 +602,9 @@ input[type="checkbox"].custom-check {
 }
 .nav-commu-choose{
   border: none;
-  opacity: 90%  ;
+  background-color: white;
+  text-decoration: none;
+  color: rgb(84, 48, 203);
 }
 .content-bg{
   background-color: #22223c;
@@ -619,4 +621,72 @@ input[type="checkbox"].custom-check {
   font-size: 0.8vw;
   color: white;
   opacity: 70%;
+}
+
+
+/* trong Market */  
+
+.container-bg{
+  background: linear-gradient(to top, #38485f, #22223c);
+}
+.container-game{
+  background-color: rgb(255, 255, 255, 0.1);
+}
+.discount{
+  font-size: 1vw;
+  background-color: darkgreen;
+  text-align: center;
+  color: lawngreen;
+}
+.demo{
+  font-size: 1vw;
+  background-color: darkgrey;
+  text-align: center;
+  color: white;
+}
+.old-price {
+  position: relative;
+  display: inline-block;
+  color: #aaa;
+  font-size: 0.6vw;
+  text-decoration: line-through;
+  padding-right: 0.2vw;
+  padding-top: 0.1vw;
+}
+
+
+.discount-num{
+  font-size: 0.9vw;
+  color: lawngreen;
+  padding-right: 0.2vw;
+}
+.buying-info{
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.get-button {
+  border: none;
+  background-color: rgb(84, 48, 203);
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  height: 2.35vw;
+}
+.get-button:hover {
+  border: none;
+  background-color: white;
+  color: rgb(84, 48, 203);
+}
+.buy-button-m {
+  border: none;
+  background-color: rgb(84, 48, 203);
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  height: 2.35vw;
+}
+.buy-button-m:hover {
+  border: none;
+  background-color: white;
+  color: rgb(84, 48, 203);
 }

@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>GameFM - Cửa Hàng</title>
+  <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="./Jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- slide show  -->
+  <script src="./slideshow.js" defer></script>
+  <link rel="stylesheet" href="./slideshow.css">
+
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar">
+      <div class="row justify-content-center align-items-center w-100">
+
+        <!-- Logo + Dropdown -->
+        <div class="col-lg-3 col-sm-12 col-auto align-items-center justify-content-center menudrop">
+          <a href="" style="text-decoration: none !important; color: white; font-size: 22px;">
+            <b style="position: relative; right: 3px; top: 5px;">GameFM</b>
+            <img class="logo" src="./images/trangchu/GAMEFM.png" alt="">
+          </a>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="color1 fas fa-bars"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-dark text-center px-3" style="position: absolute; left: -5 0px;">
+              <a href="./login_register.html" style="text-decoration: none;"><div class="menu-button-effect w-100 mb-1">Đăng Nhập</div></a>
+              <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
+              <div class="menu-button-effect w-100">Tài Khoản</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="col-lg-6 col-sm-12 col-auto">
+          <div class="container d-flex justify-content-center flex-wrap p-2 g-0">
+            <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
+            <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
+            <a href="./Market.html" class="button-effect text-decoration-none choose">Market</a>
+            <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
+            <a href="./mygame.html" class="button-effect text-decoration-none">MyGame</a>
+          </div>
+        </div>
+
+        <!-- Đăng nhập + ? -->
+        <div class="col-lg-3 col-sm-12 col-auto text-end">
+          <div class="row align-items-center justify-content-center g-5">
+            <div class="col-lg-9 col-sm-auto col-auto">
+              <a href="./login_register.html">
+                <input type="button" class="costomBut2" value="Đăng Nhập">
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-1 col-auto">
+              <a href="" style="text-decoration: none !important;">
+                <div class="customBut1"><strong>?</strong></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <!-- search bar -->
+    <div class="row align-items-center justify-content-center pb-3">
+        <div class="col-1">
+            <a href="">
+                <div class="search-button">
+                    <i class="fa fa-search"></i> <!-- search button -->
+                </div>
+            </a>
+        </div>
+        <div class="col-9 text-start">
+            <input class="search-bar" placeholder="Tìm Kiếm" type="text" name="" id="">
+        </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="row text-start mb-3">
+        <strong class="col-12" style="font-size: 2.5vw;">Cửa Hàng Trò Chơi</strong>
+        <h3 class="col-12" style="font-size: 1.3vw;">Mua và nhận trò chơi miễn phí</h3>
+    </div>
+    
+    <div class="row justify-content-center gap-5">
+
+        <div class="col-md-12 col-lg-5">
+            <div class="row container-bg h-100">
+                <strong class="mt-2 ms-2" style="font-size: 1.5vw;">Ưu đãi nóng !</strong>
+                <img src="./images/trangchu/top-index.jpg" class="w-100 px-4 pb-1" alt="">
+                <div class="sub-text m-1 ps-4">UƯ ĐÃI NÓNG! SỞ HỮU GAME HAY CHỈ VỚI 50% GIÁ GỐC! <a class="sub-text-1" href="">Xem chi tiết.</a></div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6">
+            <div class="row container-bg">
+                <strong class="m-2" style="font-size: 1.5vw;">Tiêu biểu và nên xem:</strong>
+                <div class="slideshow-container">
+                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1750985773" alt="">
+                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475490/header.jpg?t=1751897003" alt="">
+                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/379430/header.jpg?t=1741619061" alt="">
+                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124490/header.jpg?t=1744248682" alt="">
+                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/601430/header.jpg?t=1750783701" alt="">
+
+
+
+                    <a class="prev" onclick="changeSlide(-1)"> <i class="fa fa-angle-left"> </i></a>
+                    <a class="next" onclick="changeSlide(1)"> <i class="fa fa-angle-right"></i> </a>
+                </div>
+
+                <div class="thumbnail-wrapper">
+                    <button class="arrow-btn" onclick="scrollThumbnails(-1)"> <i class="fa fa-angle-left"></i> </button>
+                    
+                    <div class="thumbnail-container" id="thumbnailScroll">
+                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1750985773" onclick="showSlide(0)">
+                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475490/header.jpg?t=1751897003" onclick="showSlide(1)">
+                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/379430/header.jpg?t=1741619061" onclick="showSlide(2)">
+                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124490/header.jpg?t=1744248682" onclick="showSlide(3)">
+                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/601430/header.jpg?t=1750783701" onclick="showSlide(4)">
+                   
+                    
+                    </div>
+
+                    <button class="arrow-btn" onclick="scrollThumbnails(1)"> <i class="fa fa-angle-right"></i> </button>
+                </div>
+
+
+            </div>            
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <strong style="font-size: 1.5vw; margin-bottom: 1vw;">Duyệt theo thể loại:</strong>
+        <div class="col-12">
+            <div class="row nav-commu">
+                <a href="#" class="col-md-1 col-12 text-center nav-commu-choose">Tất Cả</a>
+                <a href="#MoiPhatHanh" class="col-md-2 col-4 text-center">Mới Phát Hành</a>
+                <a href="#MienPhi" class="col-md-1 col-4 text-center">Miễn Phí</a>
+                <a href="#ChienThuat" class="col-md-2 col-4 text-center">Chiến Thuật</a>
+                <a href="#HanhDong" class="col-md-2 col-4 text-center">Hành Động</a>
+                <a href="#GiaChien" class="col-md-2 col-4 text-center">Giả Chiến</a>
+                <a href="#XayDung" class="col-md-2 col-4 text-center">Xây Dựng</a>
+            </div>
+            <div class="row line"></div>
+        </div>
+    </div>
+
+    <div class="row content-bg">
+
+        <!-- tro choi mới phát hành -->
+        <div class="col-12" style="margin-top: 1vw;">
+            <div class="row m-1 g-2 container-game justify-content-center" style="margin-top: 0.5vw; padding-bottom: 1vw;">
+                <strong id="MoiPhatHanh" class="col-12" style="font-size: 1.3vw; margin-left: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw;">Trò chơi mới phát hành:</strong>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1304930/c6fc392c72e64a9c93fb651350a89a935df64fa5/header.jpg?t=1752587987" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962663/54bd6a40eb3759aca46966aadd4c4d0d84b2713e/header.jpg?t=1748534520" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1733297467" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg?t=1744328458" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end" style="margin-top: 0.7vw;">
+                    <button class="col-12 ms-2 col-sm-2 text-center readmore-button" style="border: none;"><strong>Xem Thêm</strong></button>
+                </div>
+            </div>  
+        </div>
+
+        <!-- tro choi mien phi -->
+        <div class="col-12" style="margin-top: 1vw;">
+            <div class="row m-1 g-2 container-game justify-content-center" style="margin-top: 0.5vw; padding-bottom: 1vw;">
+                <strong id="MienPhi" class="col-12" style="font-size: 1.3vw; margin-left: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw;">Trò chơi miễn phí:</strong>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1748018387" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1746590920" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2139460/c1a9c7a48ae170a2808bb0cc21d175a01ee8fc53/header.jpg?t=1750998130" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end" style="margin-top: 0.7vw;">
+                    <button class="col-12 ms-2 col-sm-2 text-center readmore-button" style="border: none;"><strong>Xem Thêm</strong></button>
+                </div>
+            </div>  
+        </div>
+
+        <!-- tro choi chien thuat -->
+        <div class="col-12" style="margin-top: 1vw;">
+            <div class="row m-1 g-2 container-game justify-content-center" style="margin-top: 0.5vw; padding-bottom: 1vw;">
+                <strong id="ChienThuat" class="col-12" style="font-size: 1.3vw; margin-left: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw;">Trò chơi chiến thuật:</strong>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2584990/bab5a90e2765d340ca3ba8553e1b0ee679176dda/header.jpg?t=1750319997" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg?t=1744328458" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2824490/0e5a3452ab2219b832841b2838e696e05b0c14de/header_alt_assets_0.jpg?t=1752862252" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1748018387" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end" style="margin-top: 0.7vw;">
+                    <button class="col-12 ms-2 col-sm-2 text-center readmore-button" style="border: none;"><strong>Xem Thêm</strong></button>
+                </div>
+            </div>  
+        </div>
+
+        <!-- tro choi hanh dong -->
+        <div class="col-12" style="margin-top: 1vw;">
+            <div class="row m-1 g-2 container-game justify-content-center" style="margin-top: 0.5vw; padding-bottom: 1vw;">
+                <strong id="HanhDong" class="col-12" style="font-size: 1.3vw; margin-left: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw;">Trò chơi hành động:</strong>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>              
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1746590920" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1720558643" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1144200/header.jpg?t=1752563001" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end" style="margin-top: 0.7vw;">
+                    <button class="col-12 ms-2 col-sm-2 text-center readmore-button" style="border: none;"><strong>Xem Thêm</strong></button>
+                </div>
+            </div>  
+        </div>
+
+        <!-- tro choi gia chien-->
+        <div class="col-12" style="margin-top: 1vw;">
+            <div class="row m-1 g-2 container-game justify-content-center" style="margin-top: 0.5vw; padding-bottom: 1vw;">
+                <strong id="GiaChien" class="col-12" style="font-size: 1.3vw; margin-left: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw;">Trò chơi giả chiến - mô phỏng:</strong>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3224770/header.jpg?t=1750819298" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>              
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3205720/header.jpg?t=1750922323" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-2"></div>
+                        <div class="col-2 d-flex align-items-center justify-content-center demo">Demo</div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/379430/header.jpg?t=1741619061" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1745933101" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-4"></div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end" style="margin-top: 0.7vw;">
+                    <button class="col-12 ms-2 col-sm-2 text-center readmore-button" style="border: none;"><strong>Xem Thêm</strong></button>
+                </div>
+            </div>  
+        </div>
+
+        <!-- tro choi xay dung-->
+        <div class="col-12" style="margin-top: 1vw;">
+            <div class="row m-1 g-2 container-game justify-content-center" style="margin-top: 0.5vw; padding-bottom: 1vw;">
+                <strong id="XayDung" class="col-12" style="font-size: 1.3vw; margin-left: 1vw; margin-top: 0.5vw; margin-bottom: 0.5vw;">Trò chơi xây dựng:</strong>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3205720/header.jpg?t=1750922323" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>FREE</strong></div>
+                        <div class="col-2"></div>
+                        <div class="col-2 d-flex align-items-center justify-content-center demo">Demo</div>
+                        <div class="col-12 col-md-2 get-button d-flex align-items-center justify-content-center">
+                            Nhận
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1711128146" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1731252354" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1751944840" class="w-100" alt="">
+                    <div class="row w-100 buying-info" style="margin-left: 0; padding: 0.3vw;">
+                        <i class="col-3 d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;" aria-hidden="true"></i>
+                        <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount"><strong>-30%</strong></div>
+                        <div class="col-4">
+                            <div class="row justify-content-end old-price">470.000vnđ</div>
+                            <div class="row discount-num justify-content-end">329.000vnđ</div>
+                        </div>
+                        <div class="col-12 col-md-2 buy-button-m d-flex align-items-center justify-content-center">
+                            Mua
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end" style="margin-top: 0.7vw;">
+                    <button class="col-12 ms-2 col-sm-2 text-center readmore-button" style="border: none;"><strong>Xem Thêm</strong></button>
+                </div>
+            </div>  
+        </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="container my-4">
+    <p style="font-size: 1vw;">
+      &copy; 2025 Bản quyền thuộc về GameFM.
+    </p>
+    <p style="font-size: 1vw;">
+      Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
+    </p>
+    <div class="row g-0 align-items-center justify-content-center text-center" style="font-size: 1vw;">
+      <!-- Chính sách -->
+      <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
+      <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
+      <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
+      <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div> |
+
+      <!-- Mạng xã hội -->
+      <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div> |
+      <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div> |
+      <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> |
+      <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
+    </div>
+
+
+
+  </footer>
+  
+
+  <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
+</body>
+
+</html>
