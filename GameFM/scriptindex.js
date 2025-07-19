@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         //phan avt
         let img = document.createElement('img');
 
-        img.src="./images/Login-Register/default-avt.png";
+        img.src="./images/Login_Register/default-avt.png";
         img.alt = 'Avatar';
         img.style.width = '40px';
         img.style.height = '40px';
