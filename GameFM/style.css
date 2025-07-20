@@ -637,9 +637,8 @@ input[type="checkbox"].custom-check {
   background-color: darkgreen;
   text-align: center;
   color: lawngreen;
-  white-space: nowrap !important;
-  width: auto;
-  padding: 0.25rem 0.75rem;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
 }
 .demo{
   font-size: 1vw;
@@ -653,7 +652,6 @@ input[type="checkbox"].custom-check {
   color: #aaa;
   font-size: 0.6vw;
   text-decoration: line-through;
-  padding-right: 0.2vw;
   padding-top: 0.1vw;
 }
 
@@ -661,7 +659,6 @@ input[type="checkbox"].custom-check {
 .discount-num{
   font-size: 0.9vw;
   color: lawngreen;
-  padding-right: 0.2vw;
 }
 .buying-info{
   background-color: rgb(0, 0, 0, 0.3);
