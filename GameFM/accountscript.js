@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let user = JSON.parse(loggedInUser);
 
         let userText = document.createElement('span');
-        userText.textContent = user.name;
+        userText.textContent = user.name+"#"+user.id;
         userText.className = 'user-name';
         userText.style.fontWeight = 'bold';
         userText.style.fontSize = '16px';
