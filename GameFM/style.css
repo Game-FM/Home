@@ -637,7 +637,7 @@ input[type="checkbox"].custom-check {
   background-color: darkgreen;
   text-align: center;
   color: lawngreen;
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 .demo{
   font-size: 1vw;
