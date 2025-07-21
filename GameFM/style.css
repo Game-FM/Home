@@ -690,3 +690,24 @@ input[type="checkbox"].custom-check {
   background-color: white;
   color: rgb(84, 48, 203);
 }
+
+
+/* details */
+.addcart-button {
+  border: none;
+  background-color: rgb(145, 145, 145);
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  height: 2.35vw;
+}
+.addcart-button:hover {
+  border: none;
+  background-color: white;
+  color: rgb(84, 48, 203);
+}
+.tag{
+  background-color: rgb(145, 145, 145);
+  text-align: center;
+  font-size: 1vw;
+}
