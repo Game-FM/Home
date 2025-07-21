@@ -23,7 +23,8 @@
     <!-- slide show  -->
   <script src="./slideshow.js" defer></script>
   <link rel="stylesheet" href="./slideshow.css">
-
+  <script src="./scriptproduct.js"></script>
+  <script src="./details-cost.js"></script>
 </head>
 
 <body>
@@ -99,7 +100,7 @@
     <div class="row border content-bg">
         <!-- Ten game -->
         <div class="col-12 m-2"> 
-            <div class="row w-100" style="font-size: 2.3vw;"><strong>Clair Obscur: Expedition 33</strong></div>
+            <div class="row w-100" style="font-size: 2.3vw;" ><strong id="product-name"></strong></div>
             <div class="row w-100">
                 <h3 class="" style="font-size: 1.3vw;">Tổng quan</h3>
                 <hr>
@@ -111,11 +112,11 @@
             <!-- Anh game -->
             <div class="row">
                 <div class="slideshow-container col-12">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_483a27df5072beb3a4650634a764bda750fbcb82.600x338.jpg?t=1751536664" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_e49800e906e8a0f00707458c836567c933603bac.600x338.jpg?t=1751536664" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_b8089016095e6a16e324a59c45b2f24a439bd0b3.600x338.jpg?t=1751536664" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_8439c07d7b1f2fcfc6449db5f051f8d0867f4785.600x338.jpg?t=1751536664" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_9e050e6a61a4d9f4fe54bc62c8c73da38e9a63b0.600x338.jpg?t=1751536664" alt="">
+                    <img class="w-100 slides fade" id="gameimg1" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg2" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg3" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg4" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg5" src="" alt="">
 
 
 
@@ -127,11 +128,11 @@
                     <button class="arrow-btn" onclick="scrollThumbnails(-1)"> <i class="fa fa-angle-left"></i> </button>
                     
                     <div class="thumbnail-container" id="thumbnailScroll">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_483a27df5072beb3a4650634a764bda750fbcb82.600x338.jpg?t=1751536664" onclick="showSlide(0)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_e49800e906e8a0f00707458c836567c933603bac.600x338.jpg?t=1751536664" onclick="showSlide(1)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_b8089016095e6a16e324a59c45b2f24a439bd0b3.600x338.jpg?t=1751536664" onclick="showSlide(2)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_8439c07d7b1f2fcfc6449db5f051f8d0867f4785.600x338.jpg?t=1751536664" onclick="showSlide(3)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/ss_9e050e6a61a4d9f4fe54bc62c8c73da38e9a63b0.600x338.jpg?t=1751536664" onclick="showSlide(4)">
+                        <img class="thumbnail" id="gameimg1-thumbnail" src="" onclick="showSlide(0)">
+                        <img class="thumbnail" id="gameimg2-thumbnail" src="" onclick="showSlide(1)">
+                        <img class="thumbnail" id="gameimg3-thumbnail" src="" onclick="showSlide(2)">
+                        <img class="thumbnail" id="gameimg4-thumbnail" src="" onclick="showSlide(3)">
+                        <img class="thumbnail" id="gameimg5-thumbnail" src="" onclick="showSlide(4)">
                      
                     </div>
                     <button class="arrow-btn" onclick="scrollThumbnails(1)"> <i class="fa fa-angle-right"></i> </button>
@@ -143,17 +144,13 @@
                 <div class="col-12">
                     <h1 class="mb-0 mt-1" style="font-size: 1.5vw;">Về trò chơi này:</h1>
                     <hr class="my-1">
-                    <p style="font-size: 1vw; text-align: justify;">
-                      Once a year, the Paintress wakes and paints upon her monolith. Paints her cursed number. And everyone past that age turns to smoke and fades away. Year by year, that number ticks down and more of us are erased. Tomorrow she’ll wake and paint “33.” And tomorrow we depart on our final mission - Destroy the Paintress, so she can never paint death again.
-                      We are Expedition 33.
-                      Clair Obscur: Expedition 33 is a ground-breaking turn-based RPG with unique real-time mechanics, making battles more immersive and addictive than ever. Explore a fantasy world inspired by Belle Époque France in which you battle devastating enemies.
+                    <p style="font-size: 1vw; text-align: justify;" id="infor">
+                      
                     </p>
                     <h1 class="mb-0 mt-1" style="font-size: 1.5vw;">Thể loại:</h1>
                     <hr class="my-1">
-                    <div class="row g-1 gap-1 mb-1">
-                        <div class="tag col-3">Hành động</div>
-                        <div class="tag col-3">Nhập vai (RPG)</div>
-                        <div class="tag col-3">3D</div>
+                    <div class="row g-1 gap-1 mb-1" id="gametag">
+                        
                     </div>
                 </div>
             </div>
@@ -163,31 +160,28 @@
         <div class="col-12 col-lg-5">
             <!-- Logo -->
             <div class="row d-flex justify-content-center my-3">
-                <img src="./images/Market/Clair Obscur Expedition 33_Logo.png" class="" style="width: 25vw; height: auto;" alt="">
+                <img id="gamelogo" src="" class="" style="width: 25vw; height: auto;" alt="">
             </div>
             <!-- Age-tag -->
             <div class="row p-1 align-items-center g-0 gap-0" style="border: white solid 0.1vw; border-radius: 0.7vw;">
                 <div class="col-2 d-flex justify-content-end" style="margin-right: 1vw;">
-                    <img class="" src="./images/Market/IARC_18+.svg.png" style="width: 4vw;" alt="">
+                    <img class="" src="" id="ageRatePic" style="width: 4vw;" alt="">
                 </div>
                 <div class="col-7">
-                    <h1 class="mb-0" style="font-size: 1.5vw;">18+</h1>
-                    <p class="mb-0" style="font-size: 1.2vw;">Kinh dị, máu me, Bạo lực</p>
+                    <h1 class="mb-0" style="font-size: 1.5vw;" id="ageRateNum"></h1>
+                    <p class="mb-0" style="font-size: 1.2vw;" id="tagList"></p>
                 </div>
             </div>        
             <!-- Price -->
             <div class="row p-3 gap-1">
                     <div class="col-8 col-sm-2 d-flex align-items-center justify-content-center discount"><strong style="font-size: 1vw;">-15%</strong></div>
                     <div class="col-3">
-                      <div class="row justify-content-start old-price">700.000vnđ</div>
-                      <div class="row discount-num justify-content-start">590.000vnđ</div>
+                      <div class="row justify-content-start old-price" id="oldPrice"></div>
+                      <div class="row discount-num justify-content-start" id="newPrice"></div>
                     </div>
                     <div class="col-12 get-button d-flex align-items-center justify-content-center">
                         Mua
-                    </div>  
-                    <div class="col-12 addcart-button d-flex align-items-center justify-content-center">
-                        Thêm vào giỏ hàng
-                    </div>  
+                    </div> 
             </div>
             <!-- Phan thong tin them -->
 
@@ -206,7 +200,7 @@
                     <h1 class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">Nhà phát triển:</h1>
                 </div>
                 <div class="col-6 text-end">
-                    <a class="d-flex mt-1 justify-content-end" style="font-size: 1.2vw; text-decoration: none;">Sandfall Interactive</a>
+                    <a class="d-flex mt-1 justify-content-end" style="font-size: 1.2vw; text-decoration: none;" id="dev"></a>
                 </div>
                 <!-- Ngày phát hành -->
                 <hr class="my-2">
@@ -214,15 +208,14 @@
                     <h1 class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">Ngày phát hành:</h1>
                 </div>
                 <div class="col-6 text-end">
-                    <p class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">24 Thg04, 2025</p>
+                    <p class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);" id="dateDev"></p>
                 </div>
                 <!-- Nền tảng -->
                 <hr class="my-2">
                 <div class="col-6">
                     <h1 class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">Nền tảng:</h1>
                 </div>
-                <div class="col-6 text-end">
-                      <i class="d-flex mt-1 justify-content-end fa fa-windows" style="font-size: 1.5vw; color: rgb(34, 178, 178);"></i>
+                <div class="d-flex gap-2 justify-content-end" id="platF">
                 </div>
 
                 <!-- yêu cầu hệ thống -->

@@ -23,7 +23,8 @@
     <!-- slide show  -->
   <script src="./slideshow.js" defer></script>
   <link rel="stylesheet" href="./slideshow.css">
-
+  <script src="./scriptproduct.js"></script>
+  <script src="./details-free.js"></script>
 </head>
 
 <body>
@@ -99,7 +100,7 @@
     <div class="row border content-bg">
         <!-- Ten game -->
         <div class="col-12 m-2"> 
-            <div class="row w-100" style="font-size: 2.3vw;"><strong>Outlast 2</strong></div>
+            <div class="row w-100" style="font-size: 2.3vw;" ><strong id="product-name"></strong></div>
             <div class="row w-100">
                 <h3 class="" style="font-size: 1.3vw;">Tổng quan</h3>
                 <hr>
@@ -111,11 +112,11 @@
             <!-- Anh game -->
             <div class="row">
                 <div class="slideshow-container col-12">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_391bfd739898fd31ec7fa0c0b7658f18b7202286.600x338.jpg?t=1618944453" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_69427df3942114a8e0c598e03fc88112f65f7fdc.600x338.jpg?t=1618944453" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_0b3a895b08f4a77e89cb970911c0b0fd213afa4e.600x338.jpg?t=1618944453" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_e4790456e152b9db2aa1b8e4918a83748a68e3a0.600x338.jpg?t=1618944453" alt="">
-                    <img class="w-100 slides fade" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_d190ff947f5529d6e47c918afe7e6ee4fbccbce3.600x338.jpg?t=1618944453" alt="">
+                    <img class="w-100 slides fade" id="gameimg1" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg2" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg3" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg4" src="" alt="">
+                    <img class="w-100 slides fade" id="gameimg5" src="" alt="">
 
 
 
@@ -127,11 +128,11 @@
                     <button class="arrow-btn" onclick="scrollThumbnails(-1)"> <i class="fa fa-angle-left"></i> </button>
                     
                     <div class="thumbnail-container" id="thumbnailScroll">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_391bfd739898fd31ec7fa0c0b7658f18b7202286.600x338.jpg?t=1618944453" onclick="showSlide(0)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_69427df3942114a8e0c598e03fc88112f65f7fdc.116x65.jpg?t=1618944453" onclick="showSlide(1)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_0b3a895b08f4a77e89cb970911c0b0fd213afa4e.600x338.jpg?t=1618944453" onclick="showSlide(2)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_e4790456e152b9db2aa1b8e4918a83748a68e3a0.116x65.jpg?t=1618944453" onclick="showSlide(3)">
-                        <img class="thumbnail" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/414700/ss_d190ff947f5529d6e47c918afe7e6ee4fbccbce3.116x65.jpg?t=1618944453" onclick="showSlide(4)">
+                        <img class="thumbnail" id="gameimg1-thumbnail" src="" onclick="showSlide(0)">
+                        <img class="thumbnail" id="gameimg2-thumbnail" src="" onclick="showSlide(1)">
+                        <img class="thumbnail" id="gameimg3-thumbnail" src="" onclick="showSlide(2)">
+                        <img class="thumbnail" id="gameimg4-thumbnail" src="" onclick="showSlide(3)">
+                        <img class="thumbnail" id="gameimg5-thumbnail" src="" onclick="showSlide(4)">
                      
                     </div>
                     <button class="arrow-btn" onclick="scrollThumbnails(1)"> <i class="fa fa-angle-right"></i> </button>
@@ -143,19 +144,13 @@
                 <div class="col-12">
                     <h1 class="mb-0 mt-1" style="font-size: 1.5vw;">Về trò chơi này:</h1>
                     <hr class="my-1">
-                    <p style="font-size: 1vw; text-align: justify;">
-                        Outlast 2 is the sequel to the acclaimed survival horror game Outlast. Set in the same universe as the first game, but with different characters and a different setting, Outlast 2 is a twisted new journey into the depths of the human mind and its dark secrets.
-                        Outlast 2 introduces you to Sullivan Knoth and his followers, who left our wicked world behind to give birth to Temple Gate, a town, deep in the wilderness and hidden from civilization. Knoth and his flock are preparing for the tribulations of the end of times and you’re right in the thick of it.
-                        You are Blake Langermann, a cameraman working with your wife, Lynn. The two of you are investigative journalists willing to take risks and dig deep to uncover the stories no one else will dare touch.
-                        You're following a trail of clues that started with the seemingly impossible murder of a pregnant woman known only as Jane Doe.
-                        The investigation has lead you miles into the Arizona desert, to a darkness so deep that no one could shed light upon it, and a corruption so profound that going mad may be the only sane thing to do.
+                    <p style="font-size: 1vw; text-align: justify;" id="infor">
+                      
                     </p>
                     <h1 class="mb-0 mt-1" style="font-size: 1.5vw;">Thể loại:</h1>
                     <hr class="my-1">
-                    <div class="row g-1 gap-1 mb-1">
-                        <div class="tag col-3">Kinh dị</div>
-                        <div class="tag col-3">Hành động</div>
-                        <div class="tag col-3">Phiêu lưu</div>
+                    <div class="row g-1 gap-1 mb-1" id="gametag">
+                        
                     </div>
                 </div>
             </div>
@@ -165,27 +160,24 @@
         <div class="col-12 col-lg-5">
             <!-- Logo -->
             <div class="row d-flex justify-content-center my-3">
-                <img src="./images/Market/OUTLAST II_Logo.png" class="" style="width: 25vw; height: auto;" alt="">
+                <img id="gamelogo" src="" class="" style="width: 25vw; height: auto;" alt="">
             </div>
             <!-- Age-tag -->
             <div class="row p-1 align-items-center g-0 gap-0" style="border: white solid 0.1vw; border-radius: 0.7vw;">
                 <div class="col-2 d-flex justify-content-end" style="margin-right: 1vw;">
-                    <img class="" src="./images/Market/IARC_18+.svg.png" style="width: 4vw;" alt="">
+                    <img class="" src="" id="ageRatePic" style="width: 4vw;" alt="">
                 </div>
                 <div class="col-7">
-                    <h1 class="mb-0" style="font-size: 1.5vw;">18+</h1>
-                    <p class="mb-0" style="font-size: 1.2vw;">Kinh dị, máu me, Bạo lực</p>
+                    <h1 class="mb-0" style="font-size: 1.5vw;" id="ageRateNum"></h1>
+                    <p class="mb-0" style="font-size: 1.2vw;" id="tagList"></p>
                 </div>
             </div>        
             <!-- Price -->
-            <div class="row p-3 gap-1">
+             <div class="row p-3 gap-1">
                     <div class="col-7 col-sm-4 d-flex align-items-center justify-content-center discount"><strong style="font-size: 1vw;">Miễn Phí</strong></div>
                     <div class="col-12 get-button d-flex align-items-center justify-content-center">
                         Nhận
-                    </div>  
-                    <div class="col-12 addcart-button d-flex align-items-center justify-content-center">
-                        Thêm vào giỏ hàng
-                    </div>  
+                    </div> 
             </div>
             <!-- Phan thong tin them -->
 
@@ -204,7 +196,7 @@
                     <h1 class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">Nhà phát triển:</h1>
                 </div>
                 <div class="col-6 text-end">
-                    <a class="d-flex mt-1 justify-content-end" style="font-size: 1.2vw; text-decoration: none;">Red Barrels</a>
+                    <a class="d-flex mt-1 justify-content-end" style="font-size: 1.2vw; text-decoration: none;" id="dev"></a>
                 </div>
                 <!-- Ngày phát hành -->
                 <hr class="my-2">
@@ -212,15 +204,14 @@
                     <h1 class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">Ngày phát hành:</h1>
                 </div>
                 <div class="col-6 text-end">
-                    <p class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">25 Thg04, 2017</p>
+                    <p class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);" id="dateDev"></p>
                 </div>
                 <!-- Nền tảng -->
                 <hr class="my-2">
                 <div class="col-6">
                     <h1 class="mb-0 mt-1" style="font-size: 1.2vw; color: rgb(145, 145, 145);">Nền tảng:</h1>
                 </div>
-                <div class="col-6 text-end">
-                      <i class="d-flex mt-1 justify-content-end fa fa-windows" style="font-size: 1.5vw; color: rgb(34, 178, 178);"></i>
+                <div class="d-flex gap-2 justify-content-end" id="platF">
                 </div>
 
                 <!-- yêu cầu hệ thống -->
@@ -231,15 +222,15 @@
                     </div>
                     <div class="col-6">
                       <p class="mb-0" style="font-size: 1vw; color:  rgb(145, 145, 145,0.9);">TỐI THIỂU:</p>
-                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">HĐH:  Windows Vista / 7 / 8 / 10, 64-bits</p>
-                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ xử lý: Intel Core i3-530</p>
-                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ nhớ: 4 GB RAM</p>
+                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">HĐH: Windows  10</p>
+                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ xử lý: Intel Core i7-8700K / AMD Ryzen 5 1600X</p>
+                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ nhớ: 8 GB RAM</p>
                     </div>
                     <div class="col-6">
                       <p class="mb-0" style="font-size: 1vw; color:  rgb(145, 145, 145,0.9);">KHUYẾN NGHỊ:</p>
-                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">HĐH:  Windows Vista / 7 / 8 / 10, 64-bits</p>
-                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ xử lý: Intel Core i5</p>
-                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ nhớ: 8 GB RAM</p>
+                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">HĐH: Windows  11</p>
+                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ xử lý: Intel Core i7-12700K / AMD Ryzen 7 5800X</p>
+                      <p class="mb-0 mt-0" style="font-size: 0.8vw; color:  rgb(145, 145, 145,0.5);">Bộ nhớ: 16 GB RAM</p>
                     </div>
                 </div>
 
