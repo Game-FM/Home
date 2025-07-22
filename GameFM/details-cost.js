@@ -40,11 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('tagList').textContent = game.genre.join(', ');
 
         //giá
-        if(game.discount != 0){
-            document.getElementById('oldPrice').textContent = (game.price / 1000).toFixed(3) + ' VND';
+        if (game.discount != 0) {
+            document.getElementById('oldPrice').textContent = formatVND(game.price);
         }
-        let cost = game.price - game.price*(game.discount/100);
-        document.getElementById('newPrice').textContent = (cost / 1000).toFixed(3) + ' VNĐ';
+
+        let cost = game.price - game.price * (game.discount / 100);
+        document.getElementById('newPrice').textContent = formatVND(Math.round(cost));
 
         //thong tin phat trien
         document.getElementById('dev').textContent = game.developer;
@@ -94,4 +95,9 @@ function formatDateVN(dateStr) {
     const year = date.getFullYear();
 
     return `${day} ${month}, ${year}`;
+}
+
+//tiền theo format
+function formatVND(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' VND';
 }
