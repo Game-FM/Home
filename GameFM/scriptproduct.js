@@ -4,10 +4,10 @@ var gameList = {
     "price": "200000",
     "discount": "50",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_b106c27ff03bb3162a6875dd22c4ce440e9694c4.116x65.jpg?t=1747193649",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_9857cad0e29e5cd905f1f9b6be3e20357a6ecb92.116x65.jpg?t=1747193649",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_f4da0074a24b8c21c53929f429c26834fe8d07ae.116x65.jpg?t=1747193649",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_9c9ce8a803b06375d46e58204e6554facdd30543.116x65.jpg?t=1747193649",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_b106c27ff03bb3162a6875dd22c4ce440e9694c4.600x338.jpg?t=1747193649",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_9857cad0e29e5cd905f1f9b6be3e20357a6ecb92.600x338.jpg?t=1747193649",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_f4da0074a24b8c21c53929f429c26834fe8d07ae.600x338.jpg?t=1747193649",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_9c9ce8a803b06375d46e58204e6554facdd30543.600x338.jpg?t=1747193649",
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/ss_41e0d8fada425daa4ecb6bbaa51fd9b40d71ee4b.600x338.jpg?t=1747193649"
 
     ],
@@ -25,11 +25,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_391bfd739898fd31ec7fa0c0b7658f18b7202286.116x65.jpg?t=1618944453",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_69427df3942114a8e0c598e03fc88112f65f7fdc.116x65.jpg?t=1618944453",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_0b3a895b08f4a77e89cb970911c0b0fd213afa4e.116x65.jpg?t=1618944453",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_e4790456e152b9db2aa1b8e4918a83748a68e3a0.116x65.jpg?t=1618944453",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_d190ff947f5529d6e47c918afe7e6ee4fbccbce3.116x65.jpg?t=1618944453"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_391bfd739898fd31ec7fa0c0b7658f18b7202286.600x338.jpg?t=1618944453",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_69427df3942114a8e0c598e03fc88112f65f7fdc.600x338.jpg?t=1618944453",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_0b3a895b08f4a77e89cb970911c0b0fd213afa4e.600x338.jpg?t=1618944453",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_e4790456e152b9db2aa1b8e4918a83748a68e3a0.600x338.jpg?t=1618944453",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/ss_d190ff947f5529d6e47c918afe7e6ee4fbccbce3.600x338.jpg?t=1618944453"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/header.jpg?t=1618944453",
     "developer": "Red Barrels",
@@ -45,10 +45,10 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_5da0bcf3be8205d656c271217ead8f0190bd5234.116x65.jpg?t=1667468566",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_d278c24710d2ef6ae168a9c79fd7ba0b993131b1.116x65.jpg?t=1667468566",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_0e78f46846210c76d6d0f85364dc61ab147bb87b.116x65.jpg?t=1667468566",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_e5402579b2b9fbd560074f08ee18868cfb44ca25.116x65.jpg?t=1667468566",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_5da0bcf3be8205d656c271217ead8f0190bd5234.600x338.jpg?t=1667468566",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_d278c24710d2ef6ae168a9c79fd7ba0b993131b1.600x338.jpg?t=1667468566",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_e95a83156396da85dc7e20143c6db377efb9d38e.600x338.jpg?t=1667468566",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_70db535d60b9fdc60a5ddea20f0373b9d2a0750e.600x338.jpg?t=1667468566",
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/ss_bb9ee3002af4434f79ea3b3badf637f5dfd869f8.600x338.jpg?t=1667468566"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960990/header.jpg?t=1667468566",
@@ -65,11 +65,11 @@ var gameList = {
     "price": "180000",
     "discount": "50",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.116x65.jpg?t=1751944840",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.116x65.jpg?t=1751944840",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_5f2f2ea498cdc632cbffd6cf37c1a09670eb3272.116x65.jpg?t=1751944840",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_cebc378d2f7bc78978c21db4e3c5e12ccd067349.116x65.jpg?t=1751944840",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_0ace7f8b4350b8fbdd16345a76bc30545256e918.116x65.jpg?t=1751944840"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.600x338.jpg?t=1751944840",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.600x338.jpg?t=1751944840",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_5f2f2ea498cdc632cbffd6cf37c1a09670eb3272.600x338.jpg?t=1751944840",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_cebc378d2f7bc78978c21db4e3c5e12ccd067349.600x338.jpg?t=1751944840",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_0ace7f8b4350b8fbdd16345a76bc30545256e918.600x338.jpg?t=1751944840"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1751944840",
     "developer": "Unknown Worlds Entertainment",
@@ -85,11 +85,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_d582f6e384652c1a05fb6e928ab6557b0abba1b3.116x65.jpg?t=1751897003",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_d582f6e384652c1a05fb6e928ab6557b0abba1b3.600x338.jpg?t=1751897003",
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_ec922c5769acb9986aa009e41b71ecdcd51e484f.600x338.jpg?t=1751897003",
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_a81b2d5c2c76ef972898d2c62b98f7d191f9c64a.116x65.jpg?t=1751897003",
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_f707dcc6da5c778d9730949037b06089ba92efa4.116x65.jpg?t=1751897003",
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_b2763de3055881847e5741fd10ddab2305033f6a.116x65.jpg?t=1751897003 "
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_bf9f8aeca93daffa7a4493d9af8ffc4524cada74.600x338.jpg?t=1751897003",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_fc1d15989f3d8ef8c6493881bb68dd284defa0cb.600x338.jpg?t=1751897003",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/ss_a81b2d5c2c76ef972898d2c62b98f7d191f9c64a.600x338.jpg?t=1751897003"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/header.jpg?t=1751897003",
     "developer": "Wrong Organ",
@@ -105,11 +105,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_2eae29fbdfe8e5e8999b96d8bb28c5db70507968.116x65.jpg?t=1745368562",
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_29b3b4f2a3994c889f6fc12e0781d9d4726ef33f.116x65.jpg?t=1745368562",
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_9488e329bb42d792a059fb44cb7135d25b6262f5.116x65.jpg?t=1745368562",
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_6ec4ee04d4924b099e25ce79f3d6571c3b623b3b.116x65.jpg?t=1745368562",
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_73ad69168a263ce585e4823d9607d901719ca3c5.116x65.jpg?t=1745368562"
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_29b3b4f2a3994c889f6fc12e0781d9d4726ef33f.600x338.jpg?t=1745368562",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_9488e329bb42d792a059fb44cb7135d25b6262f5.600x338.jpg?t=1745368562",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_6ec4ee04d4924b099e25ce79f3d6571c3b623b3b.600x338.jpg?t=1745368562",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_7098be159cfe3cc524fb68b2585f643324cc1078.600x338.jpg?t=1745368562",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/ss_ba2ea2eda245f89626277457ae2ab76ba997f46a.600x338.jpg?t=1745368562"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1745368562",
     "developer": "Valve",
@@ -125,11 +125,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_663171dc3afce8fe987e57e8659f91b69faa39bc.116x65.jpg?t=1733297467",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_a3258aba84ae2f2ff13a02a160f7495bfc152adb.116x65.jpg?t=1733297467",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_ddcc016b8e5c434ccbd1a89c0157ce73acf905ae.116x65.jpg?t=1733297467",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_c665872b4c5cb3a4e4fd3a4abde97ee60fe51e33.116x65.jpg?t=1733297467",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_63d2164bf39a43905e9602381f43a9ad4ab46dea.116x65.jpg?t=1733297467"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_663171dc3afce8fe987e57e8659f91b69faa39bc.600x338.jpg?t=1733297467",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_a3258aba84ae2f2ff13a02a160f7495bfc152adb.600x338.jpg?t=1733297467",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_ddcc016b8e5c434ccbd1a89c0157ce73acf905ae.600x338.jpg?t=1733297467",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_c665872b4c5cb3a4e4fd3a4abde97ee60fe51e33.600x338.jpg?t=1733297467",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/ss_63d2164bf39a43905e9602381f43a9ad4ab46dea.600x338.jpg?t=1733297467 "
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1733297467",
     "developer": "Atlus",
@@ -145,11 +145,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_74961b6f52d7694b12c272c37d69551fc08a1ccb.116x65.jpg?t=1751926051",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_e4f243245a60f8a65eb82b1288ed67d8d8cf2b4e.116x65.jpg?t=1751926051",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_a73fcfbee67d95dd53858d0f3fb881181e0e9e8e.116x65.jpg?t=1751926051",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/c5d4057a82c0a72092494e0e7ba3188e22dfe477/ss_c5d4057a82c0a72092494e0e7ba3188e22dfe477.116x65.jpg?t=1751926051",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_a9b00612e3e3bbc111a6dc53a5a861d38b77c9df.116x65.jpg?t=1751926051"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_74961b6f52d7694b12c272c37d69551fc08a1ccb.600x338.jpg?t=1751926051",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_e4f243245a60f8a65eb82b1288ed67d8d8cf2b4e.600x338.jpg?t=1751926051",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_a73fcfbee67d95dd53858d0f3fb881181e0e9e8e.600x338.jpg?t=1751926051",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/c5d4057a82c0a72092494e0e7ba3188e22dfe477/ss_c5d4057a82c0a72092494e0e7ba3188e22dfe477.600x338.jpg?t=1751926051",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_a9b00612e3e3bbc111a6dc53a5a861d38b77c9df.600x338.jpg?t=1751926051"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1751926051",
     "developer": "TVGS", 
@@ -165,11 +165,11 @@ var gameList = {
     "price": "1390000",
     "discount": "40",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_d085a6cd49ed5bf4dcc67dfe0bba72ffc7ad6290.116x65.jpg?t=1747346596",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_10afae02830aee12600b55fedf05a10af070187c.116x65.jpg?t=1747346596",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_73e44d2d2282e0035beed3b78f565aa1f0f5f5b6.116x65.jpg?t=1747346596",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_096538495a348e1bff5432353cbee8e28fb3cee8.116x65.jpg?t=1747346596",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_7d15a8c0d67cd3853d2632f494bcc02fb2ae6392.116x65.jpg?t=1747346596"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_d085a6cd49ed5bf4dcc67dfe0bba72ffc7ad6290.600x338.jpg?t=1747346596",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_10afae02830aee12600b55fedf05a10af070187c.600x338.jpg?t=1747346596",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_73e44d2d2282e0035beed3b78f565aa1f0f5f5b6.600x338.jpg?t=1747346596",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_096538495a348e1bff5432353cbee8e28fb3cee8.600x338.jpg?t=1747346596",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/ss_7d15a8c0d67cd3853d2632f494bcc02fb2ae6392.600x338.jpg?t=1747346596"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/356190/header.jpg?t=1747346596",
     "developer": "Monolith Productions",
@@ -185,11 +185,11 @@ var gameList = {
     "price": "86000",
     "discount": "10",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_130202d236ae61cd22ad32a04f95fa5f22a7b5f5.116x65.jpg?t=1752773955",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_8445452856adbc856f2ee9d1a4c5c36c1f04cbf9.116x65.jpg?t=1752773955",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_8d231931caf3a5a3c13b9912c6329834a71f5341.116x65.jpg?t=1752773955",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_e3e07e47b58c9cd7732e4a705e8b7d3d9d48509c.116x65.jpg?t=1752773955",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_9870f59e1ffaaadc78ca9a9a5eb8ba6416cf11ff.116x65.jpg?t=1752773955"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_130202d236ae61cd22ad32a04f95fa5f22a7b5f5.600x338.jpg?t=1752773955",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_8445452856adbc856f2ee9d1a4c5c36c1f04cbf9.600x338.jpg?t=1752773955",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_8d231931caf3a5a3c13b9912c6329834a71f5341.600x338.jpg?t=1752773955",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_e3e07e47b58c9cd7732e4a705e8b7d3d9d48509c.600x338.jpg?t=1752773955",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/ss_9870f59e1ffaaadc78ca9a9a5eb8ba6416cf11ff.600x338.jpg?t=1752773955"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1272320/header.jpg?t=1752773955",
     "developer": "ControlMagic",
@@ -205,11 +205,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/872410/ss_58cdb6b2fa1ad5504999d906f5e849d1cdfc7ddd.116x65.jpg?t=1729047461",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/872410/ss_15ca51a4846e80b13864ebaa642aa62e8c80c215.116x65.jpg?t=1729047461",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/872410/ss_d17b5dcd6caf9af1f77a7c03768e2738d35deda7.116x65.jpg?t=1729047461",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/872410/ss_1f9095d473c0cd3767bdb2e0b392d62b28d804e4.116x65.jpg?t=1729047461",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/872410/ss_c69241b9a5ea8b88e56ed5d1b809fb9205222d68.116x65.jpg?t=1729047461"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288150/ss_d88aa7820b9bddaba444b544f247434ecf8c72ae.600x338.jpg?t=1747030684",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288150/ss_245b5fb7a4896845708c96e2239830ebb79b3b55.600x338.jpg?t=1747030684",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288150/ss_56a4ec31570f5183cf9f55e21de59141b13fa37a.600x338.jpg?t=1747030684",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288150/ss_1f2a2d1f464c1863497652680d33eeee9089534a.600x338.jpg?t=1747030684",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288150/ss_b31175a86664170ea3d71c56059f82ff2460c159.600x338.jpg?t=1747030684"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/872410/header.jpg?t=1729047461",
     "developer": "Koei Tecmo",
@@ -225,11 +225,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_950a6f6dc67f521877345db6d2c0cebb27ddc528.116x65.jpg?t=1745933101",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_bdb27001b47f80b07024e392f57fdc1944e05a23.116x65.jpg?t=1745933101",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_8935f82df46266a193bd088085978629fb8cf7ec.116x65.jpg?t=1745933101",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_e23d2fb8a8f397025d063260bb458ad6adc6048b.116x65.jpg?t=1745933101",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_8b53c852845e15a7967579b614bc2cf78f6e03df.116x65.jpg?t=1745933101"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_950a6f6dc67f521877345db6d2c0cebb27ddc528.600x338.jpg?t=1745933101",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_bdb27001b47f80b07024e392f57fdc1944e05a23.600x338.jpg?t=1745933101",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_8935f82df46266a193bd088085978629fb8cf7ec.600x338.jpg?t=1745933101",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_8b53c852845e15a7967579b614bc2cf78f6e03df.600x338.jpg?t=1745933101",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/ss_cf57a69ff61043267e4ec9872e1e837e04389a1b.600x338.jpg?t=1745933101"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1745933101",
     "developer": "Paradox Interactive",
@@ -245,11 +245,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_5384805fa5d365b069f197498269fabd7143cb4c.116x65.jpg?t=1744749573",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_4da9632574ab355b1a581190c262d21a1d3248ba.116x65.jpg?t=1744749573",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_48195285a60c6208f8bd722f74c556b9a224f4b0.116x65.jpg?t=1744749573",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_758b154dbd4cbfc943ba34010f514348580968c7.116x65.jpg?t=1744749573",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_4d48fbd0aa828322c76239c03c591181c69b3049.116x65.jpg?t=1744749573"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_5384805fa5d365b069f197498269fabd7143cb4c.600x338.jpg?t=1744749573",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_5384805fa5d365b069f197498269fabd7143cb4c.600x338.jpg?t=1744749573",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_4da9632574ab355b1a581190c262d21a1d3248ba.600x338.jpg?t=1744749573",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_48195285a60c6208f8bd722f74c556b9a224f4b0.600x338.jpg?t=1744749573",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_758b154dbd4cbfc943ba34010f514348580968c7.600x338.jpg?t=1744749573"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/header.jpg?t=1744749573",
     "developer": "Relic Entertainment",
@@ -265,11 +265,11 @@ var gameList = {
     "price": "300000",
     "discount": "30",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_ab2692aa33171bc61378dd59efa89e2ff86e02a6.116x65.jpg?t=1746638753",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_1033024a26f0a7ed277865201aed9bb471b54320.116x65.jpg?t=1746638753",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_83253675c7af3ad5f3f2c1dc2c43c667000e0c4a.116x65.jpg?t=1746638753",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_ea0429a12f9d65f3e6b5384e0117fceef2109e45.116x65.jpg?t=1746638753",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_c13d14fd11f3deb2fa5f592cceb98db3d48ef10b.116x65.jpg?t=1746638753"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_ab2692aa33171bc61378dd59efa89e2ff86e02a6.600x338.jpg?t=1746638753",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_1033024a26f0a7ed277865201aed9bb471b54320.600x338.jpg?t=1746638753",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_83253675c7af3ad5f3f2c1dc2c43c667000e0c4a.600x338.jpg?t=1746638753",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_8f30a6ae45244f12ebdb48f99393aa9c93aaa398.600x338.jpg?t=1746638753",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/ss_77792f8c4a7b375fc7c749b6336e61d61830920b.600x338.jpg?t=1746638753"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813780/header.jpg?t=1746638753",
     "developer": "Forgotten Empires",
@@ -285,11 +285,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_2a8289eaca31fa5b81f379b42c47010bb8070f15.116x65.jpg?t=1743784791",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_942d0a44b1e5bb5caf601feb082f8b14124c8209.116x65.jpg?t=1743784791",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_dbc1c23ffd249f0c8b07aae6312f33aa63a0e8eb.116x65.jpg?t=1743784791",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_e9eb10e68eab982bbcfb36be9a3bc1799fb6e958.116x65.jpg?t=1743784791",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_c16b9212e4494a6cc7bef79ad764d1b889f5bbd2.116x65.jpg?t=1743784791"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_2a8289eaca31fa5b81f379b42c47010bb8070f15.600x338.jpg?t=1743784791",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_942d0a44b1e5bb5caf601feb082f8b14124c8209.600x338.jpg?t=1743784791",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_dbc1c23ffd249f0c8b07aae6312f33aa63a0e8eb.600x338.jpg?t=1743784791",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_e9eb10e68eab982bbcfb36be9a3bc1799fb6e958.600x338.jpg?t=1743784791",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/ss_679df9d3d1d03a934afb3e36ba26b8b1fb90159c.600x338.jpg?t=1743784791"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/690830/header.jpg?t=1743784791",
     "developer": "Polymorph Games",
@@ -305,11 +305,11 @@ var gameList = {
     "price": "30000",
     "discount": "60",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784150/ss_d332181836bdb4b0cfa38899bcf03f2b1bf41502.116x65.jpg?t=1752743156",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784150/ss_a2be07ea8cef2dcabeb412295451d7e16aba67dc.116x65.jpg?t=1752743156",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784150/ss_ae2de336d21d03a6c2baa965ed66f66fb8158440.116x65.jpg?t=1752743156",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784150/ss_ccce2e7fb7e0701787af6d735fbbc52bb945da6e.116x65.jpg?t=1752743156",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784150/ss_04d40b677f6638a3b3b1ae6643c649ffe6992d18.116x65.jpg?t=1752743156"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/ss_d332181836bdb4b0cfa38899bcf03f2b1bf41502.600x338.jpg?t=1752743156",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/ss_a2be07ea8cef2dcabeb412295451d7e16aba67dc.600x338.jpg?t=1752743156",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/ss_ae2de336d21d03a6c2baa965ed66f66fb8158440.600x338.jpg?t=1752743156",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/ss_7ef7536f41c7a24fe465055cefe3b84ba49d14de.600x338.jpg?t=1752743156",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/ss_f7a3670f1384bc81a529f3e93a14cd28dcc4fb7c.600x338.jpg?t=1752743156"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784150/header.jpg?t=1752743156",
     "developer": "Build a Rocket Boy",
@@ -325,11 +325,11 @@ var gameList = {
     "price": "700000",
     "discount": "15",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_483a27df5072beb3a4650634a764bda750fbcb82.116x65.jpg?t=1751536664",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_e49800e906e8a0f00707458c836567c933603bac.116x65.jpg?t=1751536664",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_b8089016095e6a16e324a59c45b2f24a439bd0b3.116x65.jpg?t=1751536664",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_8439c07d7b1f2fcfc6449db5f051f8d0867f4785.116x65.jpg?t=1751536664",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_d3a10809f5cc2a8df7773f41acd1493f4fb900ec.116x65.jpg?t=1751536664"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_483a27df5072beb3a4650634a764bda750fbcb82.600x338.jpg?t=1751536664",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_e49800e906e8a0f00707458c836567c933603bac.600x338.jpg?t=1751536664",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_b8089016095e6a16e324a59c45b2f24a439bd0b3.600x338.jpg?t=1751536664",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_8439c07d7b1f2fcfc6449db5f051f8d0867f4785.600x338.jpg?t=1751536664",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/ss_9e050e6a61a4d9f4fe54bc62c8c73da38e9a63b0.600x338.jpg?t=1751536664"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/be3305b02d4db0dffa3458537118423bf2792d7e/header.jpg?t=1751536664",
     "developer": "Kepler Interactive",
@@ -345,11 +345,11 @@ var gameList = {
     "price": "0",
     "discount": "0",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/d61184a98c1cf2db2b08b2999c04b0519e3615bb/ss_d61184a98c1cf2db2b08b2999c04b0519e3615bb.116x65.jpg?t=1752701585",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/8340fd391012e12be7e4c02e65801a2648a6b60e/ss_8340fd391012e12be7e4c02e65801a2648a6b60e.116x65.jpg?t=1752701585",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/f2e70b5823510daa062293ff0b03821e1dee2d37/ss_f2e70b5823510daa062293ff0b03821e1dee2d37.116x65.jpg?t=1752701585",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/6959cc5d64cce82cb68a27457cfa46fb4d50f897/ss_6959cc5d64cce82cb68a27457cfa46fb4d50f897.116x65.jpg?t=1752701585",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/0231bf16835cd4f6d83523d76aa8d91cb2dfef9b/ss_0231bf16835cd4f6d83523d76aa8d91cb2dfef9b.116x65.jpg?t=1752701585"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/d61184a98c1cf2db2b08b2999c04b0519e3615bb/ss_d61184a98c1cf2db2b08b2999c04b0519e3615bb.600x338.jpg?t=1752701585",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/8340fd391012e12be7e4c02e65801a2648a6b60e/ss_8340fd391012e12be7e4c02e65801a2648a6b60e.600x338.jpg?t=1752701585",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/f2e70b5823510daa062293ff0b03821e1dee2d37/ss_f2e70b5823510daa062293ff0b03821e1dee2d37.600x338.jpg?t=1752701585",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/0231bf16835cd4f6d83523d76aa8d91cb2dfef9b/ss_0231bf16835cd4f6d83523d76aa8d91cb2dfef9b.600x338.jpg?t=1752701585",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/60690d0fdbd022ab1527ba6d080d42c1812a0f39/ss_60690d0fdbd022ab1527ba6d080d42c1812a0f39.600x338.jpg?t=1752701585"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1752701585",
     "developer": "Rockstar North",
@@ -386,10 +386,10 @@ var gameList = {
     "discount": "25",
     "photo": [
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.600x338.jpg?t=1711128146",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_9ac899fe2cda15d48b0549bba77ef8c4a090a71c.116x65.jpg?t=1711128146",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_4fa0866709ede3753fdf2745349b528d5e8c4054.116x65.jpg?t=1711128146",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_d836f0a5b0447fb6a2bdb0a6ac5f954949d3c41e.116x65.jpg?t=1711128146",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_10628b4a811c0a925a1433d4323f78c7017dbbe4.116x65.jpg?t=1711128146"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_9ac899fe2cda15d48b0549bba77ef8c4a090a71c.600x338.jpg?t=1711128146",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_4fa0866709ede3753fdf2745349b528d5e8c4054.600x338.jpg?t=1711128146",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_d836f0a5b0447fb6a2bdb0a6ac5f954949d3c41e.600x338.jpg?t=1711128146",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_10628b4a811c0a925a1433d4323f78c7017dbbe4.600x338.jpg?t=1711128146"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1711128146",
     "developer": "ConcernedApe",
@@ -405,11 +405,11 @@ var gameList = {
     "price": "150000",
     "discount": "30",
     "photo": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_8c03886f214d2108cafca13845533eaa3d87d83f.116x65.jpg?t=1731252354",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_ae168a00ab08104ba266dc30232654d4b3c919e5.116x65.jpg?t=1731252354",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_9edd98caaf9357c2f40758f354475a56e356e8b0.116x65.jpg?t=1731252354",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_75ea9a7e39eb34b40efa1e6dfd2536098dc4734b.116x65.jpg?t=1731252354",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_782374517c1792debd74d24856203b876eba3a5d.116x65.jpg?t=1731252354"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_8c03886f214d2108cafca13845533eaa3d87d83f.600x338.jpg?t=1731252354",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_ae168a00ab08104ba266dc30232654d4b3c919e5.600x338.jpg?t=1731252354",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_9edd98caaf9357c2f40758f354475a56e356e8b0.600x338.jpg?t=1731252354",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_04dd9f0a5773b686a452ba480b951f83b3ed5061.600x338.jpg?t=1731252354",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_782374517c1792debd74d24856203b876eba3a5d.600x338.jpg?t=1731252354"
     ],
     "logo": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1731252354",
     "developer": "Re-Logic",

@@ -22,7 +22,7 @@
     }
 
     @keyframes fadeEffect {
-      from {opacity: 0.4;}
+      from {opacity: 0.75;}
       to {opacity: 1;}
     }
 
