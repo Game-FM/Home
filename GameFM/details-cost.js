@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('oldPrice').textContent = (game.price / 1000).toFixed(3) + ' VND';
         }
         let cost = game.price - game.price*(game.discount/100);
-        document.getElementById('newPrice').textContent = (cost / 1000).toFixed(3) + ' VND';
+        document.getElementById('newPrice').textContent = (cost / 1000).toFixed(3) + ' VNĐ';
 
         //thong tin phat trien
         document.getElementById('dev').textContent = game.developer;
