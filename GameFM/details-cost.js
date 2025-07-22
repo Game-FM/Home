@@ -72,6 +72,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 platformContainer.appendChild(iconElement);
             }
         });
+
+        //discount
+        if(game.discount !=0 ){
+            const sale = document.getElementById('discount');
+            const num = document.createElement('div');
+            num.className = 'col-8 col-sm-2 d-flex align-items-center justify-content-center discount';
+            num.textContent = game.discount + '%';
+            num.style.fontWeight = 'bold';
+            num.style.fontSize  = '1vw';
+            sale.insertBefore(num, sale.firstChild);
+        }
     } else {
         console.error('Không tìm thấy game với ID:', gameId);
     }
