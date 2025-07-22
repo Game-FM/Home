@@ -47,10 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
         //nền tảng
         const platformIcons = {
             "PC": "fa-windows",
-            "PS4": "fa-playstation",
-            "PS5": "fa-playstation",
+            "PS": "fa-playstation",
             "Xbox": "fa-xbox",
-            "Xbox One": "fa-xbox",
             "Switch": "fa-nintendo-switch",
             "Mobile": "fa-mobile-alt"
         };
