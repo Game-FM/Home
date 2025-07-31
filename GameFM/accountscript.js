@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         userText.textContent = user.name+"#"+user.id;
         userText.className = 'user-name';
         userText.style.fontWeight = 'bold';
-        userText.style.fontSize = '16px';
+        userText.style.fontSize = '1.3vw';
         userText.style.color = 'white';
 
         loginBtn.parentNode.replaceChild(userText, loginBtn);
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         img.src="./images/Login_Register/default-avt.png";
         img.alt = 'Avatar';
-        img.style.width = '40px';
-        img.style.height = '40px';
+        img.style.width = '3vw';
+        img.style.height = '3vw';
         img.style.borderRadius = '50%';
         img.style.objectFit = 'cover';
         img.style.cursor = 'pointer';
@@ -44,19 +44,19 @@ document.addEventListener('DOMContentLoaded', function() {
             // showname
             let userInfo = document.createElement('div');
             userInfo.textContent = '👤 ' + user.name;
-            userInfo.className = 'menu-button-effect w-100 mb-1';
+            userInfo.className = 'menu-button-effect mb-1';
             dropdownMenu.appendChild(userInfo);
 
             // account button
             let accountBtn = document.createElement('div');
             accountBtn.textContent = 'Tài Khoản';
-            accountBtn.className = 'menu-button-effect w-100 mb-1';
+            accountBtn.className = 'menu-button-effect mb-1';
             dropdownMenu.appendChild(accountBtn);
 
             // signout
             let logoutBtn = document.createElement('div');
             logoutBtn.textContent = 'Đăng Xuất';
-            logoutBtn.className = 'menu-button-effect w-100';
+            logoutBtn.className = 'menu-button-effect';
             logoutBtn.style.cursor = 'pointer';
             logoutBtn.addEventListener('click', function() {
                 localStorage.removeItem('loggedInUser');

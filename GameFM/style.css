@@ -11,9 +11,12 @@
 
 
 body {
-  background: linear-gradient(to bottom, #38485f, #22223c);
+  background-image: url(https://img.freepik.com/free-photo/gradient-blue-abstract-background-smooth-dark-blue-with-black-vignette-studio_1258-53634.jpg);
   min-height: 100vh; /* Hoặc 100% */
   margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header,
@@ -30,6 +33,7 @@ main {
   padding-top: 5px;
 }
 
+
 .menu-button-effect {
   position: relative;
   background-color: rgb(18, 18, 39);
@@ -42,10 +46,10 @@ main {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;
-  height: 1.5px;
+  bottom: -0vw;
+  height: 0.1vw;
   width: 0;
-  margin-top: 1px;
+  margin-top: 1vw;
   background-color: rgb(255, 255, 255);
   transition: width 0.5s ease;
 }
@@ -58,12 +62,62 @@ main {
 .button-effect {
   margin: auto;
   position: relative;
-  background-color: rgb(18, 18, 39);
   color: white;
   border: none;
   transition: all 0.3s ease;
   overflow: visible;
 }
+
+/* search bar */
+    .search-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: all 0.4s ease;
+    }
+
+    .search-wrapper input {
+      width: 0;
+      opacity: 0;
+      border: none;
+      border-radius: 5vw;
+      transition: all 0.4s ease;
+      font-size: 1.3vw;
+      padding-left: 1vw;
+      box-shadow: none;
+      outline: none;
+    }
+
+    .search-wrapper:hover input,
+    .search-wrapper input:focus {
+      width: 20vw;
+      opacity: 1;
+      box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4);
+      background-color: rgb(18, 18, 39,0.1);
+      color: white;
+      border: 0.1vw solid #aaa;
+      margin-right: -2.4vw;
+    }
+    .search-wrapper input::placeholder{
+      color: rgb(255, 255, 255,0.6);
+    }
+
+    .search-wrapper button {
+      background: rgb(84, 48, 203);
+      border: none;
+      color: white;
+      padding: 0.5vw 0.8vw 0.5vw 0.8vw;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 0.85vw;
+      transition: background 0.3s ease;
+      z-index: 3;
+    }
+
+    .search-wrapper button:hover {
+      background: rgba(84, 48, 203);
+    }
+/* end of search bar */
 
 /* Tạo đường gạch dưới ảo */
 .button-effect::after {
@@ -99,7 +153,8 @@ main {
   border: none;
 }
 header {
-  background-color: rgb(18, 18, 39);
+  background-color: rgb(18, 18, 39,0.3);
+  box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4);
 }
 
 .container {
@@ -107,8 +162,9 @@ header {
 }
 
 footer {
-  background-color: rgb(18, 18, 39);
+  background-color: rgb(18, 18, 39,0.3);
   color: white;
+  box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4);
   padding: 20px;
   text-align: center;
 }
@@ -181,9 +237,9 @@ main {
   background-color: rgb(84, 48, 203);
   border: none;
   color: white;
-  width: 120px;
-  border-radius: 13px;
-  margin-right: -30px;
+  width: 8vw;
+  border-radius: 1vw;
+  font-size: 1.2vw;
 }
 .costomBut2:hover {
   background-color: white;
@@ -316,7 +372,8 @@ main {
 /* section3 */
 
 .section3 {
-  background: linear-gradient(to bottom, #22223c, #38485f);
+  background-color: rgb(152, 172, 193,0.2);
+  border-radius: 2vw;
   margin: auto;
   height: fit-content;
 }
@@ -379,7 +436,7 @@ main {
 
 footer a {
   text-decoration: none !important;
-  color: rgb(84, 48, 203);
+  color: white;
 }
 
 .ellipsis {
@@ -578,7 +635,7 @@ input[type="checkbox"].custom-check {
 
 /* Communication */
 .commu-bg{
-  background-color: rgb(18, 18, 39,0.6);
+  background-color: rgb(18, 18, 39,0.5);
 }
 .nav-commu{
   font-size: 1vw;
@@ -607,7 +664,9 @@ input[type="checkbox"].custom-check {
   color: rgb(84, 48, 203);
 }
 .content-bg{
-  background-color: #22223c;
+  background-color: rgb(18, 18, 39,0.3);
+  box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4);
+  margin-bottom: 2vw;  
 }
 .content-bg-sub{
   background-color: rgba(0,0,0,0.4);
@@ -627,7 +686,8 @@ input[type="checkbox"].custom-check {
 /* trong Market */  
 
 .container-bg{
-  background: linear-gradient(to top, #38485f, #22223c);
+  background: linear-gradient(to top, rgba(56, 72, 95, 0.4), rgba(34, 34, 60, 0.4));
+    box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4);
 }
 .container-game{
   background-color: rgb(255, 255, 255, 0.1);
@@ -753,4 +813,14 @@ input[type="checkbox"].custom-check {
     padding: 1vw 1vw;
     font-size: 1.5vw;
   }
+}
+
+.dropdown-menu {
+  min-width: auto !important;     /* Gỡ min-width mặc định */
+  width: 15% !important;         /* Chiếm toàn bộ vùng cha */
+  padding: 1vw 0 !important;          /* Bỏ padding nếu đang thừa */
+  margin: 0 auto !important;      /* Căn giữa nếu cần */
+  box-sizing: border-box;
+  right: -85%;
+  top: 65% !important;
 }

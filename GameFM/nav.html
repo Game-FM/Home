@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>GameFM - Game Của Tôi</title>
+  <title>GameFM - Trang Chủ</title>
   <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -19,12 +19,14 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
-    <!-- slide show  -->
-  <script src="./slideshow.js" defer></script>
-  <link rel="stylesheet" href="./slideshow.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./scriptindex.js"></script>
+  <script>
+    window.onload = function() {
+    selectImage(document.querySelector('.clickable-img'));
+    };
+  </script>
   <script src="./accountscript.js"></script>
-
 </head>
 
 <body>
@@ -35,11 +37,11 @@
             <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
         </a>
         <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
-            <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
+            <a href="./index.html" class="button-effect text-decoration-none choose">Trang Chủ</a>
             <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
             <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
             <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
-            <a href="./mygame.html" class="button-effect text-decoration-none choose">Trò Chơi</a>
+            <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
         </nav>
         <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
             <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
@@ -60,7 +62,7 @@
     </div>
   </header>
 
-  <main class="container">
+<main>
     <div class="row" style="margin: 0.3vw 0;">
       <form class="search-wrapper d-flex justify-content-end" action="#" method="GET">
         <input type="text" name="q" placeholder="Tìm kiếm...">
@@ -69,9 +71,9 @@
         </button>
       </form>
     </div>
-  </main>
+</main>
 
- <footer class="container my-4 p-2">
+  <footer class="container my-4 p-2">
 
 
     <div style="margin: 1vw 0;">
@@ -100,6 +102,7 @@
 
 
   </footer>
+
   
 
   <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
