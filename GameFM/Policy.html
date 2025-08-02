@@ -21,156 +21,252 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
   <script src="./scriptlogin.js"></script>
   <script src="./accountscript.js"></script>
+  <script src="./Policy-eng.js"></script>
 </head>
 <style>
-  li{
-    font-size: 2vh;
+  li {
+    font-size: 4vh;
     font-weight: bold;
   }
-  h4,h1,h2,h3{
-    font-size: 2vh !important 
+
+  h4,
+  h2,
+  h3 {
+    font-size: 4vh !important
+  }
+
+  h1 {
+    font-size: 6vh !important
+  }
+  .lang-switcher .btn {
+    font-size: 0.7rem;           /* giảm khoảng 25% so với mặc định */
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .lang-btn.active {
+    background-color: #ced4da;
+    color: #000;
   }
 </style>
+
 <body class="">
-  <header class="container">
-
-    <div class="row"> 
-
-          <!-- Dropdown -->
-      <div class="align-items-center justify-content-center menudrop col-1">
-        <div class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="color1 fas fa-bars"></i>
+  <header class="container g-2">
+    <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
+      <a href="./index.html"
+        class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
+        <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
+        <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
+      </a>
+      <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
+        <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
+        <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
+        <a href="./Market.html" class="button-effect text-decoration-none choose">Cửa Hàng</a>
+        <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
+        <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
+      </nav>
+      <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
+        <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
+          <a class="" href="./login_register.html" id="login-bth">
+            <button class="costomBut2">Đăng Nhập</button>
           </a>
-            <div class="dropdown-menu dropdown-menu-dark text-center px-3" style="position: absolute; left: -5 0px;">
-              <a href="./index.html" style="text-decoration: none;"><div class="menu-button-effect w-100 mb-1">Trang Chủ</div></a>
-              <a href="./login_register.html" style="text-decoration: none;"><div class="menu-button-effect w-100 mb-1">Đăng Nhập</div></a>
-              <div class="menu-button-effect w-100">Tài Khoản</div>
+          <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown">
+            <div class="" id="login-avt"></div>
+          </a>
+          <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
+            <a href="./login_register.html" style="text-decoration: none;">
+              <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div>
+            </a>
+            <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
+            <div class="menu-button-effect w-100">Tài Khoản</div>
           </div>
         </div>
       </div>
-
-      <a href="./index.html" class="col-6 offset-4 d-flex align-items-center py-2 justify-content-start text-decoration-none">
-          <img src="./images/trangchu/GAMEFM.png" style="width: 3.5vw;" alt="">
-          <b style="color: white; font-size: 2.5vw;">GameFM</b>
-      </a>
-
     </div>
-
   </header>
 
   <main class="container" style="font-size: 2vh;">
+    <!-- nút đổi ngôn ngữ -->
+    <div class="text-end pe-4 pt-2">
+  <div class="btn-group lang-switcher">
+    <button id="lang-vi" class="btn btn-outline-secondary lang-btn" onclick="setLanguage('vi')">VI</button>
+    <button id="lang-en" class="btn btn-outline-secondary lang-btn" onclick="setLanguage('en')">EN</button>
+  </div>
+</div>
+
+</div>
     <div>
-      <h1 style="text-align: center;">Chính Sách & Điều Khoản</h1>
+      <h1 style="text-align: center;">
+  <span class="lang-vi">Chính Sách & Điều Khoản</span>
+  <span class="lang-en" style="display:none;">Terms & Conditions</span>
+</h1>
+<dl>
+  <dt>
+    <h3>
+      <strong>
+        <span class="lang-vi">PHẦN A: CHÍNH SÁCH BẢO MẬT (Privacy Policy)</span>
+        <span class="lang-en" style="display:none;">SECTION A: PRIVACY POLICY</span>
+      </strong>
+    </h3>
+  </dt>
+  <ol>
+    <li><h4><strong><span class="lang-vi">Giới thiệu</span><span class="lang-en" style="display:none;">Introduction</span></strong></h4></li>
+    <dd class="lang-vi">Chúng tôi (sau đây gọi là “Công ty”, “Chúng tôi” hoặc “Chúng tôi”) cam kết bảo vệ thông tin cá nhân của người dùng (sau đây gọi là “Bạn”, “Người dùng”) khi truy cập và mua sắm tại trang web GameFM (sau đây gọi tắt là “Website”). Chính sách này mô tả cách chúng tôi thu thập, sử dụng, chia sẻ và bảo vệ thông tin cá nhân của bạn.</dd>
+    <dd class="lang-en" style="display:none;">We (hereinafter referred to as "Company", "We" or "Us") are committed to protecting the personal information of users (hereinafter referred to as "You", "User") when accessing and shopping on the GameFM website (hereinafter referred to as the "Website"). This policy describes how we collect, use, share, and protect your personal information.</dd>
+
+    <li><h4><strong><span class="lang-vi">Phạm vi áp dụng</span><span class="lang-en" style="display:none;">Scope of Application</span></strong></h4></li>
+    <dd class="lang-vi">Chính sách này áp dụng cho mọi giao dịch, hành vi truy cập, và dịch vụ mà Website cung cấp, bao gồm cả khi bạn truy cập qua web, ứng dụng di động hoặc API.</dd>
+    <dd class="lang-en" style="display:none;">This policy applies to all transactions, access behaviors, and services provided by the Website, including when accessed via web, mobile app, or API.</dd>
+
+    <li><h4><strong><span class="lang-vi">Thông Tin Chúng Tôi Thu Thập</span><span class="lang-en" style="display:none;">Information We Collect</span></strong></h4></li>
+    <dd>
       <dl>
-        <dt><h3><strong>PHẦN A: CHÍNH SÁCH BẢO MẬT (Privacy Policy)</strong></h3></dt>
-        <ol>
-          <li><h4><strong>Giới thiệu</strong></h4></li>
-          <dd>Chúng tôi (sau đây gọi là “Công ty”, “Chúng tôi” hoặc “Chúng tôi”) cam kết bảo vệ thông tin cá nhân của người dùng (sau đây gọi là “Bạn”, “Người dùng”) khi truy cập và mua sắm tại trang web GameFM (sau đây gọi tắt là “Website”). Chính sách này mô tả cách chúng tôi thu thập, sử dụng, chia sẻ và bảo vệ thông tin cá nhân của bạn.
-          </dd>
-          <li><h4><strong>Phạm vi áp dụng</strong></h4></li>
-          <dd>
-            Chính sách này áp dụng cho mọi giao dịch, hành vi truy cập, và dịch vụ mà Website cung cấp, bao gồm cả khi bạn truy cập qua web, ứng dụng di động hoặc API.
-          </dd>
-          <li><h4><strong>Thông Tin Chúng Tôi Thu Thập</strong></h4></li>
-          <dd>
-            <dl>
-              <dt>Thông tin bắt buộc (Required Information):</dt>
-                <dd>Họ và tên, địa chỉ email, số điện thoại.</dd>
-                <dd>Địa chỉ thanh toán, địa chỉ giao hàng (nếu có).</dd>
-              <dt>Thông tin tùy chọn (Optional Information):</dt>
-                <dd>Ngày sinh, giới tính (cho chương trình ưu đãi hoặc sự kiện đặc biệt).</dd>
-                <dd>Thông tin thanh toán (một phần do đối tác cổng thanh toán lưu trữ).</dd>
-              <dt>Dữ liệu sử dụng (Usage Data):</dt>
-                <dd>Dữ liệu truy cập (IP, thiết bị, trình duyệt, thời gian truy cập, đường dẫn trang).</dd>
-                <dd>Hành vi mua sắm, lịch sử đơn hàng.</dd>
-            </dl>
-          </dd>
-          <li><h4><strong>Mục Đích Sử Dụng Thông Tin</strong></h4></li>
-          <dd>Xử lý đơn hàng: Xác nhận, giao hàng, hỗ trợ sau mua.</dd>
-          <dd>Thanh toán: Liên kết với cổng thanh toán, xác minh giao dịch.</dd>
-          <dd>Liên lạc: Gửi thông báo đơn hàng, khuyến mãi, bản tin (newsletter).</dd>
-          <dd>Cải thiện dịch vụ: Phân tích hành vi để nâng cao trải nghiệm người dùng.</dd>
-          <dd>Pháp lý: Tuân thủ yêu cầu pháp luật, giải quyết khiếu nại.</dd>
-          <li><h4><strong>Cơ Sở Pháp Lý</strong></h4></li>
-          <dl>
-            <dt>Chúng tôi xử lý dữ liệu cá nhân của bạn dựa trên một trong các căn cứ sau:</dt>
-              <dd>Sự đồng ý của bạn (ví dụ: đăng ký nhận bản tin).</dd>
-              <dd>Thực hiện hợp đồng (xử lý đơn hàng, thanh toán).</dd>
-              <dd>Nghĩa vụ pháp lý (lưu hồ sơ kế toán, thuế).</dd>
-              <dd>Lợi ích hợp pháp (bảo mật hệ thống, chống gian lận).</dd>
-          </dl>
-          <li><h4><strong>Chia Sẻ Thông Tin Với Bên Thứ Ba</strong></h4></li>
-          <dd>Đối tác giao hàng: Cung cấp thông tin địa chỉ, liên hệ để giao hàng.</dd>
-          <dd>Cổng thanh toán: Truyền tải thông tin cần thiết (số đơn hàng, số tiền, thông tin người mua).</dd>
-          <dd>Cơ quan pháp lý: Khi có yêu cầu hợp pháp từ cơ quan có thẩm quyền.</dd>
-          <li><h4><strong>Bảo Mật Thông Tin</strong></h4></li>
-          <dd>Mã hóa SSL/TLS khi truyền dữ liệu.</dd>
-          <dd>Lưu trữ mật khẩu dưới dạng băm (bcrypt, Argon2).</dd>
-          <dd>Giới hạn truy cập thông tin nhân viên, sử dụng firewall và hệ thống giám sát.</dd>
-          <li><h4><strong>Lưu Trữ Dữ Liệu</strong></h4></li>
-          <dd>Dữ liệu đơn hàng, hóa đơn kế toán: lưu trữ tối thiểu 10 năm theo quy định pháp luật.</dd>
-          <dd>Dữ liệu tài khoản và lịch sử mua sắm: lưu đến khi bạn yêu cầu xóa.</dd>
-          <li><h4><strong>Quyền Người Dùng</strong></h4></li>
-          <dd>Truy cập & Khôi phục: Bạn có quyền xem và cập nhật thông tin cá nhân.</dd>
-          <dd>Xóa dữ liệu: Yêu cầu xóa hoặc gỡ bỏ tài khoản.</dd>
-          <dd>Phản đối & Giới hạn: Đề nghị ngừng xử lý hoặc hạn chế mục đích xử lý.</dd>
-          <dd>Khiếu nại: Gửi khiếu nại đến cơ quan bảo vệ dữ liệu hoặc email: <a href="./support.html"><i>gamefm207@gmail.com</i></a></dd>
-          <li><h4><strong>Thay Đổi Chính Sách</strong></h4></li>
-          <dd>
-            Chúng tôi có thể cập nhật Chính sách Bảo mật. Mọi thay đổi có hiệu lực khi được đăng lên Website kèm ngày hiệu lực rõ ràng.
-          </dd>
-        </ol>
-                <dt><h3><strong>PHẦN B: ĐIỀU KHOẢN SỬ DỤNG (Terms of Service)</strong></h3></dt>
-        <ol>
-          <li><h4><strong>Giới thiệu</strong></h4></li>
-          <dd>
-            Chào mừng bạn đến với GameFM. Bằng việc truy cập và sử dụng Website, bạn đồng ý tuân thủ các Điều khoản Sử dụng dưới đây.
-          </dd>
-          <li><h4><strong>Đăng Ký Tài Khoản</strong></h4></li>
-          <dd>Người dùng phải đủ 18 tuổi trở lên.</dd>
-          <dd>Cung cấp thông tin chính xác, cập nhật.</dd>
-          <dd>Không chia sẻ tài khoản với người khác.</dd>
-          <li><h4><strong>Quyền Sử Dụng Dịch Vụ</strong></h4></li>
-          <dd>Website cung cấp dịch vụ mua bán game số (game bản quyền, game key, DLC).</dd>
-          <dd>Tất cả giao dịch là một chiều, sau khi giao hàng (kích hoạt), không hoàn tiền trừ khi lỗi do Website.</dd>
-          <li><h4><strong>Mua Hàng và Thanh Toán</strong></h4></li>
-          <dd>Giá hiển thị đã bao gồm thuế (nếu có).</dd>
-          <dd>Hỗ trợ thanh toán qua: thẻ ngân hàng, ví điện tử, chuyển khoản.</dd>
-          <dd>Hóa đơn điện tử sẽ được gửi qua email.</dd>
-          <li><h4><strong>Giao Hàng & Kích Hoạt</strong></h4></li>
-          <dd>Giao game key vào email ngay sau khi đơn hàng hoàn tất.</dd>
-          <dd>Hỗ trợ hướng dẫn kích hoạt trên các nền tảng (Steam, Epic, Origin).</dd>
-          <li><h4><strong>Quy Định Về Trả Hàng & Hoàn Tiền</strong></h4></li>
-          <dd>Không chấp nhận trả hàng với sản phẩm số đã kích hoạt.</dd>
-          <dd>Nếu key lỗi, sản phẩm không đúng mô tả: khách hàng báo trong vòng 7 ngày để được đổi key mới.</dd>
-          <li><h4><strong>Quyền Sở Hữu Trí Tuệ</strong></h4></li>
-          <dd>Tất cả nội dung (logo, hình ảnh, văn bản) trên Website là sở hữu của Công ty hoặc đối tác.</dd>
-          <dd>Cấm sao chép, tái sử dụng dưới mọi hình thức khi chưa được phép.</dd>
-          <li><h4><strong>Nội Dung Người Dùng</strong></h4></li>
-          <dd>Người dùng chịu trách nhiệm về bình luận, đánh giá.</dd>
-          <dd>Cấm đăng nội dung vi phạm pháp luật, đồi trụy, bạo lực.</dd>
-          <li><h4><strong>Chấm Dứt & Khóa Tài Khoản</strong></h4></li>
-          <dd>Website có quyền tạm ngưng hoặc chấm dứt tài khoản khi vi phạm Điều khoản.</dd>
-          <dd>Người dùng có thể yêu cầu xóa tài khoản bằng email: <a href="./support.html"><i>gamefm207@gmail.com</i></a></dd>
-          <li><h4><strong>Giới Hạn Trách Nhiệm</strong></h4></li>
-          <dd>Website không chịu trách nhiệm cho tổn thất gián tiếp, mất mát doanh thu.</dd>
-          <dd>Mức trách nhiệm tối đa không vượt quá giá trị đơn hàng phát sinh.</dd>
-          <li><h4><strong> Luật Áp Dụng & Giải Quyết Tranh Chấp</strong></h4></li>
-          <dd>Áp dụng pháp luật Việt Nam.</dd>
-          <dd>Mọi tranh chấp được giải quyết tại Tòa án nhân dân.</dd>
-          <li><h4><strong>Liên Hệ</strong></h4></li>
-          <dd>Email hỗ trợ: <a href="./support.html"><i>gamefm207@gmail.com</i></a></dd>
-          <dd>Điện thoại: 0123-456-789</dd>
-          <dd>Địa chỉ: Khu 2, Đ. 3/2, P. Ninh Kiều, TP. Cần Thơ</dd>
-        </ol>
+        <dt><span class="lang-vi">Thông tin bắt buộc:</span><span class="lang-en" style="display:none;">Required Information:</span></dt>
+        <dd class="lang-vi">Họ và tên, địa chỉ email, số điện thoại.</dd>
+        <dd class="lang-en" style="display:none;">Full name, email address, phone number.</dd>
+        <dd class="lang-vi">Địa chỉ thanh toán, địa chỉ giao hàng (nếu có).</dd>
+        <dd class="lang-en" style="display:none;">Billing address, shipping address (if any).</dd>
+
+        <dt><span class="lang-vi">Thông tin tùy chọn:</span><span class="lang-en" style="display:none;">Optional Information:</span></dt>
+        <dd class="lang-vi">Ngày sinh, giới tính (cho chương trình ưu đãi hoặc sự kiện đặc biệt).</dd>
+        <dd class="lang-en" style="display:none;">Date of birth, gender (for promotions or special events).</dd>
+        <dd class="lang-vi">Thông tin thanh toán (một phần do đối tác cổng thanh toán lưu trữ).</dd>
+        <dd class="lang-en" style="display:none;">Payment information (partly stored by payment gateway partners).</dd>
+
+        <dt><span class="lang-vi">Dữ liệu sử dụng:</span><span class="lang-en" style="display:none;">Usage Data:</span></dt>
+        <dd class="lang-vi">Dữ liệu truy cập (IP, thiết bị, trình duyệt, thời gian truy cập, đường dẫn trang).</dd>
+        <dd class="lang-en" style="display:none;">Access data (IP, device, browser, time of access, page path).</dd>
+        <dd class="lang-vi">Hành vi mua sắm, lịch sử đơn hàng.</dd>
+        <dd class="lang-en" style="display:none;">Shopping behavior, order history.</dd>
       </dl>
-      <p style="text-align: left;"><i>Ngày hiệu lực: 14/7/2025</i></p>
+    </dd>
+
+    <li><h4><strong><span class="lang-vi">Mục Đích Sử Dụng Thông Tin</span><span class="lang-en" style="display:none;">Purpose of Using Information</span></strong></h4></li>
+    <dd class="lang-vi">Xử lý đơn hàng: Xác nhận, giao hàng, hỗ trợ sau mua.</dd>
+    <dd class="lang-en" style="display:none;">Order processing: Confirmation, delivery, post-purchase support.</dd>
+    <dd class="lang-vi">Thanh toán: Liên kết với cổng thanh toán, xác minh giao dịch.</dd>
+    <dd class="lang-en" style="display:none;">Payment: Integration with payment gateways, transaction verification.</dd>
+    <dd class="lang-vi">Liên lạc: Gửi thông báo đơn hàng, khuyến mãi, bản tin (newsletter).</dd>
+    <dd class="lang-en" style="display:none;">Communication: Send order notifications, promotions, newsletters.</dd>
+    <dd class="lang-vi">Cải thiện dịch vụ: Phân tích hành vi để nâng cao trải nghiệm người dùng.</dd>
+    <dd class="lang-en" style="display:none;">Service improvement: Analyze behavior to enhance user experience.</dd>
+    <dd class="lang-vi">Pháp lý: Tuân thủ yêu cầu pháp luật, giải quyết khiếu nại.</dd>
+    <dd class="lang-en" style="display:none;">Legal: Comply with legal requirements, handle complaints.</dd>
+
+    <li><h4><strong><span class="lang-vi">Cơ Sở Pháp Lý</span><span class="lang-en" style="display:none;">Legal Basis</span></strong></h4></li>
+    <dd>
+      <dl>
+        <dt class="lang-vi">Chúng tôi xử lý dữ liệu cá nhân của bạn dựa trên một trong các căn cứ sau:</dt>
+        <dt class="lang-en" style="display:none;">We process your personal data based on one of the following grounds:</dt>
+        <dd class="lang-vi">Sự đồng ý của bạn (ví dụ: đăng ký nhận bản tin).</dd>
+        <dd class="lang-en" style="display:none;">Your consent (e.g., subscribing to newsletters).</dd>
+        <dd class="lang-vi">Thực hiện hợp đồng (xử lý đơn hàng, thanh toán).</dd>
+        <dd class="lang-en" style="display:none;">Contract performance (order processing, payments).</dd>
+        <dd class="lang-vi">Nghĩa vụ pháp lý (lưu hồ sơ kế toán, thuế).</dd>
+        <dd class="lang-en" style="display:none;">Legal obligation (recordkeeping, taxation).</dd>
+        <dd class="lang-vi">Lợi ích hợp pháp (bảo mật hệ thống, chống gian lận).</dd>
+        <dd class="lang-en" style="display:none;">Legitimate interest (system security, fraud prevention).</dd>
+      </dl>
+    </dd>
+
+    <li><h4><strong><span class="lang-vi">Chia Sẻ Thông Tin Với Bên Thứ Ba</span><span class="lang-en" style="display:none;">Third-Party Information Sharing</span></strong></h4></li>
+    <dd class="lang-vi">Đối tác giao hàng: Cung cấp thông tin địa chỉ, liên hệ để giao hàng.</dd>
+    <dd class="lang-en" style="display:none;">Delivery partners: Provide address and contact information for delivery.</dd>
+    <dd class="lang-vi">Cổng thanh toán: Truyền tải thông tin cần thiết (số đơn hàng, số tiền, thông tin người mua).</dd>
+    <dd class="lang-en" style="display:none;">Payment gateway: Transfer necessary information (order number, amount, buyer details).</dd>
+    <dd class="lang-vi">Cơ quan pháp lý: Khi có yêu cầu hợp pháp từ cơ quan có thẩm quyền.</dd>
+    <dd class="lang-en" style="display:none;">Legal authorities: When there is a legitimate request from competent authorities.</dd>
+
+    <li><h4><strong><span class="lang-vi">Bảo Mật Thông Tin</span><span class="lang-en" style="display:none;">Information Security</span></strong></h4></li>
+    <dd class="lang-vi">Mã hóa SSL/TLS khi truyền dữ liệu.</dd>
+    <dd class="lang-en" style="display:none;">SSL/TLS encryption during data transmission.</dd>
+    <dd class="lang-vi">Lưu trữ mật khẩu dưới dạng băm (bcrypt, Argon2).</dd>
+    <dd class="lang-en" style="display:none;">Password storage using hash functions (bcrypt, Argon2).</dd>
+    <dd class="lang-vi">Giới hạn truy cập thông tin nhân viên, sử dụng firewall và hệ thống giám sát.</dd>
+    <dd class="lang-en" style="display:none;">Restrict staff access, use firewalls and monitoring systems.</dd>
+
+    <li><h4><strong><span class="lang-vi">Lưu Trữ Dữ Liệu</span><span class="lang-en" style="display:none;">Data Retention</span></strong></h4></li>
+    <dd class="lang-vi">Dữ liệu đơn hàng, hóa đơn kế toán: lưu trữ tối thiểu 10 năm theo quy định pháp luật.</dd>
+    <dd class="lang-en" style="display:none;">Order data, accounting invoices: stored for at least 10 years as required by law.</dd>
+    <dd class="lang-vi">Dữ liệu tài khoản và lịch sử mua sắm: lưu đến khi bạn yêu cầu xóa.</dd>
+    <dd class="lang-en" style="display:none;">Account and purchase history: stored until you request deletion.</dd>
+
+    <li><h4><strong><span class="lang-vi">Quyền Người Dùng</span><span class="lang-en" style="display:none;">User Rights</span></strong></h4></li>
+    <dd class="lang-vi">Truy cập & Khôi phục: Bạn có quyền xem và cập nhật thông tin cá nhân.</dd>
+    <dd class="lang-en" style="display:none;">Access & Update: You have the right to view and update personal data.</dd>
+    <dd class="lang-vi">Xóa dữ liệu: Yêu cầu xóa hoặc gỡ bỏ tài khoản.</dd>
+    <dd class="lang-en" style="display:none;">Delete data: Request deletion or removal of account.</dd>
+    <dd class="lang-vi">Phản đối & Giới hạn: Đề nghị ngừng xử lý hoặc hạn chế mục đích xử lý.</dd>
+    <dd class="lang-en" style="display:none;">Object & Restrict: Request to stop or limit processing.</dd>
+    <dd class="lang-vi">Khiếu nại: Gửi khiếu nại đến cơ quan bảo vệ dữ liệu hoặc email: <a href="./support.html"><i>gamefm207@gmail.com</i></a></dd>
+    <dd class="lang-en" style="display:none;">Complain: File a complaint with data protection authority or email: <a href="./support.html"><i>gamefm207@gmail.com</i></a></dd>
+
+    <li><h4><strong><span class="lang-vi">Thay Đổi Chính Sách</span><span class="lang-en" style="display:none;">Policy Changes</span></strong></h4></li>
+    <dd class="lang-vi">Chúng tôi có thể cập nhật Chính sách Bảo mật. Mọi thay đổi có hiệu lực khi được đăng lên Website kèm ngày hiệu lực rõ ràng.</dd>
+    <dd class="lang-en" style="display:none;">We may update our Privacy Policy. All changes are effective when posted on the Website with a clear effective date.</dd>
+  </ol>
+</dl>
+
+          <h3><strong><span class="lang-vi">PHẦN B: ĐIỀU KHOẢN SỬ DỤNG</span><span class="lang-en" style="display:none;">PART B: TERMS OF SERVICE</span></strong></h3>
+<ol>
+  <li><h4><strong><span class="lang-vi">Giới thiệu</span><span class="lang-en" style="display:none;">Introduction</span></strong></h4></li>
+  <dd><span class="lang-vi">Chào mừng bạn đến với GameFM. Bằng việc truy cập và sử dụng Website, bạn đồng ý tuân thủ các Điều khoản Sử dụng dưới đây.</span><span class="lang-en" style="display:none;">Welcome to GameFM. By accessing and using the Website, you agree to comply with the following Terms of Service.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Đăng Ký Tài Khoản</span><span class="lang-en" style="display:none;">Account Registration</span></strong></h4></li>
+  <dd><span class="lang-vi">Người dùng phải đủ 18 tuổi trở lên.</span><span class="lang-en" style="display:none;">Users must be 18 years or older.</span></dd>
+  <dd><span class="lang-vi">Cung cấp thông tin chính xác, cập nhật.</span><span class="lang-en" style="display:none;">Provide accurate and up-to-date information.</span></dd>
+  <dd><span class="lang-vi">Không chia sẻ tài khoản với người khác.</span><span class="lang-en" style="display:none;">Do not share your account with others.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Quyền Sử Dụng Dịch Vụ</span><span class="lang-en" style="display:none;">Right to Use Services</span></strong></h4></li>
+  <dd><span class="lang-vi">Website cung cấp dịch vụ mua bán game số (game bản quyền, game key, DLC).</span><span class="lang-en" style="display:none;">The Website offers digital game trading services (licensed games, game keys, DLCs).</span></dd>
+  <dd><span class="lang-vi">Tất cả giao dịch là một chiều, sau khi giao hàng (kích hoạt), không hoàn tiền trừ khi lỗi do Website.</span><span class="lang-en" style="display:none;">All transactions are one-way. Once delivery (activation) is completed, no refunds unless the error is from the Website.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Mua Hàng và Thanh Toán</span><span class="lang-en" style="display:none;">Purchases and Payments</span></strong></h4></li>
+  <dd><span class="lang-vi">Giá hiển thị đã bao gồm thuế (nếu có).</span><span class="lang-en" style="display:none;">Displayed prices include taxes (if any).</span></dd>
+  <dd><span class="lang-vi">Hỗ trợ thanh toán qua: thẻ ngân hàng, ví điện tử, chuyển khoản.</span><span class="lang-en" style="display:none;">Supports payment via: bank card, e-wallet, bank transfer.</span></dd>
+  <dd><span class="lang-vi">Hóa đơn điện tử sẽ được gửi qua email.</span><span class="lang-en" style="display:none;">E-invoices will be sent via email.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Giao Hàng & Kích Hoạt</span><span class="lang-en" style="display:none;">Delivery & Activation</span></strong></h4></li>
+  <dd><span class="lang-vi">Giao game key vào email ngay sau khi đơn hàng hoàn tất.</span><span class="lang-en" style="display:none;">Game key is sent to email immediately after order completion.</span></dd>
+  <dd><span class="lang-vi">Hỗ trợ hướng dẫn kích hoạt trên các nền tảng (Steam, Epic, Origin).</span><span class="lang-en" style="display:none;">Support activation guides on platforms (Steam, Epic, Origin).</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Quy Định Về Trả Hàng & Hoàn Tiền</span><span class="lang-en" style="display:none;">Return & Refund Policy</span></strong></h4></li>
+  <dd><span class="lang-vi">Không chấp nhận trả hàng với sản phẩm số đã kích hoạt.</span><span class="lang-en" style="display:none;">Returns are not accepted for activated digital products.</span></dd>
+  <dd><span class="lang-vi">Nếu key lỗi, sản phẩm không đúng mô tả: khách hàng báo trong vòng 7 ngày để được đổi key mới.</span><span class="lang-en" style="display:none;">If the key is faulty or product is not as described, report within 7 days for a new key.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Quyền Sở Hữu Trí Tuệ</span><span class="lang-en" style="display:none;">Intellectual Property</span></strong></h4></li>
+  <dd><span class="lang-vi">Tất cả nội dung (logo, hình ảnh, văn bản) trên Website là sở hữu của Công ty hoặc đối tác.</span><span class="lang-en" style="display:none;">All content (logos, images, text) on the Website belongs to the Company or partners.</span></dd>
+  <dd><span class="lang-vi">Cấm sao chép, tái sử dụng dưới mọi hình thức khi chưa được phép.</span><span class="lang-en" style="display:none;">Reproduction or reuse in any form without permission is prohibited.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Nội Dung Người Dùng</span><span class="lang-en" style="display:none;">User Content</span></strong></h4></li>
+  <dd><span class="lang-vi">Người dùng chịu trách nhiệm về bình luận, đánh giá.</span><span class="lang-en" style="display:none;">Users are responsible for their comments and reviews.</span></dd>
+  <dd><span class="lang-vi">Cấm đăng nội dung vi phạm pháp luật, đồi trụy, bạo lực.</span><span class="lang-en" style="display:none;">Posting content that is illegal, obscene, or violent is prohibited.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Chấm Dứt & Khóa Tài Khoản</span><span class="lang-en" style="display:none;">Termination & Account Suspension</span></strong></h4></li>
+  <dd><span class="lang-vi">Website có quyền tạm ngưng hoặc chấm dứt tài khoản khi vi phạm Điều khoản.</span><span class="lang-en" style="display:none;">The Website reserves the right to suspend or terminate accounts for violations of Terms.</span></dd>
+  <dd><span class="lang-vi">Người dùng có thể yêu cầu xóa tài khoản bằng email: <a href="./support.html"><i>gamefm207@gmail.com</i></a></span><span class="lang-en" style="display:none;">Users may request account deletion via email: <a href="./support.html"><i>gamefm207@gmail.com</i></a></span></dd>
+
+  <li><h4><strong><span class="lang-vi">Giới Hạn Trách Nhiệm</span><span class="lang-en" style="display:none;">Limitation of Liability</span></strong></h4></li>
+  <dd><span class="lang-vi">Website không chịu trách nhiệm cho tổn thất gián tiếp, mất mát doanh thu.</span><span class="lang-en" style="display:none;">The Website is not liable for indirect losses or revenue loss.</span></dd>
+  <dd><span class="lang-vi">Mức trách nhiệm tối đa không vượt quá giá trị đơn hàng phát sinh.</span><span class="lang-en" style="display:none;">Maximum liability does not exceed the value of the transaction.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Luật Áp Dụng & Giải Quyết Tranh Chấp</span><span class="lang-en" style="display:none;">Applicable Law & Dispute Resolution</span></strong></h4></li>
+  <dd><span class="lang-vi">Áp dụng pháp luật Việt Nam.</span><span class="lang-en" style="display:none;">Vietnamese law applies.</span></dd>
+  <dd><span class="lang-vi">Mọi tranh chấp được giải quyết tại Tòa án nhân dân.</span><span class="lang-en" style="display:none;">Disputes are resolved at the People's Court.</span></dd>
+
+  <li><h4><strong><span class="lang-vi">Liên Hệ</span><span class="lang-en" style="display:none;">Contact</span></strong></h4></li>
+  <dd><span class="lang-vi">Email hỗ trợ: <a href="./support.html"><i>gamefm207@gmail.com</i></a></span><span class="lang-en" style="display:none;">Support email: <a href="./support.html"><i>gamefm207@gmail.com</i></a></span></dd>
+  <dd><span class="lang-vi">Điện thoại: 0123-456-789</span><span class="lang-en" style="display:none;">Phone: 0123-456-789</span></dd>
+  <dd><span class="lang-vi">Địa chỉ: Khu 2, Đ. 3/2, P. Ninh Kiều, TP. Cần Thơ</span><span class="lang-en" style="display:none;">Address: Zone 2, 3/2 St., Ninh Kieu Ward, Can Tho City</span></dd>
+</ol>
+<p style="text-align: left;"><i><span class="lang-vi">Ngày hiệu lực: 14/7/2025</span><span class="lang-en" style="display:none;">Effective date: July 14, 2025</span></i></p>
+
     </div>
   </main>
 
@@ -192,13 +288,13 @@
       <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div> |
       <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div> |
       <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> |
-      <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
+      <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
     </div>
 
 
 
   </footer>
-  
+
 
   <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
 </body>
