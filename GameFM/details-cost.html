@@ -40,7 +40,7 @@
             <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
             <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
             <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
-            <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
+            <a href="./mygame.html" id="navButton" class="button-effect text-decoration-none">Trò Chơi</a>
         </nav>
         <div class="col-2 col-sm-2 justify-content-center d-flex" style="font-size: 1.5vw;">
             <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
@@ -151,7 +151,7 @@
                       <div class="row justify-content-start old-price" id="oldPrice"></div>
                       <div class="row discount-num justify-content-start" id="newPrice"></div>
                     </div>
-                    <button onclick="open_checkout();" class="col-12 get-button d-flex align-items-center justify-content-center">
+                    <button  id="buyButton" onclick="open_checkout();" class="col-12 get-button d-flex align-items-center justify-content-center">
                         Mua
                     </button> 
             </div>
@@ -223,7 +223,7 @@
 
         <!-- checkout  -->
     <div id="body" class="" style="display: none;background-color: black; position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: 999; opacity: 50%;"></div>
-    <form class="row container-checkout" id="checkout-form" style="display: none;padding: 3vw ;overflow: auto;color: black;position: fixed;top: 50%;left: 50%; transform: translate(-50%, -50%); background-color: white; z-index: 999;">
+    <form class="row container-checkout" id="checkout-form" action="#" style="display: none;padding: 3vw ;overflow: auto;color: black;position: fixed;top: 50%;left: 50%; transform: translate(-50%, -50%); background-color: white; z-index: 999;">
             <!-- left  -->
             <div class="col-12 col-lg-6 border">
                 <!-- L-section 1 -->

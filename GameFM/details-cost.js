@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const gameId = urlParams.get('gameId');
 
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('gameimg2-thumbnail').src = game.photo[1];
         document.getElementById('gameimg3-thumbnail').src = game.photo[2];
         document.getElementById('gameimg4-thumbnail').src = game.photo[3];
-        document.getElementById('gameimg5-thumbnail').src = game.photo[4];  
+        document.getElementById('gameimg5-thumbnail').src = game.photo[4];
         document.getElementById('gamelogo').src = game.logo;
         document.getElementById('gamelogo1').src = game.logo;
 
@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
             gtag.appendChild(tagDiv);
         });
 
-        if(game.ageRating == '18+'){
+        if (game.ageRating == '18+') {
             document.getElementById('ageRatePic').src = "./images/Market/IARC_18+.svg.png";
         }
-        else{
+        else {
             document.getElementById('ageRatePic').src = "./images/Market/IARC_12+.svg.png";
         }
 
@@ -79,16 +79,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         //discount
-        if(game.discount !=0 ){
+        if (game.discount != 0) {
             const sale = document.getElementById('discount');
             const num = document.createElement('div');
             num.className = 'col-8 col-sm-2 d-flex align-items-center justify-content-center discount';
+            num.id = 'sale';
             num.textContent = game.discount + '%';
             num.style.fontWeight = 'bold';
-            num.style.fontSize  = '1vw';
+            num.style.fontSize = '1vw';
             sale.insertBefore(num, sale.firstChild);
         }
-        document.getElementById('discount1').textContent = "-"+ game.discount + "%";
+        document.getElementById('discount1').textContent = "-" + game.discount + "%";
     } else {
         console.error('Không tìm thấy game với ID:', gameId);
     }
@@ -108,3 +109,88 @@ function formatDateVN(dateStr) {
 function formatVND(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' VNĐ';
 }
+
+//purchased
+document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameId = urlParams.get('gameId');
+    if (!gameId) {
+        console.error("Không tìm thấy gameId trên URL");
+        return;
+    }
+
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    if (!loggedInUser) {
+        alert('Bạn chưa đăng nhập!');
+        return;
+    }
+
+    const user = JSON.parse(loggedInUser);
+    const userId = user.id;
+
+    const purchasedKey = `purchasedGames_${userId}`;
+    const purchasedGames = JSON.parse(localStorage.getItem(purchasedKey)) || [];
+    const isPurchased = purchasedGames.includes(gameId);
+
+    if (isPurchased) {
+        // Ẩn phần giá
+        ['oldPrice', 'oldPrice1', 'newPrice', 'newPrice1', 'sale'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        });
+
+        // Nút chơi thay vì mua
+        const buyButton = document.getElementById('buyButton');
+        if (buyButton) {
+            buyButton.textContent = 'Chơi';
+            buyButton.classList.remove('btn-primary');
+            buyButton.classList.add('btn-success');
+            buyButton.addEventListener('click', () => {
+                window.location.href = 'mygame.html';
+            });
+
+            // Chấm đỏ
+            const navbutton = document.getElementById('navButton');
+            if (navbutton && localStorage.getItem('purchaseSuccess') === 'true') {
+                const redDot = document.createElement('span');
+                redDot.style.width = '10px';
+                redDot.style.height = '10px';
+                redDot.style.backgroundColor = 'red';
+                redDot.style.borderRadius = '50%';
+                redDot.style.display = 'inline-block';
+                redDot.style.marginLeft = '6px';
+                redDot.style.verticalAlign = 'middle';
+
+                navbutton.appendChild(redDot);
+
+                // ❌ Xoá cờ sau khi hiển thị
+                localStorage.removeItem('purchaseSuccess');
+            }
+
+        }
+    }
+
+    // Xử lý khi mua game
+    const checkoutForm = document.getElementById('checkout-form');
+    if (checkoutForm) {
+        checkoutForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (!userId) {
+                alert('Bạn chưa đăng nhập!');
+                return;
+            }
+
+            if (!purchasedGames.includes(gameId)) {
+                purchasedGames.push(gameId);
+                localStorage.setItem(purchasedKey, JSON.stringify(purchasedGames));
+                localStorage.setItem('purchaseSuccess', 'true');
+                alert('Mua thành công!');
+            } else {
+                alert('Bạn đã mua game này rồi!');
+            }
+
+            location.reload(); // Reload lại để cập nhật giao diện
+        });
+    }
+});

@@ -81,3 +81,88 @@ function formatDateVN(dateStr) {
 
     return `${day} ${month}, ${year}`;
 }
+
+//purchased
+document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameId = urlParams.get('gameId');
+    if (!gameId) {
+        console.error("Không tìm thấy gameId trên URL");
+        return;
+    }
+
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    if (!loggedInUser) {
+        alert('Bạn chưa đăng nhập!');
+        return;
+    }
+
+    const user = JSON.parse(loggedInUser);
+    const userId = user.id;
+
+    const purchasedKey = `purchasedGames_${userId}`;
+    const purchasedGames = JSON.parse(localStorage.getItem(purchasedKey)) || [];
+    const isPurchased = purchasedGames.includes(gameId);
+
+    if (isPurchased) {
+        // Ẩn phần giá
+        ['free'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        });
+
+        // Nút chơi thay vì mua
+        const buyButton = document.getElementById('buyButton');
+        if (buyButton) {
+            buyButton.textContent = 'Chơi';
+            buyButton.classList.remove('btn-primary');
+            buyButton.classList.add('btn-success');
+            buyButton.addEventListener('click', () => {
+                window.location.href = 'mygame.html';
+            });
+
+            // Chấm đỏ
+            const navbutton = document.getElementById('navButton');
+            if (navbutton && localStorage.getItem('purchaseSuccess') === 'true') {
+                const redDot = document.createElement('span');
+                redDot.style.width = '10px';
+                redDot.style.height = '10px';
+                redDot.style.backgroundColor = 'red';
+                redDot.style.borderRadius = '50%';
+                redDot.style.display = 'inline-block';
+                redDot.style.marginLeft = '6px';
+                redDot.style.verticalAlign = 'middle';
+
+                navbutton.appendChild(redDot);
+
+                // ❌ Xoá cờ sau khi hiển thị
+                localStorage.removeItem('purchaseSuccess');
+            }
+
+        }
+    }
+
+    // Xử lý khi mua game
+    const checkoutForm = document.getElementById('checkout-form');
+    if (checkoutForm) {
+        checkoutForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (!userId) {
+                alert('Bạn chưa đăng nhập!');
+                return;
+            }
+
+            if (!purchasedGames.includes(gameId)) {
+                purchasedGames.push(gameId);
+                localStorage.setItem(purchasedKey, JSON.stringify(purchasedGames));
+                localStorage.setItem('purchaseSuccess', 'true');
+                alert('Mua thành công!');
+            } else {
+                alert('Bạn đã mua game này rồi!');
+            }
+
+            location.reload(); // Reload lại để cập nhật giao diện
+        });
+    }
+});
