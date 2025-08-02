@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (gameId && gameList[gameId]) {
         const game = gameList[gameId];
         //name
-        document.getElementById('product-name').textContent = game.name;       
-        document.getElementById('product-name1').textContent = game.name;        
- 
+        document.getElementById('product-name').textContent = game.name;
         //pic
         document.getElementById('gameimg1').src = game.photo[0];
         document.getElementById('gameimg2').src = game.photo[1];
@@ -20,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('gameimg4-thumbnail').src = game.photo[3];
         document.getElementById('gameimg5-thumbnail').src = game.photo[4];  
         document.getElementById('gamelogo').src = game.logo;
-        document.getElementById('gamelogo1').src = game.logo;
-
         //information
         document.getElementById('infor').textContent = game.information;
         //thể loại, tag, age rating

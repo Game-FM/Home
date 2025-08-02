@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const game = gameList[gameId];
         //name
         document.getElementById('product-name').textContent = game.name;
-        document.getElementById('product-name1').textContent = game.name;
         //pic
         document.getElementById('gameimg1').src = game.photo[0];
         document.getElementById('gameimg2').src = game.photo[1];
@@ -19,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('gameimg4-thumbnail').src = game.photo[3];
         document.getElementById('gameimg5-thumbnail').src = game.photo[4];  
         document.getElementById('gamelogo').src = game.logo;
-        document.getElementById('gamelogo1').src = game.logo;
-
         //information
         document.getElementById('infor').textContent = game.information;
         //thể loại, tag, age rating
@@ -45,13 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         //giá
         if (game.discount != 0) {
             document.getElementById('oldPrice').textContent = formatVND(game.price);
-            document.getElementById('oldPrice1').textContent = formatVND(game.price);
-
         }
 
         let cost = game.price - game.price * (game.discount / 100);
         document.getElementById('newPrice').textContent = formatVND(Math.round(cost));
-        document.getElementById('newPrice1').textContent = formatVND(Math.round(cost));
 
         //thong tin phat trien
         document.getElementById('dev').textContent = game.developer;
@@ -88,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
             num.style.fontSize  = '1vw';
             sale.insertBefore(num, sale.firstChild);
         }
-        document.getElementById('discount1').textContent = "-"+ game.discount + "%";
     } else {
         console.error('Không tìm thấy game với ID:', gameId);
     }

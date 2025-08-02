@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let loggedInUser = localStorage.getItem('loggedInUser');
     let loginBtn = document.getElementById('login-bth');
     let loginAvt = document.getElementById('login-avt');
-    let loginBtn1 = document.getElementById('login-bth1');
     //kiem tra dieu kien da dang nhap ch
     if (loggedInUser && loginBtn && loginAvt) {
       //phan ten
@@ -15,17 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         userText.style.fontSize = '1.3vw';
         userText.style.color = 'white';
 
-
-        let userText1 = document.createElement('span');
-        userText1.textContent = "Người dùng: " + user.name+"#"+user.id;
-        userText1.className = 'user-name';
-        userText1.style.fontWeight = 'bold';
-        userText1.style.fontSize = '1.3vw';
-        userText1.style.color = 'black';
-
         loginBtn.parentNode.replaceChild(userText, loginBtn);
-        loginBtn1.parentNode.replaceChild(userText1, loginBtn1);
-
         //phan avt
         let img = document.createElement('img');
 
