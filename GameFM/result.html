@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GameFM - Game Của Tôi</title>
+    <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./Jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- slide show  -->
+    <script src="./slideshow.js" defer></script>
+    <link rel="stylesheet" href="./slideshow.css">
+    <script src="./accountscript.js"></script>
+    <script src="./scriptproduct.js"></script>
+    <script src="./search.js"></script>
+</head>
+
+<body>
+
+    <header class="container g-2">
+        <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
+            <a href="./index.html"
+                class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
+                <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
+                <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
+            </a>
+            <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
+                <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
+                <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
+                <a href="./Market.html" class="button-effect text-decoration-none  choose">Cửa Hàng</a>
+                <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
+                <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
+            </nav>
+            <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
+                <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
+                    <a class="" href="./login_register.html" id="login-bth">
+                        <button class="costomBut2">Đăng Nhập</button>
+                    </a>
+                    <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">
+                        <div class="" id="login-avt"></div>
+                    </a>
+                    <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
+                        <a href="./login_register.html" style="text-decoration: none;">
+                            <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div>
+                        </a>
+                        <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
+                        <div class="menu-button-effect w-100">Tài Khoản</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row" style="margin: 0.3vw 0;">
+            <form class="search-wrapper d-flex justify-content-end" action="result.html" method="GET">
+                <input type="text" name="q" placeholder="Tìm kiếm...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="container my-4">
+            <h4 id="search-key" class="text-white"></h4>
+        </div>
+
+        <div class="row" id="result-list"></div>
+        <!-- tìm kiếm -->
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const keyword = params.get("q")?.toLowerCase() || "";
+            document.getElementById("search-key").textContent = `Kết quả tìm kiếm cho: "${keyword}"`;
+            const container = document.getElementById("result-list");
+
+            const matchedGames = Object.entries(gameList).filter(([id, game]) =>
+                game.name.toLowerCase().includes(keyword)
+            );
+
+            if (matchedGames.length === 0) {
+                container.innerHTML = `<p class="text-warning ml-3">Không tìm thấy trò chơi nào phù hợp với từ khóa "<strong>${keyword}</strong>".</p>`;
+            } else {
+                matchedGames.forEach(([id, game]) => {
+                    const originalPrice = parseInt(game.price);
+                    const discount = parseInt(game.discount || 0);
+                    const finalPrice = discount ? originalPrice * (1 - discount / 100) : originalPrice;
+                    const priceHTML = originalPrice === 0
+                        ? `<span class="text-success">Miễn phí</span>`
+                        : discount
+                            ? `<s style="color: gold;">${originalPrice.toLocaleString()}₫</s> <span style="color: #00ff00; font-weight: bold;">${finalPrice.toLocaleString()}₫</span> <span style="color: #ff4444;">(-${discount}%)</span>`
+                            : `<span style="color: #00ff00;">${originalPrice.toLocaleString()}₫</span>`;
+
+                    const linkTarget = originalPrice === 0
+                        ? `details-free.html?gameId=${id}`
+                        : `details-cost.html?gameId=${id}`;
+
+                    const cardHTML = `
+  <div class="col-md-4 mb-4">
+    <div class="card game-card text-white bg-dark h-100">
+      <img src="${game.logo}" class="card-img-top" alt="${game.name}">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="card-title">${game.name}</h5>
+          <div class="card-genre">Thể loại: ${game.genre.join(", ")}</div>
+          <div class="card-price">Giá: ${priceHTML}</div>
+        </div>
+        <a href="${linkTarget}" class="btn btn-sm btn-outline-light mt-3 align-self-end">Chi tiết</a>
+      </div>
+    </div>
+  </div>
+`;
+                    container.insertAdjacentHTML("beforeend", cardHTML);
+                });
+            }
+
+        </script>
+
+
+    </main>
+
+    <footer class="container my-4 p-2">
+
+
+        <div style="margin: 1vw 0;">
+            <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
+            <p style="font-size: 1vw; margin-top: 0.5vw;">
+                &copy; 2025 Bản quyền thuộc về GameFM.
+            </p>
+            <p style="font-size: 1vw;margin-top: 0.5vw;">
+                Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
+            </p>
+            <div class="row g-0 align-items-center justify-content-center text-center"
+                style="font-size: 1vw;margin-top: 0.5vw;">
+                <!-- Chính sách -->
+                <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
+                <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
+                <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
+                <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div>
+            </div>
+            <div class="row g-0 gap-3 align-items-center justify-content-center text-center"
+                style="font-size: 1vw; margin-top: 0.5vw;">
+                <!-- Mạng xã hội -->
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div>
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
+</body>
+
+</html>

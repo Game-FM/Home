@@ -15,92 +15,198 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- slide show  -->
+  <!-- slide show  -->
   <script src="./slideshow.js" defer></script>
   <link rel="stylesheet" href="./slideshow.css">
   <script src="./accountscript.js"></script>
-
+  <script src="./scriptproduct.js"></script>
 </head>
 
 <body>
+  <style>
+    .game-card {
+      background-color: #000;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .game-card img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .btn-play {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      display: none;
+    }
+
+    .game-card:hover .btn-play {
+      display: inline-block;
+    }
+  </style>
+  <!-- hiển thị game đã mua -->
+  <script>
+    $(document).ready(function () {
+      const container = $("#my-games-list");
+      const user = JSON.parse(localStorage.getItem("loggedInUser"));
+      if (!user) {
+        container.html("<p>⚠️ Bạn chưa đăng nhập.</p>");
+        return;
+      }
+
+      const userId = user.id;
+      const purchasedIds = JSON.parse(localStorage.getItem(`purchasedGames_${userId}`)) || [];
+
+      if (purchasedIds.length === 0) {
+        container.html("<p>🕹️ Bạn chưa mua trò chơi nào.</p>");
+        return;
+      }
+
+      purchasedIds.forEach(id => {
+        const game = gameList[id];
+        if (game) {
+          const card = `
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 game-card">
+      <img src="${game.logo}" class="card-img-top" alt="${game.name}">
+      <div class="card-body">
+        <h5 class="card-title">${game.name}</h5>
+        <a href="#" class="btn btn-primary btn-play">Chơi ngay</a>
+      </div>
+    </div>
+  </div>
+`;
+          container.append(card);
+        }
+      });
+    });
+  </script>
+
+  <!-- tìm kiếm thời gian thực: dùng jquery-->
+  <script>
+  $(document).ready(function () {
+    $("#my-games-list").on("DOMSubtreeModified", function () {
+      attachSearchFilter();
+    });
+
+    function attachSearchFilter() {
+      const searchInput = $("#search-input"); // Đúng id
+      searchInput.off("input").on("input", function () {
+        const keyword = $(this).val().toLowerCase();
+        $("#my-games-list .game-card").each(function () {
+          const title = $(this).find(".card-title").text().toLowerCase();
+          if (title.includes(keyword)) {
+            $(this).closest(".col-md-4").show();
+          } else {
+            $(this).closest(".col-md-4").hide();
+          }
+        });
+      });
+    }
+
+    attachSearchFilter();
+  });
+</script>
+
+
+
+
+
+
   <header class="container g-2">
     <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
-        <a href="./index.html" class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
-            <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
-            <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
-        </a>
-        <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
-            <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
-            <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
-            <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
-            <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
-            <a href="./mygame.html" class="button-effect text-decoration-none choose">Trò Chơi</a>
-        </nav>
-        <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
-            <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
-                <a class="" href="./login_register.html" id="login-bth">
-                    <button class="costomBut2">Đăng Nhập</button>
-                </a>
-                <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                    <div class="" id = "login-avt"></div>
-                </a>
-                <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
-                   <a href="./login_register.html" style="text-decoration: none;">
-                    <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div></a>
-                    <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
-                    <div class="menu-button-effect w-100">Tài Khoản</div>
-                </div>
-            </div>
+      <a href="./index.html"
+        class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
+        <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
+        <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
+      </a>
+      <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
+        <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
+        <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
+        <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
+        <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
+        <a href="./mygame.html" class="button-effect text-decoration-none choose">Trò Chơi</a>
+      </nav>
+      <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
+        <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
+          <a class="" href="./login_register.html" id="login-bth">
+            <button class="costomBut2">Đăng Nhập</button>
+          </a>
+          <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown">
+            <div class="" id="login-avt"></div>
+          </a>
+          <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
+            <a href="./login_register.html" style="text-decoration: none;">
+              <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div>
+            </a>
+            <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
+            <div class="menu-button-effect w-100">Tài Khoản</div>
+          </div>
         </div>
+      </div>
     </div>
   </header>
 
   <main class="container">
     <div class="row" style="margin: 0.3vw 0;">
-      <form class="search-wrapper d-flex justify-content-end" action="#" method="GET">
-        <input type="text" name="q" placeholder="Tìm kiếm...">
-        <button type="submit">
+      <div class="search-wrapper d-flex justify-content-end">
+        <input type="text" id="search-input" placeholder="Tìm kiếm...">
+        <button type="button" id="search-button">
           <i class="fas fa-search"></i>
         </button>
-      </form>
+      </div>
     </div>
+    <main class="container mt-4">
+      <h2>🎮 Game của bạn</h2>
+      <div class="row" id="my-games-list"></div>
+    </main>
+
   </main>
 
- <footer class="container my-4 p-2">
+  <footer class="container my-4 p-2">
 
 
     <div style="margin: 1vw 0;">
-        <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
-        <p style="font-size: 1vw; margin-top: 0.5vw;">
+      <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
+      <p style="font-size: 1vw; margin-top: 0.5vw;">
         &copy; 2025 Bản quyền thuộc về GameFM.
-        </p>
-        <p style="font-size: 1vw;margin-top: 0.5vw;">
+      </p>
+      <p style="font-size: 1vw;margin-top: 0.5vw;">
         Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
-        </p>
-        <div class="row g-0 align-items-center justify-content-center text-center" style="font-size: 1vw;margin-top: 0.5vw;">
+      </p>
+      <div class="row g-0 align-items-center justify-content-center text-center"
+        style="font-size: 1vw;margin-top: 0.5vw;">
         <!-- Chính sách -->
         <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
         <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
         <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
         <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div>
-        </div>    
-        <div class="row g-0 gap-3 align-items-center justify-content-center text-center" style="font-size: 1vw; margin-top: 0.5vw;">
-            <!-- Mạng xã hội -->
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> 
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
-        </div>
+      </div>
+      <div class="row g-0 gap-3 align-items-center justify-content-center text-center"
+        style="font-size: 1vw; margin-top: 0.5vw;">
+        <!-- Mạng xã hội -->
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div>
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+      </div>
     </div>
 
 
   </footer>
-  
+
 
   <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
 </body>

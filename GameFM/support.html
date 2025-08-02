@@ -2,186 +2,199 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>GameFM - Đăng Nhập & Đăng Ký</title>
-  <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta charset="UTF-8">
+    <title>GameFM - Đăng Nhập & Đăng Ký</title>
+    <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <script src="./Jquery.js"></script>
+    <script src="./Jquery.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <script src="./scriptsupport.js"></script>
-  <script src="./accountscript.js"></script>
+    <script src="./scriptsupport.js"></script>
+    <script src="./accountscript.js"></script>
+    <script src="./search.js"></script>
 </head>
 
 <body class="">
-<body>
-  <header class="container g-2">
-    <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
-        <a href="./index.html" class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
-            <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
-            <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
-        </a>
-        <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
-            <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
-            <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
-            <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
-            <a href="./support.html" class="button-effect text-decoration-none choose">Hỗ Trợ</a>
-            <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
-        </nav>
-        <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
-            <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
-                <a class="" href="./login_register.html" id="login-bth">
-                    <button class="costomBut2">Đăng Nhập</button>
+
+    <body>
+        <header class="container g-2">
+            <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
+                <a href="./index.html"
+                    class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
+                    <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
+                    <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
                 </a>
-                <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                    <div class="" id = "login-avt"></div>
-                </a>
-                <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
-                   <a href="./login_register.html" style="text-decoration: none;">
-                    <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div></a>
-                    <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
-                    <div class="menu-button-effect w-100">Tài Khoản</div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </header>
-
-  <main class="container px-1">
-
-    <div class="row" style="margin: 0.3vw 0;">
-      <form class="search-wrapper d-flex justify-content-end" action="#" method="GET">
-        <input type="text" name="q" placeholder="Tìm kiếm...">
-        <button type="submit">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
-    </div>
-  
-    <!-- form 1 -->
-    <div class="overlay" id="overlay">
-      <div class="popup-form" id="popupForm">
-          <div class="row d-flex justify-content-center text-center"> 
-            <div class="my-3"><h1>Form Liên hệ</h1></div>
-            <div class="row mb-2">
-                <div class="col-2 offset-1 text-end"><i class="fa fa-user"></i></div>
-                <input class="col-6" type="text" placeholder="Vui lòng nhập họ tên của bạn">
-            </div>
-            <div class="row mb-2">
-                <div class="col-2 offset-1 text-end"><i class="fa fa-envelope"></i></div>
-                <input class="col-6" type="text" placeholder="Vui lòng nhập địa chỉ Email">
-            </div>
-            <div class="row mb-2">
-                <div class="col-2 offset-1 text-end"> <i class="fas fa-list"></i></div>
-                <select class="col-6" name="" id="">
-                    <option value="">Về Sản Phẩm/ Dịch Vụ</option>
-                    <option value="">Về Trải Nghiệm Game</option>
-                    <option value="">Về Lỗi Game/Web</option>
-                    <option value="">...</option>
-                </select>
-            </div>
-            <div class="row mb-2">
-                <div class="col-2 offset-1 text-end"> <i class="fas fa-file-alt"></i></div>
-                <textarea class="col-6" style="padding-bottom: 5vw;"  placeholder="Nội dung cần liên hệ" name="" id=""></textarea>
-            </div>
-            <div class="row mb-3 justify-content-center"><button class="col-3 xem-button">Gửi</button></div>
-          </div>
-      </div>
-    </div>
-    <!-- end form 1 -->
-    <div class=" background-support">
-        <div class="row text-start pt-2" style="width: 99.9%; margin-left: 0.1%;">
-            <h1 style="font-size: 3vw;">Hỗ trợ</h1>
-            <h5 style="color: rgb(84, 48, 203); font-size: 1.5vw;">Chúng tôi có thể giúp gì cho bạn?</h5>
-        </div>
-        <div class="row" style="width: 99.9%; margin-left: 0.1%;">
-            <div class="col-6 col-sm-6 d-flex justify-content-center" style="margin-top: 5vw;">
-                <div class="background2 row text-center">
-                    <div class="col-12" style="justify-content: center; align-items: center; margin-bottom: -10%;">
-                        <i class="fas fa-headset m-3" style="font-size: 4vw;;"></i>
-                    </div>
-                    <div class="col-12" style="font-size: 1.5vw; margin-bottom: -10%;">
-                        Bạn đang gặp vấn đề?
-                        <br>
-                        Hãy gọi ngay số điện thoại sau để được hỗ trợ
-                        <br>
-                        <a style="text-decoration: none; color: rgb(84, 48, 203);" href="">+84 3 015 4400</a>
-                    </div>
-                    <div class="col-12" style="font-size: 1.5vw;">
-                        <hr style="margin-bottom: 0;">
-                        Hoặc điền vào form ở đây
-                        <br>
-                        <a class="dkn" style="text-decoration: none; color: rgb(84, 48, 203);" id="openFormBtn" href="#" type="button">Click vào để điền form</a>
-                    </div>
-                    <div class="col-12"></div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 d-flex justify-content-center" style="margin-top: 5vw;">
-                <div class="background2 text-center">
-                    <div class="col-12" style="justify-content: center; align-items: center; margin-bottom: 1vw;;">
-                        <i class="fas fa-question-circle m-3" style="font-size: 4vw;"></i>
-                    </div>
-                    <div class="col-12" style="font-size: 1.5vw;">
-                       Lỗi hãy gặp: Không tải được trang, không mua được hàng, không mở được trò chơi,...
-                    </div>
-                    <div class="col-6 offset-3 my-3 text-center" style="font-size: 1.5vw;">    
-                        <button class="xem-button" style="font-size: 1.5vw !important;">Xem tại đây</button>
+                <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
+                    <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
+                    <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
+                    <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
+                    <a href="./support.html" class="button-effect text-decoration-none choose">Hỗ Trợ</a>
+                    <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
+                </nav>
+                <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
+                    <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
+                        <a class="" href="./login_register.html" id="login-bth">
+                            <button class="costomBut2">Đăng Nhập</button>
+                        </a>
+                        <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown">
+                            <div class="" id="login-avt"></div>
+                        </a>
+                        <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
+                            <a href="./login_register.html" style="text-decoration: none;">
+                                <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div>
+                            </a>
+                            <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
+                            <div class="menu-button-effect w-100">Tài Khoản</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-  </main> 
+        </header>
 
- <footer class="container my-4 p-2">
+        <main class="container px-1">
+
+            <div class="row" style="margin: 0.3vw 0;">
+                <form class="search-wrapper d-flex justify-content-end" action="result.html" method="GET">
+                    <input type="text" name="q" placeholder="Tìm kiếm...">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- form 1 -->
+            <div class="overlay" id="overlay">
+                <div class="popup-form" id="popupForm">
+                    <div class="row d-flex justify-content-center text-center">
+                        <div class="my-3">
+                            <h1>Form Liên hệ</h1>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-2 offset-1 text-end"><i class="fa fa-user"></i></div>
+                            <input class="col-6" type="text" placeholder="Vui lòng nhập họ tên của bạn">
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-2 offset-1 text-end"><i class="fa fa-envelope"></i></div>
+                            <input class="col-6" type="text" placeholder="Vui lòng nhập địa chỉ Email">
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-2 offset-1 text-end"> <i class="fas fa-list"></i></div>
+                            <select class="col-6" name="" id="">
+                                <option value="">Về Sản Phẩm/ Dịch Vụ</option>
+                                <option value="">Về Trải Nghiệm Game</option>
+                                <option value="">Về Lỗi Game/Web</option>
+                                <option value="">...</option>
+                            </select>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-2 offset-1 text-end"> <i class="fas fa-file-alt"></i></div>
+                            <textarea class="col-6" style="padding-bottom: 5vw;" placeholder="Nội dung cần liên hệ"
+                                name="" id=""></textarea>
+                        </div>
+                        <div class="row mb-3 justify-content-center"><button class="col-3 xem-button">Gửi</button></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end form 1 -->
+            <div class=" background-support">
+                <div class="row text-start pt-2" style="width: 99.9%; margin-left: 0.1%;">
+                    <h1 style="font-size: 3vw;">Hỗ trợ</h1>
+                    <h5 style="color: rgb(84, 48, 203); font-size: 1.5vw;">Chúng tôi có thể giúp gì cho bạn?</h5>
+                </div>
+                <div class="row" style="width: 99.9%; margin-left: 0.1%;">
+                    <div class="col-6 col-sm-6 d-flex justify-content-center" style="margin-top: 5vw;">
+                        <div class="background2 row text-center">
+                            <div class="col-12"
+                                style="justify-content: center; align-items: center; margin-bottom: -10%;">
+                                <i class="fas fa-headset m-3" style="font-size: 4vw;;"></i>
+                            </div>
+                            <div class="col-12" style="font-size: 1.5vw; margin-bottom: -10%;">
+                                Bạn đang gặp vấn đề?
+                                <br>
+                                Hãy gọi ngay số điện thoại sau để được hỗ trợ
+                                <br>
+                                <a style="text-decoration: none; color: rgb(84, 48, 203);" href="">+84 3 015 4400</a>
+                            </div>
+                            <div class="col-12" style="font-size: 1.5vw;">
+                                <hr style="margin-bottom: 0;">
+                                Hoặc điền vào form ở đây
+                                <br>
+                                <a class="dkn" style="text-decoration: none; color: rgb(84, 48, 203);" id="openFormBtn"
+                                    href="#" type="button">Click vào để điền form</a>
+                            </div>
+                            <div class="col-12"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 d-flex justify-content-center" style="margin-top: 5vw;">
+                        <div class="background2 text-center">
+                            <div class="col-12"
+                                style="justify-content: center; align-items: center; margin-bottom: 1vw;;">
+                                <i class="fas fa-question-circle m-3" style="font-size: 4vw;"></i>
+                            </div>
+                            <div class="col-12" style="font-size: 1.5vw;">
+                                Lỗi hãy gặp: Không tải được trang, không mua được hàng, không mở được trò chơi,...
+                            </div>
+                            <div class="col-6 offset-3 my-3 text-center" style="font-size: 1.5vw;">
+                                <button class="xem-button" style="font-size: 1.5vw !important;">Xem tại đây</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container my-4 p-2">
 
 
-    <div style="margin: 1vw 0;">
-        <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
-        <p style="font-size: 1vw; margin-top: 0.5vw;">
-        &copy; 2025 Bản quyền thuộc về GameFM.
-        </p>
-        <p style="font-size: 1vw;margin-top: 0.5vw;">
-        Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
-        </p>
-        <div class="row g-0 align-items-center justify-content-center text-center" style="font-size: 1vw;margin-top: 0.5vw;">
-        <!-- Chính sách -->
-        <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
-        <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
-        <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
-        <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div>
-        </div>    
-        <div class="row g-0 gap-3 align-items-center justify-content-center text-center" style="font-size: 1vw; margin-top: 0.5vw;">
-            <!-- Mạng xã hội -->
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> 
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
-        </div>
-    </div>
+            <div style="margin: 1vw 0;">
+                <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
+                <p style="font-size: 1vw; margin-top: 0.5vw;">
+                    &copy; 2025 Bản quyền thuộc về GameFM.
+                </p>
+                <p style="font-size: 1vw;margin-top: 0.5vw;">
+                    Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
+                </p>
+                <div class="row g-0 align-items-center justify-content-center text-center"
+                    style="font-size: 1vw;margin-top: 0.5vw;">
+                    <!-- Chính sách -->
+                    <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
+                    <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
+                    <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
+                    <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div>
+                </div>
+                <div class="row g-0 gap-3 align-items-center justify-content-center text-center"
+                    style="font-size: 1vw; margin-top: 0.5vw;">
+                    <!-- Mạng xã hội -->
+                    <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                    <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+                    <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div>
+                    <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                </div>
+            </div>
 
 
-  </footer>
-  
+        </footer>
 
-  <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
-</body>
+
+        <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
+    </body>
 
 </html>

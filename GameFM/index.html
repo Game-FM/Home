@@ -15,121 +15,138 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="./scriptindex.js"></script>
   <script>
-    window.onload = function() {
-    selectImage(document.querySelector('.clickable-img'));
+    window.onload = function () {
+      selectImage(document.querySelector('.clickable-img'));
     };
   </script>
   <script src="./accountscript.js"></script>
+  <script src="./search.js"></script>
 </head>
 
 <body>
   <header class="container g-2">
     <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
-        <a href="./index.html" class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
-            <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
-            <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
-        </a>
-        <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
-            <a href="./index.html" class="button-effect text-decoration-none choose">Trang Chủ</a>
-            <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
-            <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
-            <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
-            <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
-        </nav>
-        <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
-            <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
-                <a class="" href="./login_register.html" id="login-bth">
-                    <button class="costomBut2">Đăng Nhập</button>
-                </a>
-                <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                    <div class="" id = "login-avt"></div>
-                </a>
-                <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
-                   <a href="./login_register.html" style="text-decoration: none;">
-                    <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div></a>
-                    <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
-                    <div class="menu-button-effect w-100">Tài Khoản</div>
-                </div>
-            </div>
+      <a href="./index.html"
+        class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
+        <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
+        <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
+      </a>
+      <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
+        <a href="./index.html" class="button-effect text-decoration-none choose">Trang Chủ</a>
+        <a href="./Communication.html" class="button-effect text-decoration-none">Cộng Đồng</a>
+        <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
+        <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
+        <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
+      </nav>
+      <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
+        <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
+          <a class="" href="./login_register.html" id="login-bth">
+            <button class="costomBut2">Đăng Nhập</button>
+          </a>
+          <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown">
+            <div class="" id="login-avt"></div>
+          </a>
+          <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
+            <a href="./login_register.html" style="text-decoration: none;">
+              <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div>
+            </a>
+            <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
+            <div class="menu-button-effect w-100">Tài Khoản</div>
+          </div>
         </div>
+      </div>
     </div>
   </header>
   <main class="container">
-  
+
     <div class="row" style="margin: 0.3vw 0;">
-      <form class="search-wrapper d-flex justify-content-end" action="#" method="GET">
+      <form class="search-wrapper d-flex justify-content-end" action="result.html" method="GET">
         <input type="text" name="q" placeholder="Tìm kiếm...">
         <button type="submit">
           <i class="fas fa-search"></i>
         </button>
       </form>
     </div>
-    
+
     <div class="row">
-        <div class="col-12 mt-2 "> 
+      <div class="col-12 mt-2 ">
 
-            <div class="row"><!-- ô background hè-->
-                <img class="w-100" src="./images/trangchu/top-index.jpg" style="opacity: 65%;" alt=""> 
-            </div>
-
-            <!-- ô chứa game qc-->
-            <div class="row w-100 g-1 text-center" style="position: relative; top: -45%; margin-bottom: -15%;"> 
-              <!-- Game 1 -->
-              <div class="col hover-details" >
-                <img class="item-index" src="https://img.asmedia.epimg.net/resizer/v2/6RHZLXMFB5PB5NR5DYCD67EU5E.jpg?auth=2736aee51ece7c8aa38e73221edd0d209e151a721782e154385e621ed228aaa6&width=1472&height=828&smart=true" alt="">
-                <div class="details-box text-center">
-                  <video controls autoplay muted loop class="video-details">
-                    <source src="https://video.fastly.steamstatic.com/store_trailers/256754362/movie480.webm?t=1561449228" type="video/webm">
-                  </video>
-                  <div class="row w-100 justify-content-center g-0">
-                    <div class="col-4"><strong>BLACK MESA</strong></div>
-                    <div class="col-2 text-center discount-tag"><strong>-50%</strong></div>
-                    <div class="col-3 discount-num-tag"><p>100.000vnd</p></div>
-                    <div class="col-2 text-start"><button onclick="window.location.href = 'details-cost.html?gameId=game001'" class="buy-button">MUA</button></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Game 2 -->
-              <div class="col hover-details" >
-                <img class="item-index" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1751944840" alt="">
-                <div class="details-box text-center">
-                  <video controls autoplay muted loop class="video-details">
-                    <source src="https://video.akamai.steamstatic.com/store_trailers/256706872/movie480.webm?t=1516824043" type="video/webm">
-                  </video>
-                  <div class="row justify-content-center g-0">
-                    <div class="col-4"><strong>Subnautica</strong></div>
-                    <div class="col-2 text-center discount-tag"><strong>-50%</strong></div>
-                    <div class="col-3 discount-num-tag"><p>90.000vnd</p></div>
-                    <div class="col-2 text-start"><button class="buy-button" onclick="window.location.href = 'details-cost.html?gameId=game004'" >MUA</button></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Game 3 -->
-              <div class="col hover-details" >
-                <img class="item-index" src="./images/Market/Fortnite.jpg" alt="">
-                <div class="details-box text-center">
-                  <video controls autoplay muted loop class="video-details">
-                    <source src="https://www.youtube.com/watch?v=wGB1aLDR2Es" type="video/webm">
-                  </video>
-                  <div class="row justify-content-center g-0">
-                    <div class="col-4"><strong style="font-size: 70%;">Fortnite</strong></div>
-                    <div class="col-2 text-center discount-tag"><strong>-50%</strong></div>
-                    <div class="col-3 discount-num-tag"><p>150.000vnd</p></div>
-                    <div class="col-2 text-start"><button class="buy-button" onclick="window.location.href = 'details-cost.html?gameId=game019'" >MUA</button></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- het game -->
-            </div>
-            <!-- end of ô chứa game  -->
+        <div class="row"><!-- ô background hè-->
+          <img class="w-100" src="./images/trangchu/top-index.jpg" style="opacity: 65%;" alt="">
         </div>
+
+        <!-- ô chứa game qc-->
+        <div class="row w-100 g-1 text-center" style="position: relative; top: -45%; margin-bottom: -15%;">
+          <!-- Game 1 -->
+          <div class="col hover-details">
+            <img class="item-index"
+              src="https://img.asmedia.epimg.net/resizer/v2/6RHZLXMFB5PB5NR5DYCD67EU5E.jpg?auth=2736aee51ece7c8aa38e73221edd0d209e151a721782e154385e621ed228aaa6&width=1472&height=828&smart=true"
+              alt="">
+            <div class="details-box text-center">
+              <video controls autoplay muted loop class="video-details">
+                <source src="https://video.fastly.steamstatic.com/store_trailers/256754362/movie480.webm?t=1561449228"
+                  type="video/webm">
+              </video>
+              <div class="row w-100 justify-content-center g-0">
+                <div class="col-4"><strong>BLACK MESA</strong></div>
+                <div class="col-2 text-center discount-tag"><strong>-50%</strong></div>
+                <div class="col-3 discount-num-tag">
+                  <p>100.000vnd</p>
+                </div>
+                <div class="col-2 text-start"><button
+                    onclick="window.location.href = 'details-cost.html?gameId=game001'" class="buy-button">MUA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Game 2 -->
+          <div class="col hover-details">
+            <img class="item-index"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1751944840"
+              alt="">
+            <div class="details-box text-center">
+              <video controls autoplay muted loop class="video-details">
+                <source src="https://video.akamai.steamstatic.com/store_trailers/256706872/movie480.webm?t=1516824043"
+                  type="video/webm">
+              </video>
+              <div class="row justify-content-center g-0">
+                <div class="col-4"><strong>Subnautica</strong></div>
+                <div class="col-2 text-center discount-tag"><strong>-50%</strong></div>
+                <div class="col-3 discount-num-tag">
+                  <p>90.000vnd</p>
+                </div>
+                <div class="col-2 text-start"><button class="buy-button"
+                    onclick="window.location.href = 'details-cost.html?gameId=game004'">MUA</button></div>
+              </div>
+            </div>
+          </div>
+          <!-- Game 3 -->
+          <div class="col hover-details">
+            <img class="item-index" src="./images/Market/Fortnite.jpg" alt="">
+            <div class="details-box text-center">
+              <video controls autoplay muted loop class="video-details">
+                <source src="https://www.youtube.com/watch?v=wGB1aLDR2Es" type="video/webm">
+              </video>
+              <div class="row justify-content-center g-0">
+                <div class="col-4"><strong style="font-size: 70%;">Fortnite</strong></div>
+                <div class="col-2 text-center discount-tag"><strong>-50%</strong></div>
+                <div class="col-3 discount-num-tag">
+                  <p>150.000vnd</p>
+                </div>
+                <div class="col-2 text-start"><button class="buy-button"
+                    onclick="window.location.href = 'details-cost.html?gameId=game019'">MUA</button></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- het game -->
+        </div>
+        <!-- end of ô chứa game  -->
+      </div>
     </div>
 
 
@@ -142,11 +159,12 @@
       </div>
 
       <div class="col-8 g-0">
-            
+
         <div class="row SHOW w-100 justify-content-center" id="content">
           <video controls autoplay muted loop>
-            <source src="https://video.fastly.steamstatic.com/store_trailers/256706800/movie480.webm?t=1516828564" type="video/webm">
-                    Trình duyệt của bạn không hỗ trợ video.
+            <source src="https://video.fastly.steamstatic.com/store_trailers/256706800/movie480.webm?t=1516828564"
+              type="video/webm">
+            Trình duyệt của bạn không hỗ trợ video.
           </video>
         </div>
 
@@ -155,15 +173,19 @@
         <!-- Game 1 -->
         <div class="row clickable-img" onclick="event.preventDefault(); navigate('Game1'); selectImage(this);">
           <a href="#">
-            <img class="w-100" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1750985773" alt="">
+            <img class="w-100"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1750985773"
+              alt="">
           </a>
         </div>
 
         <!-- Game 2 -->
         <div class="row clickable-img" onclick="event.preventDefault(); navigate('Game2'); selectImage(this);">
           <a href="#">
-            <img class="w-100" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475490/header.jpg?t=1751897003" alt="">
-          </a>    
+            <img class="w-100"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475490/header.jpg?t=1751897003"
+              alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -181,24 +203,32 @@
       </div>
       <div class="row w-100">
         <div class="col-4 czoom">
-          <img class="zoom" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1745368562" alt="">
+          <img class="zoom"
+            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1745368562" alt="">
           <div class="details-box1 row">
-            <div class="m-auto pt-1"><strong style="color: rgba(84, 48, 203, 1);" >LEFT 4 DEAD 2</strong></div>
-            <div class="m-auto"><a href="details-free.html?gameId=game006" style="text-decoration: none; color: rgba(84, 48, 203, 1);">Xem chi tiết.</a></div>
+            <div class="m-auto pt-1"><strong style="color: rgba(84, 48, 203, 1);">LEFT 4 DEAD 2</strong></div>
+            <div class="m-auto"><a href="details-free.html?gameId=game006"
+                style="text-decoration: none; color: rgba(84, 48, 203, 1);">Xem chi tiết.</a></div>
           </div>
         </div>
         <div class="col-4 czoom">
-          <img class="zoom" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1733297467" alt="">
+          <img class="zoom"
+            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1733297467"
+            alt="">
           <div class="details-box1 row">
-            <div class="m-auto pt-1"><strong style="color: rgba(84, 48, 203, 1);" >PERSONA 5 ROYAL</strong></div>
-            <div class="m-auto"><a href="details-free.html?gameId=game007" style="text-decoration: none; color: rgba(84, 48, 203, 1);">Xem chi tiết.</a></div>
+            <div class="m-auto pt-1"><strong style="color: rgba(84, 48, 203, 1);">PERSONA 5 ROYAL</strong></div>
+            <div class="m-auto"><a href="details-free.html?gameId=game007"
+                style="text-decoration: none; color: rgba(84, 48, 203, 1);">Xem chi tiết.</a></div>
           </div>
         </div>
         <div class="col-4 czoom">
-          <img class="zoom" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1751926051" alt="">
+          <img class="zoom"
+            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1751926051"
+            alt="">
           <div class="details-box1 row">
-            <div class="m-auto pt-1"><strong style="color: rgba(84, 48, 203, 1);" >SCHEDULE</strong></div>
-            <div class="m-auto"><a href="details-free.html?gameId=game008" style="text-decoration: none; color: rgba(84, 48, 203, 1);">Xem chi tiết.</a></div>
+            <div class="m-auto pt-1"><strong style="color: rgba(84, 48, 203, 1);">SCHEDULE</strong></div>
+            <div class="m-auto"><a href="details-free.html?gameId=game008"
+                style="text-decoration: none; color: rgba(84, 48, 203, 1);">Xem chi tiết.</a></div>
           </div>
         </div>
       </div>
@@ -214,15 +244,18 @@
           <br>
           <p style="font-size: 2vw;">Nhãn tiêu biểu</p>
         </div>
-        <div class="row justify-content-center align-items-center g-2 p-3" style="background-color: rgb(152, 172, 193,0.2); border-radius: 1vh;">
+        <div class="row justify-content-center align-items-center g-2 p-3"
+          style="background-color: rgb(152, 172, 193,0.2); border-radius: 1vh;">
           <!-- game L1 -->
           <div class="col-6">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/356190/capsule_616x353.jpg?t=1747346596" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/356190/capsule_616x353.jpg?t=1747346596"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2"
-                style="font-size: 1.7vw;" aria-hidden="true"></i>
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-40%</strong>
               </div>
@@ -230,19 +263,22 @@
                 <div class="row justify-content-end old-price">1.390.000vnđ</div>
                 <div class="row discount-num justify-content-end">834.000vnđ</div>
               </div>
-              <button onclick="window.location.href='details-cost.html?gameId=game009'" class="col-2 buy-button-m d-flex align-items-center ms-2 justify-content-center" >
+              <button onclick="window.location.href='details-cost.html?gameId=game009'"
+                class="col-2 buy-button-m d-flex align-items-center ms-2 justify-content-center">
                 Mua
               </button>
             </div>
           </div>
           <!-- game L2 -->
           <div class="col-6">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1272320/0fd58e4147d589bbd883b190202ba7692d80d058/capsule_616x353.jpg?t=1750959274" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1272320/0fd58e4147d589bbd883b190202ba7692d80d058/capsule_616x353.jpg?t=1750959274"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2"
-                style="font-size: 1.7vw;" aria-hidden="true"></i>
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-10%</strong>
               </div>
@@ -250,35 +286,44 @@
                 <div class="row justify-content-end old-price">86.000vnđ</div>
                 <div class="row discount-num justify-content-end">77.000vnđ</div>
               </div>
-                <button class="col-2 get-button d-flex align-items-center justify-content-center" onclick="window.location.href='details-cost.html?gameId=game010'">
+              <button class="col-2 get-button d-flex align-items-center justify-content-center"
+                onclick="window.location.href='details-cost.html?gameId=game010'">
                 Nhận
               </button>
             </div>
           </div>
           <!-- game L3 -->
           <div class="col-6">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288150/capsule_616x353.jpg?t=1747030684" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288150/capsule_616x353.jpg?t=1747030684"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows"
-              style="font-size: 1.7vw;" aria-hidden="true"></i>
-                <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong></div>
-                <button class="col-2 get-button d-flex align-items-center justify-content-center" onclick="window.location.href='details-free.html?gameId=game011'">
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
+              <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
+              </div>
+              <button class="col-2 get-button d-flex align-items-center justify-content-center"
+                onclick="window.location.href='details-free.html?gameId=game011'">
                 Nhận
               </button>
             </div>
           </div>
           <!-- game L4 -->
           <div class="col-6">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/capsule_616x353.jpg?t=1745933101" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/capsule_616x353.jpg?t=1745933101"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows"
-              style="font-size: 1.7vw;" aria-hidden="true"></i>
-                <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong></div>
-                <button class="col-2 get-button d-flex align-items-center justify-content-center" onclick="window.location.href='details-free.html?gameId=game012'">
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
+              <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
+              </div>
+              <button class="col-2 get-button d-flex align-items-center justify-content-center"
+                onclick="window.location.href='details-free.html?gameId=game012'">
                 Nhận
               </button>
             </div>
@@ -294,29 +339,36 @@
           <br>
           <p style="font-size: 2vw;">Nhãn tiêu biểu</p>
         </div>
-        <div class="row justify-content-center align-items-center g-2 p-3" style="background-color: rgb(152, 172, 193,0.2); border-radius: 1vh;">
+        <div class="row justify-content-center align-items-center g-2 p-3"
+          style="background-color: rgb(152, 172, 193,0.2); border-radius: 1vh;">
           <!-- game R1 -->
           <div class="col-6">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1466860/capsule_616x353.jpg?t=1744749573" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1466860/capsule_616x353.jpg?t=1744749573"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows"
-              style="font-size: 1.7vw;" aria-hidden="true"></i>
-                <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong></div>
-                <button class="col-2 get-button d-flex align-items-center justify-content-center" onclick="window.location.href='details-free.html?gameId=game013'">
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
+              <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
+              </div>
+              <button class="col-2 get-button d-flex align-items-center justify-content-center"
+                onclick="window.location.href='details-free.html?gameId=game013'">
                 Nhận
               </button>
             </div>
           </div>
           <!-- game R2 -->
           <div class="col-6">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/813780/capsule_616x353.jpg?t=1746638753" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/813780/capsule_616x353.jpg?t=1746638753"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2"
-                style="font-size: 1.7vw;" aria-hidden="true"></i>
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-30%</strong>
               </div>
@@ -324,33 +376,40 @@
                 <div class="row justify-content-end old-price">300.000vnđ</div>
                 <div class="row discount-num justify-content-end">210.000vnđ</div>
               </div>
-              <button onclick="window.location.href='details-cost.html?gameId=game014'" class="col-2 buy-button-m d-flex align-items-center ms-2 justify-content-center" >
+              <button onclick="window.location.href='details-cost.html?gameId=game014'"
+                class="col-2 buy-button-m d-flex align-items-center ms-2 justify-content-center">
                 Mua
               </button>
             </div>
           </div>
           <!-- game R3 -->
           <div class="col-6">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/690830/f889ffa0de51eabbd49afe317c83f160c35c69e9/capsule_616x353.jpg?t=1743784791" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/690830/f889ffa0de51eabbd49afe317c83f160c35c69e9/capsule_616x353.jpg?t=1743784791"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows"
-              style="font-size: 1.7vw;" aria-hidden="true"></i>
-                <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong></div>
-                <button class="col-2 get-button d-flex align-items-center justify-content-center" onclick="window.location.href='details-free.html?gameId=game015'">
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
+              <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
+              </div>
+              <button class="col-2 get-button d-flex align-items-center justify-content-center"
+                onclick="window.location.href='details-free.html?gameId=game015'">
                 Nhận
               </button>
             </div>
           </div>
           <!-- game R4 -->
           <div class="col-6 justify-content-center text-start">
-            <img class="item-index1" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_616x353.jpg?t=1750766399" alt="">
+            <img class="item-index1"
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_616x353.jpg?t=1750766399"
+              alt="">
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
-            style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2"
-                style="font-size: 1.7vw;" aria-hidden="true"></i>
+              style="margin-left: 0; padding: 0.3vw; width: 95%;">
+              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+                aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-60%</strong>
               </div>
@@ -358,7 +417,8 @@
                 <div class="row justify-content-end old-price">30.000vnđ</div>
                 <div class="row discount-num justify-content-end">12.000vnđ</div>
               </div>
-              <button onclick="window.location.href='details-cost.html?gameId=game016'" class="col-2 buy-button-m d-flex align-items-center ms-2 justify-content-center" >
+              <button onclick="window.location.href='details-cost.html?gameId=game016'"
+                class="col-2 buy-button-m d-flex align-items-center ms-2 justify-content-center">
                 Mua
               </button>
             </div>
@@ -377,32 +437,34 @@
 
 
     <div style="margin: 1vw 0;">
-        <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
-        <p style="font-size: 1vw; margin-top: 0.5vw;">
+      <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
+      <p style="font-size: 1vw; margin-top: 0.5vw;">
         &copy; 2025 Bản quyền thuộc về GameFM.
-        </p>
-        <p style="font-size: 1vw;margin-top: 0.5vw;">
+      </p>
+      <p style="font-size: 1vw;margin-top: 0.5vw;">
         Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
-        </p>
-        <div class="row g-0 align-items-center justify-content-center text-center" style="font-size: 1vw;margin-top: 0.5vw;">
+      </p>
+      <div class="row g-0 align-items-center justify-content-center text-center"
+        style="font-size: 1vw;margin-top: 0.5vw;">
         <!-- Chính sách -->
         <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
         <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
         <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
         <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div>
-        </div>    
-        <div class="row g-0 gap-3 align-items-center justify-content-center text-center" style="font-size: 1vw; margin-top: 0.5vw;">
-            <!-- Mạng xã hội -->
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> 
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
-        </div>
+      </div>
+      <div class="row g-0 gap-3 align-items-center justify-content-center text-center"
+        style="font-size: 1vw; margin-top: 0.5vw;">
+        <!-- Mạng xã hội -->
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div>
+        <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+      </div>
     </div>
 
 
   </footer>
-  
+
 
   <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
 </body>

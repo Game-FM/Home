@@ -2,322 +2,377 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>GameFM - Cộng Đồng</title>
-  <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="./Jquery.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-  <script src="./accountscript.js"></script>
-
+    <meta charset="UTF-8">
+    <title>GameFM - Cộng Đồng</title>
+    <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./Jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="./accountscript.js"></script>
+    <script src="./search.js"></script>
 </head>
 
 <body>
-  <header class="container g-2">
-    <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
-        <a href="./index.html" class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
-            <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
-            <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
-        </a>
-        <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
-            <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
-            <a href="./Communication.html" class="button-effect text-decoration-none choose">Cộng Đồng</a>
-            <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
-            <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
-            <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
-        </nav>
-        <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
-            <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
-                <a class="" href="./login_register.html" id="login-bth">
-                    <button class="costomBut2">Đăng Nhập</button>
-                </a>
-                <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                    <div class="" id = "login-avt"></div>
-                </a>
-                <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
-                   <a href="./login_register.html" style="text-decoration: none;">
-                    <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div></a>
-                    <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
-                    <div class="menu-button-effect w-100">Tài Khoản</div>
+    <header class="container g-2">
+        <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
+            <a href="./index.html"
+                class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
+                <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
+                <span><strong style="color: white; font-size: 2vw;">GameFM</strong></span>
+            </a>
+            <nav class="col-10 col-sm-6 justify-content-center d-flex" style="font-size: 1.5vw;">
+                <a href="./index.html" class="button-effect text-decoration-none">Trang Chủ</a>
+                <a href="./Communication.html" class="button-effect text-decoration-none choose">Cộng Đồng</a>
+                <a href="./Market.html" class="button-effect text-decoration-none ">Cửa Hàng</a>
+                <a href="./support.html" class="button-effect text-decoration-none">Hỗ Trợ</a>
+                <a href="./mygame.html" class="button-effect text-decoration-none">Trò Chơi</a>
+            </nav>
+            <div class="col-2 col-sm-2  justify-content-center d-flex" style="font-size: 1.5vw;">
+                <div class="d-flex align-items-center gap-1 d-flex justify-content-center">
+                    <a class="" href="./login_register.html" id="login-bth">
+                        <button class="costomBut2">Đăng Nhập</button>
+                    </a>
+                    <a href="" style="text-decoration: none !important;" class="dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">
+                        <div class="" id="login-avt"></div>
+                    </a>
+                    <div class="dropdown-menu border" style="font-size: 1.3vw; border-radius: 2%;">
+                        <a href="./login_register.html" style="text-decoration: none;">
+                            <div class="menu-button-effect w-100 mb-1">Đăng Nhập</div>
+                        </a>
+                        <div class="menu-button-effect w-100 mb-1">Đăng Ký</div>
+                        <div class="menu-button-effect w-100">Tài Khoản</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-      <div class="row" style="margin: 0.3vw 0;">
-      <form class="search-wrapper d-flex justify-content-end" action="#" method="GET">
-        <input type="text" name="q" placeholder="Tìm kiếm...">
-        <button type="submit">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
-    </div>
-    <div class="row commu-bg">
-        <div class="col-12 text-start mb-4 mt-2">
-            <h1 class="font-size-h1"><strong>Hoạt Động Cộng Đồng</strong></h1>
-            <h3 class="font-size-h3">Nội dung cộng đồng và chính thức cho tất cả trò chơi trên GameFM</h3>
+    <main class="container">
+        <div class="row" style="margin: 0.3vw 0;">
+            <form class="search-wrapper d-flex justify-content-end" action="result.html" method="GET">
+                <input type="text" name="q" placeholder="Tìm kiếm...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
         </div>
-        <div class="col-12">
-            <div class="row nav-commu">
-                <a href="#BaiViet" class="col-2 text-center">Bài Viết</a>
-                <a href="#AnhChup" class="col-2 text-center">Ảnh Chụp</a>
-                <a href="#Artworks" class="col-2 text-center">Tác Phẩm Nghệ Thuật</a>
-                <a class="col-2 text-center">Video</a>
-                <a class="col-2 text-center">Tin Tức</a>
+        <div class="row commu-bg">
+            <div class="col-12 text-start mb-4 mt-2">
+                <h1 class="font-size-h1"><strong>Hoạt Động Cộng Đồng</strong></h1>
+                <h3 class="font-size-h3">Nội dung cộng đồng và chính thức cho tất cả trò chơi trên GameFM</h3>
             </div>
-            <div class="row line"></div>
-        </div>
-        <div class="col-12 content-bg">
-            <!-- Phan bai viet -->
-
-            <strong class="row m-2" style="font-size: 3vw;" id="BaiViet">Bài Viết</strong>
-            <div class="row gap-4 justify-content-center">
-                <!-- bai viet recommend -->
-                <div class="col-lg-7 col-12 content-bg-sub ">
-                    <div class="sub-text my-2">
-                        392 người dùng cảm thấy tích cực với nội dung này
-                    </div>
-                    <div class="align-items-center d-flex gap-1">
-                        <strong style="font-size: 2vw;">Đề Xuất</strong>
-                        <img style="height: 3vw; width: auto; margin-bottom: 1vw;" src="./images/communication/rating.png" alt="">
-                    </div>
-                    <div>
-                        <div class="sub-text">Đăng: 8 tháng 3</div>
-                        <div class="sub-text-1">
-Bản mở rộng DLC này thực sự đã thổi một luồng sinh khí hoàn toàn mới vào trò chơi gốc. Nếu trước đây game chỉ xoay quanh việc xây dựng, khai thác và quản lý tài nguyên trên mặt đất – với lối chơi tuy hấp dẫn nhưng đôi khi thiếu sự đột phá – thì giờ đây, việc được đặt chân xuống đáy đại dương đã mở ra một trải nghiệm hoàn toàn khác biệt. Cảm giác bắt đầu một cuộc hành trình trong lòng biển sâu, nơi ánh sáng mặt trời không thể chiếu tới, mang lại một bầu không khí đầy huyền bí và thử thách. Việc phải thích nghi với áp suất khắc nghiệt, học cách kiểm soát luồng oxy, tối ưu hóa năng lượng trong môi trường thiếu hụt tài nguyên, và thậm chí đối mặt với những sinh vật biển xa lạ – tất cả khiến cho mỗi quyết định nhỏ cũng trở nên đầy cân nhắc và hồi hộp. Điều khiến DLC này nổi bật không chỉ là ở độ khó tăng lên, mà còn ở cách nó buộc người chơi phải thay đổi tư duy chiến lược. Không còn kiểu mở rộng ồ ạt như trên cạn, bạn phải từng bước củng cố cấu trúc, mở khóa công nghệ kháng áp lực, nghiên cứu các thiết bị đặc biệt và điều chỉnh nhịp độ chơi sao cho phù hợp với môi trường dưới nước. Chính sự chậm rãi ấy lại làm cho quá trình phát triển thuộc địa trở nên ý nghĩa và đáng giá hơn bao giờ hết. Bạn không chỉ đang chơi game – bạn đang sống cùng những con người trong căn cứ biển sâu ấy, chống chọi với thiên nhiên khắc nghiệt, và từng chút một xây dựng nên một nền văn minh giữa đại dương đen thẳm. Bên cạnh đó, DLC còn mang đến một hệ sinh thái độc đáo, với các loài sinh vật chưa từng thấy, những hiện tượng tự nhiên kỳ bí như “tiếng hát hố sâu” hay bão điện từ, khiến người chơi không ngừng tò mò khám phá. Hệ thống công nghệ mới, các tuyến giao thương dưới nước, cùng những cơ chế đặc thù như bộ đồ lặn áp suất cao hay trạm lọc oxy, khiến cho mỗi lần mở rộng căn cứ đều mang tính chiến lược cao. Tất nhiên, không phải mọi thứ đều hoàn hảo – giao diện người dùng đôi lúc còn rối rắm, đặc biệt khi phải quản lý nhiều hệ thống cùng lúc – nhưng điều đó không làm giảm giá trị của bản mở rộng này. Với mình, đây là một trong những DLC sáng tạo, tâm huyết và đáng chơi nhất trong nhiều năm qua. Nó không chỉ đơn thuần là một bản mở rộng, mà gần như là một trò chơi mới được lồng ghép khéo léo vào cái khung                        </div>
-                    </div>
-                    <hr>
-                    <div class="my-2 row">
-                        <div class="sub-text col-3 align-items-center d-flex">Tran Kien#001</div>
-                        <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a class="sub-text" href="#">Xem Thêm</a></div>
-                        <div class="col-1 sub-text align-items-center d-flex justify-content-start">35<i class="fas fa-comment-alt ps-1"></i></div>
-                    </div>
+            <div class="col-12">
+                <div class="row nav-commu">
+                    <a href="#BaiViet" class="col-2 text-center">Bài Viết</a>
+                    <a href="#AnhChup" class="col-2 text-center">Ảnh Chụp</a>
+                    <a href="#Artworks" class="col-2 text-center">Tác Phẩm Nghệ Thuật</a>
+                    <a class="col-2 text-center">Video</a>
+                    <a class="col-2 text-center">Tin Tức</a>
                 </div>
-                <!-- bai viet recmmend 2 -->
-                <div class="col-lg-4 col-12">
-                    <div class="row content-bg-sub mb-3">
+                <div class="row line"></div>
+            </div>
+            <div class="col-12 content-bg">
+                <!-- Phan bai viet -->
+
+                <strong class="row m-2" style="font-size: 3vw;" id="BaiViet">Bài Viết</strong>
+                <div class="row gap-4 justify-content-center">
+                    <!-- bai viet recommend -->
+                    <div class="col-lg-7 col-12 content-bg-sub ">
                         <div class="sub-text my-2">
-                            122 người dùng cảm thấy tích cực với nội dung này
+                            392 người dùng cảm thấy tích cực với nội dung này
                         </div>
                         <div class="align-items-center d-flex gap-1">
                             <strong style="font-size: 2vw;">Đề Xuất</strong>
-                            <img style="height: 3vw; width: auto; margin-bottom: 1vw;" src="./images/communication/rating.png" alt="">
+                            <img style="height: 3vw; width: auto; margin-bottom: 1vw;"
+                                src="./images/communication/rating.png" alt="">
                         </div>
                         <div>
-                            <div class="sub-text">Đăng: 1 tháng 1</div>
+                            <div class="sub-text">Đăng: 8 tháng 3</div>
                             <div class="sub-text-1">
-                               Thành thật mà nói, bản DLC này đã cho mình một cơ hội thứ hai để thực sự tận hưởng trò chơi. Trước đây, mình luôn gặp khó khăn trong giai đoạn đầu — cứ đến một mức nào đó là bế tắc. Nhưng nhờ những hệ thống mới được bổ sung trong DLC, mình cuối cùng cũng có thể xây dựng một thuộc địa ổn định và lâu dài. Mọi thứ như được làm lại từ đầu, và lần này thì mình thật sự bị cuốn vào trò chơi.
-                            </div>
-                             <hr>
+                                Bản mở rộng DLC này thực sự đã thổi một luồng sinh khí hoàn toàn mới vào trò chơi gốc.
+                                Nếu trước đây game chỉ xoay quanh việc xây dựng, khai thác và quản lý tài nguyên trên
+                                mặt đất – với lối chơi tuy hấp dẫn nhưng đôi khi thiếu sự đột phá – thì giờ đây, việc
+                                được đặt chân xuống đáy đại dương đã mở ra một trải nghiệm hoàn toàn khác biệt. Cảm giác
+                                bắt đầu một cuộc hành trình trong lòng biển sâu, nơi ánh sáng mặt trời không thể chiếu
+                                tới, mang lại một bầu không khí đầy huyền bí và thử thách. Việc phải thích nghi với áp
+                                suất khắc nghiệt, học cách kiểm soát luồng oxy, tối ưu hóa năng lượng trong môi trường
+                                thiếu hụt tài nguyên, và thậm chí đối mặt với những sinh vật biển xa lạ – tất cả khiến
+                                cho mỗi quyết định nhỏ cũng trở nên đầy cân nhắc và hồi hộp. Điều khiến DLC này nổi bật
+                                không chỉ là ở độ khó tăng lên, mà còn ở cách nó buộc người chơi phải thay đổi tư duy
+                                chiến lược. Không còn kiểu mở rộng ồ ạt như trên cạn, bạn phải từng bước củng cố cấu
+                                trúc, mở khóa công nghệ kháng áp lực, nghiên cứu các thiết bị đặc biệt và điều chỉnh
+                                nhịp độ chơi sao cho phù hợp với môi trường dưới nước. Chính sự chậm rãi ấy lại làm cho
+                                quá trình phát triển thuộc địa trở nên ý nghĩa và đáng giá hơn bao giờ hết. Bạn không
+                                chỉ đang chơi game – bạn đang sống cùng những con người trong căn cứ biển sâu ấy, chống
+                                chọi với thiên nhiên khắc nghiệt, và từng chút một xây dựng nên một nền văn minh giữa
+                                đại dương đen thẳm. Bên cạnh đó, DLC còn mang đến một hệ sinh thái độc đáo, với các loài
+                                sinh vật chưa từng thấy, những hiện tượng tự nhiên kỳ bí như “tiếng hát hố sâu” hay bão
+                                điện từ, khiến người chơi không ngừng tò mò khám phá. Hệ thống công nghệ mới, các tuyến
+                                giao thương dưới nước, cùng những cơ chế đặc thù như bộ đồ lặn áp suất cao hay trạm lọc
+                                oxy, khiến cho mỗi lần mở rộng căn cứ đều mang tính chiến lược cao. Tất nhiên, không
+                                phải mọi thứ đều hoàn hảo – giao diện người dùng đôi lúc còn rối rắm, đặc biệt khi phải
+                                quản lý nhiều hệ thống cùng lúc – nhưng điều đó không làm giảm giá trị của bản mở rộng
+                                này. Với mình, đây là một trong những DLC sáng tạo, tâm huyết và đáng chơi nhất trong
+                                nhiều năm qua. Nó không chỉ đơn thuần là một bản mở rộng, mà gần như là một trò chơi mới
+                                được lồng ghép khéo léo vào cái khung </div>
                         </div>
+                        <hr>
                         <div class="my-2 row">
-                            <div class="sub-text col-3 align-items-center d-flex">Check Si#021</div>
-                            <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a class="sub-text" href="#">Xem Thêm</a></div>
-                            <div class="col-1 sub-text align-items-center d-flex justify-content-start">23  <i class="fas fa-comment-alt ps-1"></i></div>
+                            <div class="sub-text col-3 align-items-center d-flex">Tran Kien#001</div>
+                            <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a
+                                    class="sub-text" href="#">Xem Thêm</a></div>
+                            <div class="col-1 sub-text align-items-center d-flex justify-content-start">35<i
+                                    class="fas fa-comment-alt ps-1"></i></div>
                         </div>
                     </div>
+                    <!-- bai viet recmmend 2 -->
+                    <div class="col-lg-4 col-12">
+                        <div class="row content-bg-sub mb-3">
+                            <div class="sub-text my-2">
+                                122 người dùng cảm thấy tích cực với nội dung này
+                            </div>
+                            <div class="align-items-center d-flex gap-1">
+                                <strong style="font-size: 2vw;">Đề Xuất</strong>
+                                <img style="height: 3vw; width: auto; margin-bottom: 1vw;"
+                                    src="./images/communication/rating.png" alt="">
+                            </div>
+                            <div>
+                                <div class="sub-text">Đăng: 1 tháng 1</div>
+                                <div class="sub-text-1">
+                                    Thành thật mà nói, bản DLC này đã cho mình một cơ hội thứ hai để thực sự tận hưởng
+                                    trò chơi. Trước đây, mình luôn gặp khó khăn trong giai đoạn đầu — cứ đến một mức nào
+                                    đó là bế tắc. Nhưng nhờ những hệ thống mới được bổ sung trong DLC, mình cuối cùng
+                                    cũng có thể xây dựng một thuộc địa ổn định và lâu dài. Mọi thứ như được làm lại từ
+                                    đầu, và lần này thì mình thật sự bị cuốn vào trò chơi.
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="my-2 row">
+                                <div class="sub-text col-3 align-items-center d-flex">Check Si#021</div>
+                                <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a
+                                        class="sub-text" href="#">Xem Thêm</a></div>
+                                <div class="col-1 sub-text align-items-center d-flex justify-content-start">23 <i
+                                        class="fas fa-comment-alt ps-1"></i></div>
+                            </div>
+                        </div>
 
-                    <div class="row content-bg-sub d-flex justify-content-center">
-                        <strong class="sub-text text-center m-2">ƯU ĐÃI ĐƯỢC ĐỀ XUẤT</strong>
-                        <img class="m-2" src="./images/trangchu/top-index.jpg" style="width: 80%;" alt="">
+                        <div class="row content-bg-sub d-flex justify-content-center">
+                            <strong class="sub-text text-center m-2">ƯU ĐÃI ĐƯỢC ĐỀ XUẤT</strong>
+                            <img class="m-2" src="./images/trangchu/top-index.jpg" style="width: 80%;" alt="">
+                        </div>
                     </div>
+                    <!--  -->
                 </div>
-                <!--  -->
             </div>
-        </div>
 
-        <!-- Phan Anh Chup -->
+            <!-- Phan Anh Chup -->
 
-        <div class="col-12 content-bg pt-5">
-            <strong class="row m-2" style="font-size: 3vw;" id="AnhChup">Ảnh Chụp</strong>
-            <div class="row gap-4 justify-content-center">
-                <!-- bai viet recommend -->
-                <div class="col-lg-7 col-12 content-bg-sub ">
-                    <div class="sub-text my-2">
-                        153 người dùng cảm thấy tích cực với nội dung này
+            <div class="col-12 content-bg pt-5">
+                <strong class="row m-2" style="font-size: 3vw;" id="AnhChup">Ảnh Chụp</strong>
+                <div class="row gap-4 justify-content-center">
+                    <!-- bai viet recommend -->
+                    <div class="col-lg-7 col-12 content-bg-sub ">
+                        <div class="sub-text my-2">
+                            153 người dùng cảm thấy tích cực với nội dung này
+                        </div>
+                        <div class="align-items-center d-flex gap-1">
+                            <strong style="font-size: 2vw;">Đề Xuất</strong>
+                            <img style="height: 3vw; width: auto; margin-bottom: 1vw;"
+                                src="./images/communication/rating.png" alt="">
+                        </div>
+                        <div>
+                            <div class="sub-text">Đăng: 18 tháng 7</div>
+                            <div class="">
+                                <img style="width: 100%;" src="./images/communication/Screenshot1.avif" alt="">
+                            </div>
+                            <div>
+                                <div class="sub-text">
+                                    Tiêu đề:
+                                </div>
+                                <div class="sub-text-1">
+                                    Đẹp vãi ò ^^
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="my-2 row">
+                            <div class="sub-text col-3 align-items-center d-flex">Hnobm#003</div>
+                            <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a
+                                    class="sub-text" href="#">Xem Thêm</a></div>
+                            <div class="col-1 sub-text align-items-center d-flex justify-content-start">35<i
+                                    class="fas fa-comment-alt ps-1"></i></div>
+                        </div>
                     </div>
-                    <div class="align-items-center d-flex gap-1">
-                        <strong style="font-size: 2vw;">Đề Xuất</strong>
-                        <img style="height: 3vw; width: auto; margin-bottom: 1vw;" src="./images/communication/rating.png" alt="">
+                    <!-- bai viet recmmend 2 -->
+                    <div class="col-lg-4 col-12">
+                        <div class="row h-100 content-bg-sub mb-3">
+                            <div class="sub-text my-2">
+                                392 người dùng cảm thấy tích cực với nội dung này
+                            </div>
+                            <div class="align-items-center d-flex gap-1">
+                                <strong style="font-size: 2vw;">Đề Xuất</strong>
+                                <img style="height: 3vw; width: auto; margin-bottom: 1vw;"
+                                    src="./images/communication/rating.png" alt="">
+                            </div>
+                            <div>
+                                <div class="sub-text">Đăng: 30 tháng 5</div>
+                                <div class="">
+                                    <img style="width: 100%;"
+                                        src="https://images.immediate.co.uk/production/volatile/sites/3/2025/02/radio-times-kingdom-come-deliverance-2-romance-hans-capon-a24f78b.jpg?quality=90&fit=700,466"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <div class="sub-text">
+                                        Tiêu đề:
+                                    </div>
+                                    <div class="sub-text-1">
+                                        Kingdome Come: Khoảng khắc hài hước
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="my-2 row">
+                                <div class="sub-text col-3 align-items-center d-flex">Tran Kien#005</div>
+                                <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a
+                                        class="sub-text" href="#">Xem Thêm</a></div>
+                                <div class="col-1 sub-text align-items-center d-flex justify-content-start">23 <i
+                                        class="fas fa-comment-alt ps-1"></i></div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="sub-text">Đăng: 18 tháng 7</div>
-                        <div class="">
-                            <img style="width: 100%;" src="./images/communication/Screenshot1.avif" alt="">
+                    <!--  -->
+                </div>
+            </div>
+
+            <!-- Phan Artwork -->
+
+            <div class="col-12 content-bg pt-5">
+                <!-- Phan bai viet -->
+
+                <strong class="row m-2" style="font-size: 3vw;" id="Artworks">Tác Phẩm Nghệ Thuật</strong>
+                <div class="row gap-4 justify-content-center">
+
+
+                    <!-- bai viet recmmend 2 -->
+                    <div class="col-lg-4 col-12">
+                        <div class="row content-bg-sub mb-3 h-100">
+                            <div class="sub-text my-2">
+                                122 người dùng cảm thấy tích cực với nội dung này
+                            </div>
+                            <div class="align-items-center d-flex gap-1">
+                                <strong style="font-size: 2vw;">Đề Xuất</strong>
+                                <img style="height: 3vw; width: auto; margin-bottom: 1vw;"
+                                    src="./images/communication/rating.png" alt="">
+                            </div>
+                            <div>
+                                <div class="sub-text">Đăng: 1 tháng 2</div>
+                                <div class="sub-text-1">
+                                    <img src="./images/communication/1747378392742.jpg" style="width: 100%;" alt="">
+                                </div>
+                                <div>
+                                    <div class="sub-text">
+                                        Tiêu đề:
+                                    </div>
+                                    <div class="sub-text-1">
+                                        Clair Obscur: Expedition: Tác phẩm nghệ thuật
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="my-2 row">
+                                <div class="sub-text col-3 align-items-center d-flex">Haudy#002</div>
+                                <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a
+                                        class="sub-text" href="#">Xem Thêm</a></div>
+                                <div class="col-1 sub-text align-items-center d-flex justify-content-start">23 <i
+                                        class="fas fa-comment-alt ps-1"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bai viet recommend -->
+                    <div class="col-lg-7 col-12 content-bg-sub">
+                        <div class="sub-text my-2" style="padding-top: 7vw;">
+                            633 người dùng cảm thấy tích cực với nội dung này
+                        </div>
+                        <div class="align-items-center d-flex gap-1">
+                            <strong style="font-size: 2vw;">Đề Xuất</strong>
+                            <img style="height: 3vw; width: auto; margin-bottom: 1vw;"
+                                src="./images/communication/rating.png" alt="">
+                        </div>
+                        <div>
+                            <div class="sub-text">Đăng: 11 tháng 3</div>
+                            <div class="">
+                                <img src="https://www.gematsu.com/wp-content/uploads/2022/10/Game-Page-Featured_Silent-Hill-f.jpg"
+                                    style="width: 100%;" alt="">
+                            </div>
                         </div>
                         <div>
                             <div class="sub-text">
                                 Tiêu đề:
                             </div>
                             <div class="sub-text-1">
-                                Đẹp vãi ò ^^
+                                Silent Hill F: Gematsu - Tác phẩm nghệ thuật
                             </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="my-2 row">
-                        <div class="sub-text col-3 align-items-center d-flex">Hnobm#003</div>
-                        <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a class="sub-text" href="#">Xem Thêm</a></div>
-                        <div class="col-1 sub-text align-items-center d-flex justify-content-start">35<i class="fas fa-comment-alt ps-1"></i></div>
-                    </div>
-                </div>
-                <!-- bai viet recmmend 2 -->
-                <div class="col-lg-4 col-12">
-                    <div class="row h-100 content-bg-sub mb-3">
-                        <div class="sub-text my-2">
-                            392 người dùng cảm thấy tích cực với nội dung này
-                        </div>
-                        <div class="align-items-center d-flex gap-1">
-                            <strong style="font-size: 2vw;">Đề Xuất</strong>
-                            <img style="height: 3vw; width: auto; margin-bottom: 1vw;" src="./images/communication/rating.png" alt="">
-                        </div>
-                        <div>
-                            <div class="sub-text">Đăng: 30 tháng 5</div>
-                            <div class="">
-                                <img style="width: 100%;" src="https://images.immediate.co.uk/production/volatile/sites/3/2025/02/radio-times-kingdom-come-deliverance-2-romance-hans-capon-a24f78b.jpg?quality=90&fit=700,466" alt="">
-                            </div>
-                            <div>
-                                <div class="sub-text">
-                                    Tiêu đề:
-                                </div>
-                                <div class="sub-text-1">
-                                    Kingdome Come: Khoảng khắc hài hước
-                                </div>
-                            </div>
-                             <hr>
-                        </div>
+                        <hr>
                         <div class="my-2 row">
-                            <div class="sub-text col-3 align-items-center d-flex">Tran Kien#005</div>
-                            <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a class="sub-text" href="#">Xem Thêm</a></div>
-                            <div class="col-1 sub-text align-items-center d-flex justify-content-start">23  <i class="fas fa-comment-alt ps-1"></i></div>
+                            <div class="sub-text col-3 align-items-center d-flex">Tran Kien#009</div>
+                            <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a
+                                    class="sub-text" href="#">Xem Thêm</a></div>
+                            <div class="col-1 sub-text align-items-center d-flex justify-content-start">35<i
+                                    class="fas fa-comment-alt ps-1"></i></div>
                         </div>
                     </div>
+
                 </div>
-                <!--  -->
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="container my-4 p-2">
+
+
+        <div style="margin: 1vw 0;">
+            <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
+            <p style="font-size: 1vw; margin-top: 0.5vw;">
+                &copy; 2025 Bản quyền thuộc về GameFM.
+            </p>
+            <p style="font-size: 1vw;margin-top: 0.5vw;">
+                Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
+            </p>
+            <div class="row g-0 align-items-center justify-content-center text-center"
+                style="font-size: 1vw;margin-top: 0.5vw;">
+                <!-- Chính sách -->
+                <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
+                <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
+                <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
+                <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div>
+            </div>
+            <div class="row g-0 gap-3 align-items-center justify-content-center text-center"
+                style="font-size: 1vw; margin-top: 0.5vw;">
+                <!-- Mạng xã hội -->
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div>
+                <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
             </div>
         </div>
 
-        <!-- Phan Artwork -->
 
-        <div class="col-12 content-bg pt-5">
-            <!-- Phan bai viet -->
-
-            <strong class="row m-2" style="font-size: 3vw;" id="Artworks">Tác Phẩm Nghệ Thuật</strong>
-            <div class="row gap-4 justify-content-center">
+    </footer>
 
 
-                <!-- bai viet recmmend 2 -->
-                <div class="col-lg-4 col-12">
-                    <div class="row content-bg-sub mb-3 h-100">
-                        <div class="sub-text my-2">
-                            122 người dùng cảm thấy tích cực với nội dung này
-                        </div>
-                        <div class="align-items-center d-flex gap-1">
-                            <strong style="font-size: 2vw;">Đề Xuất</strong>
-                            <img style="height: 3vw; width: auto; margin-bottom: 1vw;" src="./images/communication/rating.png" alt="">
-                        </div>
-                        <div>
-                            <div class="sub-text">Đăng: 1 tháng 2</div>
-                            <div class="sub-text-1">
-                                <img src="./images/communication/1747378392742.jpg" style="width: 100%;" alt="">
-                            </div>
-                            <div>
-                                <div class="sub-text">
-                                    Tiêu đề:
-                                </div>
-                                <div class="sub-text-1">
-                                    Clair Obscur: Expedition: Tác phẩm nghệ thuật
-                                </div>
-                            </div>
-                             <hr>
-                        </div>
-                        <div class="my-2 row">
-                            <div class="sub-text col-3 align-items-center d-flex">Haudy#002</div>
-                            <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a class="sub-text" href="#">Xem Thêm</a></div>
-                            <div class="col-1 sub-text align-items-center d-flex justify-content-start">23  <i class="fas fa-comment-alt ps-1"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- bai viet recommend -->
-                <div class="col-lg-7 col-12 content-bg-sub">
-                    <div class="sub-text my-2" style="padding-top: 7vw;">
-                        633 người dùng cảm thấy tích cực với nội dung này
-                    </div>
-                    <div class="align-items-center d-flex gap-1">
-                        <strong style="font-size: 2vw;">Đề Xuất</strong>
-                        <img style="height: 3vw; width: auto; margin-bottom: 1vw;" src="./images/communication/rating.png" alt="">
-                    </div>
-                    <div>
-                        <div class="sub-text">Đăng: 11 tháng 3</div>
-                        <div class="">
-                            <img src="https://www.gematsu.com/wp-content/uploads/2022/10/Game-Page-Featured_Silent-Hill-f.jpg" style="width: 100%;" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="sub-text">
-                            Tiêu đề:
-                        </div>
-                        <div class="sub-text-1">
-                            Silent Hill F: Gematsu - Tác phẩm nghệ thuật
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="my-2 row">
-                        <div class="sub-text col-3 align-items-center d-flex">Tran Kien#009</div>
-                        <div class="col-3 justify-content-end d-flex align-items-center offset-5"><a class="sub-text" href="#">Xem Thêm</a></div>
-                        <div class="col-1 sub-text align-items-center d-flex justify-content-start">35<i class="fas fa-comment-alt ps-1"></i></div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-
-    </div>
-
-  </main>
-  
-  <footer class="container my-4 p-2">
-
-
-    <div style="margin: 1vw 0;">
-        <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
-        <p style="font-size: 1vw; margin-top: 0.5vw;">
-        &copy; 2025 Bản quyền thuộc về GameFM.
-        </p>
-        <p style="font-size: 1vw;margin-top: 0.5vw;">
-        Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
-        </p>
-        <div class="row g-0 align-items-center justify-content-center text-center" style="font-size: 1vw;margin-top: 0.5vw;">
-        <!-- Chính sách -->
-        <div class="col-auto px-1"><a href="#">Chính Sách Bảo Mật</a></div> |
-        <div class="col-auto px-1"><a href="#">Điều Khoản Dịch Vụ</a></div> |
-        <div class="col-auto px-1"><a href="#">Hỗ Trợ</a></div> |
-        <div class="col-auto px-1"><a href="#">Chính Sách Cookie</a></div>
-        </div>    
-        <div class="row g-0 gap-3 align-items-center justify-content-center text-center" style="font-size: 1vw; margin-top: 0.5vw;">
-            <!-- Mạng xã hội -->
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> 
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
-        </div>
-    </div>
-
-
-  </footer>
-
-  
-
-  <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
+    <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
 </body>
 
 </html>
