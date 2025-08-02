@@ -824,3 +824,16 @@ input[type="checkbox"].custom-check {
   right: -85%;
   top: 65% !important;
 }
+
+.container-checkout{
+  width: 100vw;
+  height: 50vh;
+}
+
+@media (min-width: 1200px ) {
+  .container-checkout {
+    width: 75vw;
+    height: 100vh;
+  }
+}
+
