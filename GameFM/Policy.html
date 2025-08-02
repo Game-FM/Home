@@ -29,34 +29,42 @@
   <script src="./Policy-eng.js"></script>
 </head>
 <style>
-  li {
-    font-size: 4vh;
+  /* Điều chỉnh font-size linh hoạt hơn bằng clamp() */
+  li,
+  dt {
+    font-size: clamp(1rem, 2.5vh, 2rem);
     font-weight: bold;
-  }
-  dt{
-    font-size: 4vh;
   }
 
   h4,
   h2,
   h3 {
-    font-size: 4vh !important
+    font-size: clamp(1.2rem, 3vh, 2.5rem) !important;
   }
 
   h1 {
-    font-size: 6vh !important
+    font-size: clamp(2rem, 5vh, 4rem) !important;
   }
+
+  /* Nút chuyển ngôn ngữ */
   .lang-switcher .btn {
-    font-size: 3vh;           /* giảm khoảng 25% so với mặc định */
-    padding: 1vh 2vh;
-    border-radius: 1vh;
+    font-size: clamp(0.8rem, 2vh, 1.2rem);  /* Tự động co nhỏ */
+    padding: 0.5vh 1.5vh;
+    border-radius: 0.75vh;
   }
 
   .lang-btn.active {
     background-color: #ced4da;
     color: #000;
   }
+  dd {
+  font-size: clamp(1rem, 2.5vh, 1.5rem); /* Kích cỡ linh hoạt theo thiết bị */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 </style>
+
 
 <body class="">
   <header class="container g-2">
