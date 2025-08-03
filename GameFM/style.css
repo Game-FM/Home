@@ -8,15 +8,15 @@
   opacity: 70%;
 }
 /*  */
-
-header{
-  position: relative;
-  z-index: 1000;
-}
 html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+header{
+  position: relative;
+  z-index: 1000;
+}
+
 body {
   background-image: url(https://img.freepik.com/free-photo/gradient-blue-abstract-background-smooth-dark-blue-with-black-vignette-studio_1258-53634.jpg);
   min-height: 100vh; /* Hoặc 100% */
@@ -847,5 +847,4 @@ input[type="checkbox"].custom-check {
     height: 100vh;
   }
 }
-
 
