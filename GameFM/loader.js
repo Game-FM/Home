@@ -9,5 +9,6 @@ window.addEventListener("load", function () {
         overlay.style.display = "none";
       }, 300); // Chờ transition fade-out
     }
-  }, 1000); // Thời gian loader hiển thị (2 giây)
+  }, 1000); // Thời gian loader hiển thị 
 });
+
