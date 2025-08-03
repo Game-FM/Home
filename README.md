@@ -1,9 +1,9 @@
 # 🎮 Game-FM - Trang web cộng đồng và mua trò chơi !
 
-> 📘 Đồ án môn học: Nhập môn lập trình web (CT188).
-> 🧑‍💻 Nhóm thực hiện: Nhóm 3.
-> 🏫 Trường: Can Tho University.
-🌐 **Truy cập website:** [GameFM Web](https://game-fm.github.io/Home/GameFM/index.html)
+> 📘 Đồ án môn học: Nhập môn lập trình web (CT188). 
+> 🧑‍💻 Nhóm thực hiện: Nhóm 3. 
+> 🏫 Trường: Can Tho University. 
+🌐 **Truy cập website:** [GameFM Web](https://game-fm.github.io/Home/GameFM/index.html) 
 ---
 
 ## 📌 Giới thiệu
