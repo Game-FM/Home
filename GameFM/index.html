@@ -24,10 +24,27 @@
   </script>
   <script src="./accountscript.js"></script>
   <script src="./search.js"></script>
+  <!-- Phan loader -->
+  <link rel="stylesheet" href="./loader.css">
+  <script src="./loader.js" defer></script>
+
+  <!-- AOS Library  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
 </head>
 
 <body>
-  <header class="container g-2">
+
+  <div class="loader-overlay">
+    <div class="loader"></div>
+  </div>
+
+  <header class="container g-2" data-aos="fade-down" data-aos-delay="200" `data-aos-once="false">
     <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
       <a href="./index.html"
         class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
@@ -73,7 +90,7 @@
     </div>
 
     <div class="row">
-      <div class="col-12 mt-2 ">
+      <div class="col-12 mt-2 " data-aos="fade-up" data-aos-delay="200" `data-aos-once="false">
 
         <div class="row"><!-- ô background hè-->
           <img class="w-100" src="./images/trangchu/top-index.jpg" style="opacity: 65%;" alt="">
@@ -152,7 +169,7 @@
 
 
     <!-- section 2 -->
-    <div class="row" style=" box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4); padding: 2vw;">
+    <div class="row" style=" box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4); padding: 2vw;" data-aos="fade-up" data-aos-delay="200" `data-aos-once="false">
 
       <div class="col-12" style=" padding: 0;">
         <strong style="font-size: 3vw;">GAME NỔI BẬT</strong>
@@ -160,7 +177,7 @@
 
       <div class="col-8 g-0">
 
-        <div class="row SHOW w-100 justify-content-center" id="content">
+        <div class="row SHOW w-100 justify-content-center" id="content" data-aos="fade-right" data-aos-delay="200" `data-aos-once="false">
           <video controls autoplay muted loop>
             <source src="https://video.fastly.steamstatic.com/store_trailers/256706800/movie480.webm?t=1516828564"
               type="video/webm">
@@ -169,7 +186,7 @@
         </div>
 
       </div>
-      <div class="col-4 align-items-center justify-content-center m-auto section2contain g-0">
+      <div class="col-4 align-items-center justify-content-center m-auto section2contain g-0" data-aos="fade-left" data-aos-delay="200" `data-aos-once="false">
         <!-- Game 1 -->
         <div class="row clickable-img" onclick="event.preventDefault(); navigate('Game1'); selectImage(this);">
           <a href="#">
@@ -197,7 +214,7 @@
 
     <!-- section 3 -->
 
-    <div class="row mt-5 g-0 pb-2 justify-content-center section3 dcnn text-center">
+    <div class="row mt-5 g-0 pb-2 justify-content-center section3 dcnn text-center" data-aos="fade-up" data-aos-delay="200" `data-aos-once="false">
       <div class="col-12" style="margin-top: 1vw;">
         <strong style="font-size: 3vw;">ĐƯỢC CHƠI NHIỀU NHẤT</strong>
       </div>
@@ -238,7 +255,7 @@
 
     <div class="row mt-5 pb-2 justify-content-center " style="">
       <!-- game gia chien -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12" data-aos="fade-right" data-aos-delay="200" `data-aos-once="false">
         <div class="row">
           <strong style="font-size: 2.5vw;">TRÒ CHƠI GIẢ CHIẾN</strong>
           <br>
@@ -333,7 +350,7 @@
         <div class="col-12 col-sm-2 text-center align-items-center mb-5 readmore-button"><strong>Xem Thêm</strong></div>
       </div>
       <!-- Game xay dung  -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12" data-aos="fade-left" data-aos-delay="200" `data-aos-once="false">
         <div class="row">
           <strong style="font-size: 2.5vw;">TRÒ CHƠI XÂY DỰNG THÀNH PHỐ</strong>
           <br>
@@ -433,7 +450,7 @@
 
   </main>
 
-  <footer class="container my-4 p-2">
+  <footer class="container my-4 p-2" data-aos="fade-down" data-aos-delay="200" `data-aos-once="false">
 
 
     <div style="margin: 1vw 0;">

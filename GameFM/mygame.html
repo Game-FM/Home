@@ -22,21 +22,39 @@
   <link rel="stylesheet" href="./slideshow.css">
   <script src="./accountscript.js"></script>
   <script src="./scriptproduct.js"></script>
+  <!-- Phan loader -->
+  <link rel="stylesheet" href="./loader.css">
+  <script src="./loader.js" defer></script>  
+  <!-- AOS Library  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
 </head>
 
 <body>
+
+  <div class="loader-overlay">
+    <div class="loader"></div>
+  </div>
+  
   <style>
     .game-card {
-      background-color: #000;
+      background-color: #092b47;
       color: white;
       position: relative;
       overflow: hidden;
+      box-shadow: 0.3vw 0.4vw 1vw rgb(255, 255, 255,0.4);
+      padding-bottom: 1vw;
     }
 
     .game-card img {
       object-fit: cover;
       width: 100%;
-      height: auto;
+      height: 10vw;
       transition: transform 0.3s;
     }
 
@@ -44,17 +62,34 @@
       transform: scale(1.05);
     }
 
-    .btn-play {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      display: none;
+    .card-body{
+      text-align: center;
     }
+    .btn-play{
+      background-color: rgb(84, 48, 203);
+      color: white;
+      font-size: 1.2vw;
+      display: none;
+      border: none;
+      margin: 0;
+      top: 91%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      border-radius: 0.3vw;
+    }
+    .btn-play:hover{
+      color: rgb(84, 48, 203);
+      background-color: white;
+      border-radius: 0.3vw;
 
+    }
     .game-card:hover .btn-play {
       display: inline-block;
+      
     }
   </style>
+
   <!-- hiển thị game đã mua -->
   <script>
     $(document).ready(function () {
@@ -77,16 +112,16 @@
         const game = gameList[id];
         if (game) {
           const card = `
-  <div class="col-md-4 mb-4">
-    <div class="card h-100 game-card">
-      <img src="${game.logo}" class="card-img-top" alt="${game.name}">
-      <div class="card-body">
-        <h5 class="card-title">${game.name}</h5>
-        <a href="#" class="btn btn-primary btn-play">Chơi ngay</a>
-      </div>
-    </div>
-  </div>
-`;
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 game-card">
+                <img src="${game.logo}" class="card-img-top" alt="${game.name}">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 1.5vw;">${game.name}</h5>
+                  <button class="btn-play">Chơi Ngay</button>
+                </div>
+              </div>
+            </div>
+          `;
           container.append(card);
         }
       });
@@ -124,7 +159,7 @@
 
 
 
-  <header class="container g-2">
+  <header class="container g-2" data-aos="fade-down" data-aos-delay="200" `data-aos-once="false">
     <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
       <a href="./index.html"
         class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
@@ -168,14 +203,14 @@
         </button>
       </div>
     </div>
-    <main class="container mt-4">
+    <main class="container mt-4" data-aos="fade-up" data-aos-delay="200" `data-aos-once="false">
       <h2>🎮 Game của bạn</h2>
       <div class="row" id="my-games-list"></div>
     </main>
 
   </main>
 
-  <footer class="container my-4 p-2">
+  <footer class="container my-4 p-2" data-aos="fade-down" data-aos-delay="200" `data-aos-once="false">
 
 
     <div style="margin: 1vw 0;">
@@ -205,7 +240,7 @@
     </div>
 
 
-  </footer>
+  </footer >
 
 
   <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->

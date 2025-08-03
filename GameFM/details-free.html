@@ -26,10 +26,18 @@
   <script src="./scriptproduct.js"></script>
   <script src="./details-free.js"></script>
   <script src="checkout.js" defer></script>
+  <!-- AOS Library  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
 </head>
 
 <body>
-  <header class="container g-2">
+  <header class="container g-2" data-aos="fade-down" data-aos-delay="200" `data-aos-once="false">
     <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
         <a href="./index.html" class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
             <img src="./images/trangchu/GAMEFM.png" style="width: 5vw;" alt="">
@@ -60,7 +68,7 @@
         </div>
     </div>
   </header>
-  <main class="container">
+  <main class="container" data-aos="fade-up" data-aos-delay="200" `data-aos-once="false">
     <div class="row" style="margin: 0.3vw 0;">
       <form class="search-wrapper d-flex justify-content-end" action="#" method="GET">
         <input type="text" name="q" placeholder="Tìm kiếm...">
@@ -79,7 +87,7 @@
             </div>
         </div>
         <!-- Phan ben trai -->
-        <div class="col-lg-7 col-12">
+        <div class="col-lg-7 col-12" data-aos="fade-right" data-aos-delay="200" `data-aos-once="false">
 
             <!-- Anh game -->
             <div class="row">
@@ -129,7 +137,7 @@
 
         </div>
         <!-- Phan ben hai -->
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-lg-5" data-aos="fade-left" data-aos-delay="200" `data-aos-once="false">
             <!-- Logo -->
             <div class="row d-flex justify-content-center my-3">
                 <img id="gamelogo" src="" class="" style="width: 25vw; height: auto;" alt="">
@@ -215,10 +223,42 @@
         </div>
     </div>
 
+  </main>
+
+  <footer class="container my-4 p-2" data-aos="fade-down" data-aos-delay="200" `data-aos-once="false">
+
+
+    <div style="margin: 1vw 0;">
+        <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
+        <p style="font-size: 1vw; margin-top: 0.5vw;">
+        &copy; 2025 Bản quyền thuộc về GameFM.
+        </p>
+        <p style="font-size: 1vw;margin-top: 0.5vw;">
+        Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
+        </p>
+        <div class="row g-0 align-items-center justify-content-center text-center" style="font-size: 1vw;margin-top: 0.5vw;">
+        <!-- Chính sách -->
+        <div class="col-auto px-1"><a href="./Policy.html">Chính Sách Bảo Mật</a></div> |
+        <div class="col-auto px-1"><a href="./Policy.html">Điều Khoản Dịch Vụ</a></div> |
+        <div class="col-auto px-1"><a href="./support.html">Hỗ Trợ</a></div> |
+        <div class="col-auto px-1"><a href="./Policy.html">Chính Sách Cookie</a></div>
+        </div>    
+        <div class="row g-0 gap-3 align-items-center justify-content-center text-center" style="font-size: 1vw; margin-top: 0.5vw;">
+            <!-- Mạng xã hội -->
+            <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
+            <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+            <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> 
+            <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
+        </div>
+    </div>
+
+
+  </footer>
+  
 
         <!-- checkout  -->
-    <div id="body" class="" style="display: none;background-color: black; position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: 999; opacity: 50%;"></div>
-    <form class="row container-checkout" id="checkout-form" style="display: none;padding: 3vw ;overflow: auto;color: black;position: fixed;top: 50%;left: 50%; transform: translate(-50%, -50%); background-color: white; z-index: 999;">
+    <div id="body" class="" style="display: none;background-color: black; position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: 10002; opacity: 50%;"></div>
+    <form class="row container-checkout" id="checkout-form" style="display: none;padding: 3vw ;overflow: auto;color: black;position: fixed;top: 50%;left: 50%; transform: translate(-50%, -50%); background-color: white; z-index: 10003;">
 
             <!-- right -->
             <div class="col-12 border" style="font-size: 1.5vw;">
@@ -270,39 +310,6 @@
             </div>
         </form>
     </div>
-
-  </main>
-
-  <footer class="container my-4 p-2">
-
-
-    <div style="margin: 1vw 0;">
-        <img src="./images/trangchu/GAMEFM.png" style="width: 3vw;" alt="">
-        <p style="font-size: 1vw; margin-top: 0.5vw;">
-        &copy; 2025 Bản quyền thuộc về GameFM.
-        </p>
-        <p style="font-size: 1vw;margin-top: 0.5vw;">
-        Mọi quyền đều được bảo lưu. Giá đã bao gồm VAT.
-        </p>
-        <div class="row g-0 align-items-center justify-content-center text-center" style="font-size: 1vw;margin-top: 0.5vw;">
-        <!-- Chính sách -->
-        <div class="col-auto px-1"><a href="./Policy.html">Chính Sách Bảo Mật</a></div> |
-        <div class="col-auto px-1"><a href="./Policy.html">Điều Khoản Dịch Vụ</a></div> |
-        <div class="col-auto px-1"><a href="./support.html">Hỗ Trợ</a></div> |
-        <div class="col-auto px-1"><a href="./Policy.html">Chính Sách Cookie</a></div>
-        </div>    
-        <div class="row g-0 gap-3 align-items-center justify-content-center text-center" style="font-size: 1vw; margin-top: 0.5vw;">
-            <!-- Mạng xã hội -->
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-instagram"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-whatsapp"></i></a></div>
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-telegram"></i></a></div> 
-            <div class="col-auto px-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
-        </div>
-    </div>
-
-
-  </footer>
-  
 
   <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
 </body>

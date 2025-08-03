@@ -9,6 +9,10 @@
 }
 /*  */
 
+header{
+  position: relative;
+  z-index: 1000;
+}
 
 body {
   background-image: url(https://img.freepik.com/free-photo/gradient-blue-abstract-background-smooth-dark-blue-with-black-vignette-studio_1258-53634.jpg);
@@ -36,7 +40,7 @@ main {
 
 .menu-button-effect {
   position: relative;
-  background-color: rgb(18, 18, 39);
+  background-color:  rgb(18, 18, 39);
   color: white;
   border: none;
   transition: all 0.3s ease;
@@ -106,12 +110,13 @@ main {
       background: rgb(84, 48, 203);
       border: none;
       color: white;
+      position: relative;
       padding: 0.5vw 0.8vw 0.5vw 0.8vw;
       border-radius: 50%;
       cursor: pointer;
       font-size: 0.85vw;
       transition: background 0.3s ease;
-      z-index: 3;
+      z-index: 0;
     }
 
     .search-wrapper button:hover {
@@ -216,6 +221,9 @@ main {
   background-color: rgb(18, 18, 39) !important;
   color: white;
   text-align: center !important;
+  z-index: 999999;
+  position: absolute !important;
+  
 }
 /* .dropdownitem{
     margin-right: 15px;
@@ -669,7 +677,7 @@ input[type="checkbox"].custom-check {
   margin-bottom: 2vw;  
 }
 .content-bg-sub{
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(14, 66, 96, 0.277);
 }
 .sub-text{
   font-size: 0.8vw;
