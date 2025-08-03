@@ -96,7 +96,7 @@
       const container = $("#my-games-list");
       const user = JSON.parse(localStorage.getItem("loggedInUser"));
       if (!user) {
-        container.html("<p>⚠️ Bạn chưa đăng nhập.</p>");
+        container.html("<p style="font-size:1.5vw;">⚠️ Bạn chưa <a href="./login_register.html">đăng nhập.</a></p>");
         return;
       }
 
@@ -104,7 +104,7 @@
       const purchasedIds = JSON.parse(localStorage.getItem(`purchasedGames_${userId}`)) || [];
 
       if (purchasedIds.length === 0) {
-        container.html("<p>🕹️ Bạn chưa mua trò chơi nào.</p>");
+        container.html("<p style="font-size:1.5vw;">🕹️ Bạn chưa mua trò chơi nào.</p>");
         return;
       }
 
@@ -245,5 +245,6 @@
 
   <!-- <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a> -->
 </body>
+
 
 </html>
