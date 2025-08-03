@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const loggedInUser = localStorage.getItem('loggedInUser');
     if (!loggedInUser) {
         alert('Bạn chưa đăng nhập!');
+        window.location.href = 'login_register.html';
         return;
     }
 
