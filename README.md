@@ -9,12 +9,14 @@
 
 ## 📌 Giới thiệu
 
-**Game-FM** là một nền tảng bán và phân phối game trực tuyến và cộng đồng cho phép người dùng:
+**Game-FM** là một nền tảng bán, phân phối game trực tuyến và cộng đồng cho phép người dùng:
 
-- Duyệt & tìm kiếm hàng trăm tựa game đa thể loại
-- Mua game qua giao diện web thân thiện
-- Tải và quản lý thư viện game đã mua
-- Đánh giá, nhận xét game và tương tác với cộng đồng
+- Duyệt & tìm kiếm hàng trăm tựa game đa thể loại.
+- Mua game qua giao diện web thân thiện.
+- Tải và quản lý thư viện game đã mua.
+- Đánh giá, nhận xét game và tương tác với cộng đồng.
+- Đăng ký/đăng nhập và quản lý kho game của bạn.
+- Gửi hỗ trợ nếu cần thiết.
 
 Trang web được xây dựng nhằm mô phỏng trải nghiệm thương mại điện tử trong lĩnh vực game và đồng thời là đồ án học phần chuyên ngành công nghệ thông tin.
 
@@ -22,13 +24,13 @@ Trang web được xây dựng nhằm mô phỏng trải nghiệm thương mại
 
 ## 🚀 Tính năng nổi bật
 
-- 🔍 Tìm kiếm game theo tên, thể loại, hãng phát hành
-- 🛒 Hệ thống giỏ hàng, thanh toán giả lập
-- 🗃️ Trang chi tiết game (mô tả, ảnh, đánh giá, trailer...)
-- 👤 Đăng ký / Đăng nhập người dùng
-- ❤️ Lưu thư viện game yêu thích và đã mua
-- 💬 Hệ thống bình luận, đăng bài viết
-- 📊 Quản trị viên: Quản lý game, đơn hàng, người dùng
+- 🔍 Tìm kiếm game theo tên, thể loại, hãng phát hành.
+- 🛒 Hệ thống giỏ hàng, thanh toán giả lập.
+- 🗃️ Trang chi tiết game (mô tả, ảnh, đánh giá, trailer...).
+- 👤 Đăng ký / Đăng nhập người dùng.
+- ❤️ Lưu thư viện game đã mua.
+- 💬 Hệ thống bình luận, đăng bài viết.
+- 📊 Quản trị viên: Quản lý game, đơn hàng, người dùng.
 
 ---
 
@@ -49,9 +51,11 @@ Trang web được xây dựng nhằm mô phỏng trải nghiệm thương mại
 
 ## 📷 Hình ảnh minh họa
 
-![Trang chủ]<img width="1919" height="960" alt="image" src="https://github.com/user-attachments/assets/41d2adc1-5659-4c10-a628-f03570aa5ab2" />
+### 🏠 Trang chủ
+![Trang chủ](https://github.com/user-attachments/assets/41d2adc1-5659-4c10-a628-f03570aa5ab2)
 
-![Chi tiết game]<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/07e89881-891b-479b-bc9f-490b6d93c436" />
+### 🎮 Chi tiết game
+![Chi tiết game](https://github.com/user-attachments/assets/07e89881-891b-479b-bc9f-490b6d93c436)
 
 
 ---
