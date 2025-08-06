@@ -1,13 +1,14 @@
 .loader {
   width: 4vw;
   aspect-ratio: 1;
-  color: rgb(84, 48, 203);
+  color: rgb(255, 255, 255);
   position: relative;
   background:
     conic-gradient(from 134deg at top, currentColor 92deg, #0000 0) top,
     conic-gradient(from -46deg at bottom, currentColor 92deg, #0000 0) bottom;
   background-size: 100% 50%;
   background-repeat: no-repeat;
+  border-radius: 2vw;  
 }
 
 .loader:before {
@@ -18,16 +19,17 @@
   background:
     linear-gradient(45deg, var(--g)),
     linear-gradient(-45deg, var(--g));
-  animation: l7 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+  animation: l7 0.9s infinite ease-in-out;
+  border-radius: 1vw;
 }
 
 @keyframes l7 {
   33% {
-    inset: -10px;
+    inset: -1vw;
     transform: rotate(0deg);
   }
   66% {
-    inset: -10px;
+    inset: -1vw;
     transform: rotate(90deg);
   }
   100% {
@@ -38,7 +40,7 @@
 .loader-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.65); 
+  background-color: rgba(0, 0, 0, 0.65); 
   display: flex;
   justify-content: center;
   align-items: center;

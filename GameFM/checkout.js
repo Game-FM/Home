@@ -2,18 +2,26 @@ const form = document.getElementById("checkout-form");
 const body = document.getElementById("body");
 
 function open_checkout() {
-  form.style.display = "flex"; // flex giúp căn giữa nội dung
   body.style.display = "flex";
-  form.style.transition = "opacity 0.3s ease";
-  form.style.transform = "opacity 0.3s ease";
+  form.style.display = "flex";
+
+  // Delay để đảm bảo transition được kích hoạt
+  setTimeout(() => {
+    form.classList.add("active");
+  }, 10);
 }
 
-body.addEventListener("click",function (){
+body.addEventListener("click", function () {
+  form.classList.remove("active");
+
+  // Chờ transition hoàn tất rồi mới ẩn hoàn toàn
+  setTimeout(() => {
     form.style.display = "none";
     body.style.display = "none";
-})
+  }, 300); // Trùng với thời gian transition
+});
 
-// Ngăn sự kiện nổi bọt khi click vào nội dung
+// Ngăn sự kiện nổi bọt
 form.addEventListener("click", function (event) {
   event.stopPropagation();
 });

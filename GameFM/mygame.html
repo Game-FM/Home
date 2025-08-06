@@ -195,7 +195,7 @@
   </header>
 
   <main class="container">
-    <div class="row" style="margin: 0.3vw 0;">
+    <div class="row" style="margin: 0.3vw 0;" data-aos="fade-left" data-aos-delay="200" data-aos-once="false">
       <div class="search-wrapper d-flex justify-content-end">
         <input type="text" id="search-input" placeholder="Tìm kiếm...">
         <button type="button" id="search-button">
@@ -203,10 +203,13 @@
         </button>
       </div>
     </div>
-    <main class="container mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-once="false">
+    <div class="container mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-once="false">
       <h2 style="font-size: 2.5vw;">🎮 Game của bạn</h2>
       <div class="row" id="my-games-list"></div>
-    </main>
+    </div>
+
+  <!-- up to top  -->
+  <a id="upBtn" class="fade-button" href="#top"><button class="upBtn"><strong>^</strong></button></a>
 
   </main>
 
