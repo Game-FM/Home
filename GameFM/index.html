@@ -3,39 +3,34 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>GameFM - Trang Chủ</title>
-  <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>GameFM - Trang Chủ</title> <!-- Tieu de -->
+  <link href="images/trangchu/GAMEFM.png" rel="shortcut icon" type="image/vnd.microsoft.icon" /> <!-- icon tab -->
+
+  <!-- Custom -->
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="./Jquery.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="./scriptindex.js"></script>
-  <script>
-    window.onload = function () {
-      selectImage(document.querySelector('.clickable-img'));
-    };
-  </script>
+  <script src="./scriptindex.js" defer></script>
   <script src="./accountscript.js"></script>
   <script src="./search.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./Library/fontawesome-free-7.0.0-web/css/all.css">
+
+  <!-- Jquery -->
+  <script src="./Library/jquery-3.7.1.min.js"></script>
+
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="./Library/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <script src="./Library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Phan loader -->
   <link rel="stylesheet" href="./loader.css">
   <script src="./loader.js" defer></script>
 
   <!-- AOS Library  -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      AOS.init();
-    });
-  </script>
+  <link rel="stylesheet" href="./Library/aos-master/dist/aos.css">
+  <script src="./Library/aos-master/dist/aos.js"></script>
+  <script src="./AOS_init.js" defer></script>
+
 </head>
 
 <body>
@@ -44,7 +39,7 @@
     <div class="loader"></div>
   </div>
 
-  <header class="container g-2" data-aos="fade-down" data-aos-delay="200" data-aos-once="false">
+  <header class="container g-2" data-aos="fade-down" data-aos-delay="200" data-aos-once="false">  <!-- sử dụng AOS library (data-aos | data-aos-delay | data-aos-once) -->
     <div class="row navbar m-0 position-relative" style="padding: 1vw 0 2vw 0; justify-content: space-evenly;">
       <a href="./index.html"
         class="col-12 col-sm-2 justify-content-center d-flex align-items-center text-decoration-none">
@@ -80,14 +75,16 @@
   </header>
   <main class="container">
 
+    <!-- Tìm kiếm -->
     <div class="row" style="margin: 0.3vw 0;" data-aos="fade-left" data-aos-delay="200" data-aos-once="false">
       <form class="search-wrapper d-flex justify-content-end" action="result.html" method="GET">
         <input type="text" name="q" placeholder="Tìm kiếm...">
         <button type="submit">
-          <i class="fas fa-search"></i>
+          <i class="fas fa-magnifying-glass"></i>
         </button>
       </form>
     </div>
+    <!--  -->
 
     <div class="row">
       <div class="col-12 mt-2 " data-aos="fade-up" data-aos-delay="200" data-aos-once="false">
@@ -149,7 +146,7 @@
                 <source src="https://www.youtube.com/watch?v=wGB1aLDR2Es" type="video/webm">
               </video>
               <div class="row justify-content-center g-0">
-                <div class="col-4"><strong style="font-size: 70%;">Fortnite</strong></div>
+                <div class="col-4"><strong>Fornite</strong></div>
                 <div class="col-2 text-center discount-tag"><strong>-50%</strong></div>
                 <div class="col-3 discount-num-tag">
                   <p>150.000vnd</p>
@@ -271,7 +268,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+              <i class="col-auto d-flex align-items-center fab fa-windows me-2" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-40%</strong>
@@ -294,7 +291,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+              <i class="col-auto d-flex align-items-center fab fa-windows me-2" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-10%</strong>
@@ -317,7 +314,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+              <i class="col-5 justify-content-start d-flex align-items-center fab fa-windows" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
               </div>
@@ -335,7 +332,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+              <i class="col-5 justify-content-start d-flex align-items-center fab fa-windows" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
               </div>
@@ -366,7 +363,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+              <i class="col-5 justify-content-start d-flex align-items-center fab fa-windows" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
               </div>
@@ -384,7 +381,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+              <i class="col-auto d-flex align-items-center fab fa-windows me-2" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-30%</strong>
@@ -407,7 +404,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-5 justify-content-start d-flex align-items-center fa fa-windows" style="font-size: 1.7vw;"
+              <i class="col-5 justify-content-start d-flex align-items-center fab fa-windows" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-4 d-flex align-items-center justify-content-center discount"><strong>Miễn Phí</strong>
               </div>
@@ -425,7 +422,7 @@
             <br>
             <div class="row buying-info align-items-center justify-content-between gx-2"
               style="margin-left: 0; padding: 0.3vw; width: 95%;">
-              <i class="col-auto d-flex align-items-center fa fa-windows me-2" style="font-size: 1.7vw;"
+              <i class="col-auto d-flex align-items-center fab fa-windows me-2" style="font-size: 1.7vw;"
                 aria-hidden="true"></i>
               <div class="col-2 offset-1 d-flex align-items-center justify-content-center discount">
                 <strong>-60%</strong>

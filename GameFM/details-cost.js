@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const iconClass = platformIcons[platform];
             if (iconClass) {
                 const iconElement = document.createElement('i');
-                iconElement.className = `d-flex mt-1 justify-content-end fa ${iconClass}`;
+                iconElement.className = `d-flex mt-1 justify-content-end fab ${iconClass}`;
                 iconElement.style.fontSize = '1.5vw';
                 iconElement.style.color = 'rgb(34, 178, 178)';
                 platformContainer.appendChild(iconElement);

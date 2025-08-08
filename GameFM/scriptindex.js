@@ -1,3 +1,7 @@
+    window.onload = function () {
+      selectImage(document.querySelector('.clickable-img'));
+    };
+
 function navigate(page) {
   const content = document.getElementById('content');
   switch (page) {
