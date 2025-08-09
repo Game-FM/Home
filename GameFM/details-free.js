@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "PS": "fab fa-playstation",
             "Xbox": "fab fa-xbox",
             "Switch": "fa-solid fa-gamepad",
-            "Mobile": "fab fa-mobile-alt"
+            "Mobile": "fa fa-mobile-alt"
         };
         const platformContainer = document.getElementById('platF');
         game.platform.forEach(platform => {
@@ -166,4 +166,5 @@ document.addEventListener('DOMContentLoaded', function () {
             location.reload(); // Reload lại để cập nhật giao diện
         });
     }
+
 });
