@@ -60,18 +60,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //nền tảng
         const platformIcons = {
-            "PC": "fa-windows",
-            "PS": "fa-playstation",
-            "Xbox": "fa-xbox",
-            "Switch": "fa-nintendo-switch",
-            "Mobile": "fa-mobile-alt"
+            "PC": "fab fa-windows",
+            "PS": "fab fa-playstation",
+            "Xbox": "fab fa-xbox",
+            "Switch": "fa-solid fa-gamepad",
+            "Mobile": "fa fa-mobile-alt"
         };
         const platformContainer = document.getElementById('platF');
         game.platform.forEach(platform => {
             const iconClass = platformIcons[platform];
             if (iconClass) {
                 const iconElement = document.createElement('i');
-                iconElement.className = `d-flex mt-1 justify-content-end fab ${iconClass}`;
+                iconElement.className = `d-flex mt-1 justify-content-end ${iconClass}`;
                 iconElement.style.fontSize = '1.5vw';
                 iconElement.style.color = 'rgb(34, 178, 178)';
                 platformContainer.appendChild(iconElement);
@@ -200,3 +200,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
