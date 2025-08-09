@@ -691,6 +691,7 @@ input[type="checkbox"].custom-check {
   font-size: 0.8vw;
   color: white;
   opacity: 70%;
+  text-align: justify;
 }
 
 

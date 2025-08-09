@@ -181,14 +181,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Bạn chưa đăng nhập!');
                 return;
             }
-
-            if (!purchasedGames.includes(gameId)) {
-                purchasedGames.push(gameId);
-                localStorage.setItem(purchasedKey, JSON.stringify(purchasedGames));
-                localStorage.setItem('purchaseSuccess', 'true');
-                alert('Mua thành công!');
-            } else {
-                alert('Bạn đã mua game này rồi!');
+            var check = confirm('Bạn có chắc chắn thực hiện thao tác này không?');
+            if(check){
+                if (!purchasedGames.includes(gameId)) {
+                    purchasedGames.push(gameId);
+                    localStorage.setItem(purchasedKey, JSON.stringify(purchasedGames));
+                    localStorage.setItem('purchaseSuccess', 'true');
+                    alert('Mua thành công!');
+                } else {
+                    alert('Bạn đã mua game này rồi!');
+                }
+            }
+            else{
+                alert('Bạn đã huỷ bỏ giao dịch!');
             }
 
             location.reload(); // Reload lại để cập nhật giao diện
