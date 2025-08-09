@@ -8,7 +8,7 @@ function navigate(page) {
     case 'Game1':
       content.innerHTML = `
           <video controls autoplay muted loop>
-            <source src="https://video.fastly.steamstatic.com/store_trailers/256706800/movie480.webm?t=1516828564" type="video/webm">
+            <source src="./images/Video/Subnautica.webm" type="video/webm">
                     Trình duyệt của bạn không hỗ trợ video.
           </video>
       `;
@@ -16,7 +16,7 @@ function navigate(page) {
     case 'Game2':
       content.innerHTML = `
           <video controls autoplay muted loop>
-            <source src="https://video.fastly.steamstatic.com/store_trailers/257059180/movie480_vp9.webm?t=1727388825" type="video/webm">
+            <source src="./images/Video/Mouthwashing.webm" type="video/webm">
                     Trình duyệt của bạn không hỗ trợ video.
           </video>
       `;
