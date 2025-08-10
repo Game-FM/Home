@@ -200,7 +200,12 @@ function initFormListeners() {
 
             localStorage.setItem(email, JSON.stringify(user));
             alert("Đăng ký tài khoản thành công!");
-            navigate("Login");
+            var ask = confirm("Bạn có muốn xem trang giới thiệu không?");
+            if(ask) window.location.href = "./aboutUs.html";
+            else{
+                 navigate("Login");
+            }
+
             registerForm.reset();
         });
     }

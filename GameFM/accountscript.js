@@ -62,9 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // showname
             let userInfo = document.createElement('div');
-            userInfo.textContent = '👤 ' + user.name;
+            userInfo.style.textDecoration = 'none';
+            userInfo.textContent = 'Về GameFM';
             userInfo.className = 'menu-button-effect mb-1';
             dropdownMenu.appendChild(userInfo);
+            userInfo.onclick = function() {
+            window.location.href = './aboutUs.html';
+            };
 
             // account button
             let accountBtn = document.createElement('div');
